@@ -22,10 +22,10 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     controller: 'OverviewCtrl'
   })
 
-//   .state('overview', {
-//   url: "/overview",
+//   .state('what and how we do', {
+//   url: "/what and how we do",
 //   templateUrl: "views/template.html",
-//   controller: 'OverviewCtrl'
+//   controller: 'what and how we doCtrl'
 // })
 
 .state('sectors', {
