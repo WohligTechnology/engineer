@@ -50,6 +50,24 @@ controller: 'CareersCtrl'
 url: "/contactus",
 templateUrl: "views/template.html",
 controller: 'ContactusCtrl'
+})
+
+.state('csr', {
+url: "/csr",
+templateUrl: "views/template.html",
+controller: 'CsrCtrl'
+})
+
+.state('management', {
+url: "/management",
+templateUrl: "views/template.html",
+controller: 'ManagementCtrl'
+})
+
+.state('mission', {
+url: "/mission",
+templateUrl: "views/template.html",
+controller: 'MissionCtrl'
 });
 
   $urlRouterProvider.otherwise("/home");
