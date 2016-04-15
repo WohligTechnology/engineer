@@ -10,16 +10,69 @@ else {
 var navigationservice = angular.module('navigationservice', [])
 
 .factory('NavigationService', function() {
-  var navigation = [{
-    name: "Home",
+  var navigation = [
+    {
+    name: "Overview",
     classis: "active",
-    anchor: "home",
+    anchor: "overview",
     subnav: [{
-      name: "Subnav1",
+      name: "About RD +Geography",
+      classis: "active",
+      link: "#/home"
+    },
+
+    {
+      name: "Mission and Vision",
+      classis: "active",
+      link: "#/home"
+    },
+
+    {
+      name: "Management",
+      classis: "active",
+      link: "#/home"
+    },
+
+    {
+      name: "CSR",
+      classis: "active",
+      link: "#/home"
+    },
+
+    {
+      name: "RD-The Brand",
       classis: "active",
       link: "#/home"
     }]
-  }];
+  },
+    {
+    name: "What and how we do",
+    classis: "active",
+    anchor: "what and how we do",
+  },
+
+  {
+  name: "Sectors",
+  classis: "active",
+  anchor: "sectors",
+},
+
+{
+name: "Clients",
+classis: "active",
+anchor: "clients",
+},
+
+{
+name: "Careers",
+classis: "active",
+anchor: "careers",
+},
+{
+name: "Contact us",
+classis: "active",
+anchor: "contact us",
+}];
 
   return {
     getnav: function() {
