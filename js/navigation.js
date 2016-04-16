@@ -1,93 +1,79 @@
 var adminURL = "";
-if(isproduction)
-{
-  adminURL =  "http://www.wohlig.co.in/demo/index.php";
-}
-else {
-  adminURL = "http://localhost/demo/index.php";
+if (isproduction) {
+    adminURL = "http://www.wohlig.co.in/demo/index.php";
+} else {
+    adminURL = "http://localhost/demo/index.php";
 }
 
 var navigationservice = angular.module('navigationservice', [])
 
 .factory('NavigationService', function() {
-  var navigation = [
-    {
-    name: "Overview",
-    classis: "active",
-    anchor: "overview",
-    subnav: [{
-      name: "About RD +Geography",
-      classis: "active",
-      link: "#/home"
-    },
+    var navigation = [{
+        name: "Overview",
+        classis: "active",
+        anchor: "overview",
+        subnav: [{
+            name: "About RD + Geography",
+            classis: "active",
+            link: "about-geo"
+        }, {
+            name: "Mission and Vision",
+            classis: "active",
+            link: "mission-vision"
+        }, {
+            name: "Management",
+            classis: "active",
+            link: "management"
+        }, {
+            name: "CSR",
+            classis: "active",
+            link: "csr"
+        }, {
+            name: "RD - The Brand",
+            classis: "active",
+            link: "the-brand"
+        }]
+    }, {
+        name: "What And How We Do",
+        classis: "active",
+        anchor: "we-do",
+        subnav: []
+    }, {
+        name: "Sectors",
+        classis: "active",
+        anchor: "sectors",
+        subnav: []
+    }, {
+        name: "Clients",
+        classis: "active",
+        anchor: "clients",
+        subnav: []
+    }, {
+        name: "Careers",
+        classis: "active",
+        anchor: "careers",
+        subnav: []
+    }, {
+        name: "Contact Us",
+        classis: "active",
+        anchor: "contact-us",
+        subnav: []
+    }];
 
-    {
-      name: "Mission and Vision",
-      classis: "active",
-      link: "#/home"
-    },
+    return {
+        getnav: function() {
+            return navigation;
+        },
+        makeactive: function(menuname) {
+            for (var i = 0; i < navigation.length; i++) {
+                if (navigation[i].name == menuname) {
+                    navigation[i].classis = "active";
+                } else {
+                    navigation[i].classis = "";
+                }
+            }
+            return menuname;
+        },
 
-    {
-      name: "Management",
-      classis: "active",
-      link: "#/home"
-    },
-
-    {
-      name: "CSR",
-      classis: "active",
-      link: "#/home"
-    },
-
-    {
-      name: "RD-The Brand",
-      classis: "active",
-      link: "#/home"
-    }]
-  },
-    {
-    name: "What and how we do",
-    classis: "active",
-    anchor: "what and how we do",
-  },
-
-  {
-  name: "Sectors",
-  classis: "active",
-  anchor: "sectors",
-},
-
-{
-name: "Clients",
-classis: "active",
-anchor: "clients",
-},
-
-{
-name: "Careers",
-classis: "active",
-anchor: "careers",
-},
-{
-name: "Contact us",
-classis: "active",
-anchor: "contact us",
-}];
-
-  return {
-    getnav: function() {
-      return navigation;
-    },
-    makeactive: function(menuname) {
-      for (var i = 0; i < navigation.length; i++) {
-        if (navigation[i].name == menuname) {
-          navigation[i].classis = "active";
-        } else {
-          navigation[i].classis = "";
-        }
-      }
-      return menuname;
-    },
-
-  };
+    };
 });

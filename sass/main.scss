@@ -4,12 +4,41 @@
 @import "../bower_components/flexslider/flexslider.css";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
+
 /* Bootstrap Variables Goes Here */
-$brand-primary: #0d9dff !default;
-$brand-success: #84ce3c !default;
+$brand-primary: #29348e !default;
+$brand-success: #f78f29 !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
+
+//** Background color for `<body>`.
+$body-bg:               #fff !default;
+//** Global text color on `<body>`.
+$text-color:            $brand-primary !default;
+
+//** Global textual link color.
+$link-color:            $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: none !default;
+
+$font-family-sans-serif:  "Proxima Nova", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Gotham", "Times New Roman", Times, serif !default;
+
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
+
+$btn-default-border:             #fff !default;
+$btn-primary-border:             $brand-primary !default;
+$btn-success-border:             $brand-success !default;
+$btn-warning-border:             $brand-warning !default;
+$btn-danger-border:              $brand-danger !default;
+$btn-info-border:                $brand-info !default;
+/* Bootstrap Variables Goes Here */
+
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 body {
   padding-top: 70px;
@@ -30,10 +59,19 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block;
 }
-a {
+a,.btn {
   cursor: pointer;
   @include transition(all ease 300ms);
 }
+//Color Class
+.primary {
+  color: $brand-primary;
+}
+.success {
+  color: $brand-success;
+}
+//Custom button
+
 //bootstrap forms
 .input-lg,
 .input-group-lg > .form-control,
@@ -51,4 +89,8 @@ a {
 }
 //bootstrap forms
 /* Start writing sass here */
+.content {
+  min-height: 300px;
+}
+
 @import "fancybox-override";
