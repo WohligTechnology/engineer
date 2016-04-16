@@ -20,7 +20,7 @@ $text-color:            $brand-primary !default;
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:     $brand-success  !default;
 //** Link hover decoration.
 $link-hover-decoration: none !default;
 
@@ -92,5 +92,114 @@ a,.btn {
 .content {
   min-height: 300px;
 }
+/*header starts here*/
 
+.nav{
+  margin-left: 13%;
+  li{
+    margin-right: -10px;
+    a{
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.navbar-brand { padding: 5px 15px; }
+
+
+/*header ends here*/
+
+/*main starts here*/
+
+.banner{
+  margin-top: -19px;
+  position: relative;
+  .banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+      h1{
+        color:#fff;
+    }
+  }
+}
+
+.floating-left {
+  position: absolute;
+  top: 82%;
+  left: 0px;
+}
+
+.floating-right{
+  position: absolute;
+  top: 89%;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*main ends here*/
+
+/*footer starts here*/
+
+footer{
+  background-color: $brand-primary;
+  color: #fff;
+}
+
+footer {
+  ul{
+    padding: 15px 0 5px 0;
+    li{
+      list-style-type: none;
+      a{
+        text-transform: capitalize;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.list-head{
+  margin-top: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.foot-social{
+  margin-top: 64px;
+  span,p{
+    padding-top: 10px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+.social{
+  li{
+    a{
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      background-color: #fff;
+      border-radius: 100%;
+      color: $brand-primary;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+}
+}
+
+
+/*footer ends here*/
 @import "fancybox-override";
