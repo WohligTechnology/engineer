@@ -92,13 +92,20 @@ a,.btn {
 @font-face{
 font-family: 'FirstFont';
 src:url("../fonts/GOTHAM-BOLD_1.OTF");
+font-weight: 600;
 }
 
 @font-face{
 font-family: 'SecondFont';
 src:url("../fonts/ProximaNova-Extrabold.otf");
+font-weight: 700;
 }
 
+@font-face{
+font-family: 'ThirdFont';
+src:url("../fonts/ProximaNova-Semibold.otf");
+font-weight: 500;
+}
 
 //bootstrap forms
 /* Start writing sass here */
@@ -118,9 +125,9 @@ src:url("../fonts/ProximaNova-Extrabold.otf");
   }
 }
 
-// address{
-//   font-family:
-// }
+address{
+  font-family:'ThirdFont';
+}
 
 
 
@@ -136,9 +143,9 @@ src:url("../fonts/ProximaNova-Extrabold.otf");
   position: relative;
   .banner-text{
     position: absolute;
-    top: 45%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+    top: 48%;
+    left: 56%;
+    transform: translate(-50%,-50%);
       h1{
         display: inline-block;
         font-family: 'SecondFont';
@@ -153,9 +160,7 @@ src:url("../fonts/ProximaNova-Extrabold.otf");
   border-left: 70px solid transparent;
     border-right: 70px solid transparent;
     border-bottom: 50px solid $brand-success ;
-    position: absolute;
-    bottom: 45%;
-    right: 57%;
+    margin: 0px -60px -30px 0px;
     display: inline-block;
     height: 0;
     width: 0;
@@ -172,15 +177,24 @@ src:url("../fonts/ProximaNova-Extrabold.otf");
   right: 0;
 }
 
-
 .address-info{
-  margin-top: 5%;
-    margin-right: 108px;
+    margin:  5% 15% 0 0 ;
 }
 
+.certification{
+      padding-top: 50px;
+}
 
-
-
+.careers-info{
+  margin: 5% 15% 0 0;
+p{
+font-family: 'ThirdFont';
+ text-transform: capitalize;
+ span{
+   color: $brand-success;
+ }
+}
+}
 
 
 
