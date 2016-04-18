@@ -107,13 +107,18 @@ src:url("../fonts/ProximaNova-Semibold.otf");
 font-weight: 500;
 }
 
+@font-face{
+font-family: 'FourthFont';
+src:url("../fonts/ProximaNova-Light.otf");
+font-weight: 700;
+}
 //bootstrap forms
 /* Start writing sass here */
 .content {
   min-height: 300px;
 }
 /*header starts here*/
-
+ li{list-style-type: none;}
 .nav{
   margin-left: 13%;
   li{
@@ -138,6 +143,7 @@ address{
 
 /*main starts here*/
 h3,h2 {
+  font-family: 'FourthFont';
   text-transform: capitalize;
 }
 .banner{
@@ -194,6 +200,7 @@ font-family: 'ThirdFont';
 }
 
 .resume,a{
+  font-size: 16px;
   font-family: 'ThirdFont';
   color: $brand-success;
 }
@@ -218,7 +225,30 @@ font-family: 'ThirdFont';
   margin-top: -60px;
   padding: 50px 0 20px 0;
   background-color: $brand-success;
+  .text{
+      color: #fff;
+  }
+  .texts{
+    padding: 0 5px;
+    a{
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
 }
+
+
+.small-triangle:after{
+  content: "";
+  border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $brand-primary ;
+    display: inline-block;
+    height: 0;
+    width: 0;
+}
+
+
 
 .certifications{
   h3{
@@ -231,7 +261,6 @@ font-family: 'ThirdFont';
 .listing{
   width: auto;
   height: 100px;
-  padding: 0 15px;
   overflow: hidden;
   img{
     max-width: 100%;
@@ -239,15 +268,103 @@ font-family: 'ThirdFont';
   }
 }
 
+.clients1{
+  li{
+      padding:15px;
+  }
+}
 
+.clients2{
+  margin: 0 0 0 25px;
+  li{
+      padding: 15px 36px 30px;
+  }
+}
 
-
-
+.home-banner{
+  position: relative;
+}
+.home-bannertext{
+  .triangle{
+    position: absolute;
+    bottom: 25%;
+    left: 37%;
+    transform: translate(-50%,-50%);
+  }
+  p{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    width: 166px;
+    font-family: 'FourthFont';
+    font-weight: 600;
+  }
+}
 
 
 
 /*home page ends here*/
+/*sectors page started*/
+.sector-inf{
+    margin-bottom: 25px;
+}
+.sect1-info{
+  margin: 15px 0 25px 0;
+}
 
+.sect1-inf{
+  margin: 25px 0 15px 0;
+}
+
+.tab{
+  background-color: $brand-primary;
+}
+
+.uib-tab{
+  padding: 0 20px;
+}
+uib-tab-heading{
+  font-size: 18px;
+  font-family: 'FourthFont';
+  text-transform: capitalize;
+  padding: 10px 25px 10px 25px;
+  border-bottom: 4px solid $brand-success ;
+  color: #fff;
+}
+
+.tab >.nav-tabs > li.active > a{
+  background-color: transparent;
+  border: none;
+}
+.tab>.nav-tabs > li.active > a:hover{
+  background-color: transparent;
+  border: none;
+}
+.tab>.nav-tabs > li.active > a:focus{
+  background-color: transparent;
+  border: none;
+}
+.padding0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+// ul.padding0 li{
+// width: 49.7%;
+// display: inline-block;
+// margin: 0px;
+// }
+
+.mycl ul li{
+  float: left;
+    width: 50%;
+    padding: 0px;
+    margin: 0px !important;
+  }
+/*sectors page ended*/
 
 
 
@@ -318,7 +435,35 @@ footer {
   line-height: 30px;
 }
 
-
-
+.image-hold{
+ width: 100%;
+height: 330px;
+overflow: hidden;
+background-image: url("../img/video/v1.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-color: rgba(204,204,204,0);
+position: relative;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+min-height: 330px;
+}
+.imag-side{
+  @extend .image-hold;
+  min-height: 660px;
+  height: 660px;
+}
+.mycl{
+  ul{
+    display: block;
+    margin-bottom: 0;
+    li{
+      display: inline-block;
+      width: 50%;
+    }
+  }
+}
 /*footer ends here*/
 @import "fancybox-override";
