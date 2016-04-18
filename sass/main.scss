@@ -137,7 +137,9 @@ address{
 /*header ends here*/
 
 /*main starts here*/
-
+h3,h2 {
+  text-transform: capitalize;
+}
 .banner{
   margin-top: -19px;
   position: relative;
@@ -197,20 +199,52 @@ font-family: 'ThirdFont';
 }
 
 /*home page starts here*/
+.slider{
+  margin-top: -23px;
+}
+.flex-control-nav{
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  z-index: 2;
+}
+.flex-direction-nav{ display: none;}
+.flexslider{ border: none;}
+
+
+
 .overview{
+  margin-top: -60px;
+  padding: 50px 0 20px 0;
   background-color: $brand-success;
-  h2{
-    text-transform: capitalize;
-  }
 }
 
-
-.certification{
+.certifications{
   h3{
     color:  $brand-success;
-    text-transform: capitalize;
+  }
+  .list{
+    padding: 30px 0;
   }
 }
+.listing{
+  width: auto;
+  height: 100px;
+  padding: 0 15px;
+  overflow: hidden;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+
+
+
+
+
 
 /*home page ends here*/
 
@@ -271,6 +305,19 @@ footer {
   }
 }
 }
+
+
+.facebook a:after {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 100%;
+  color: $brand-primary;
+  text-align: center;
+  line-height: 30px;
+}
+
 
 
 /*footer ends here*/
