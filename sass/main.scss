@@ -177,24 +177,45 @@ address{
   right: 0;
 }
 
-.address-info{
-    margin:  5% 15% 0 0 ;
+.info{
+    margin:  5% 0 0 0 ;
 }
 
 .certification{
       padding-top: 50px;
 }
 
-.careers-info{
-  margin: 5% 15% 0 0;
 p{
 font-family: 'ThirdFont';
  text-transform: capitalize;
- span{
-   color: $brand-success;
- }
+ text-align: justify;
 }
+
+.resume,a{
+  font-family: 'ThirdFont';
+  color: $brand-success;
 }
+
+/*home page starts here*/
+.overview{
+  background-color: $brand-success;
+  h2{
+    text-transform: capitalize;
+  }
+}
+
+
+.certification{
+  h3{
+    color:  $brand-success;
+    text-transform: capitalize;
+  }
+}
+
+/*home page ends here*/
+
+
+
 
 
 
