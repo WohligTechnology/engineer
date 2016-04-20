@@ -1,24 +1,26 @@
 <div class="slider">
-  <flex-slider flex-slide="s in mySlides">
+  <flex-slider flex-slide="s in mySlides track by $index">
     <li>
       <img ng-src="{{s}}">
     </li>
   </flex-slider>
 </div>
 <div class="overview">
+  <div class="ribbon2">
+    <img src="img/rib.png" class="img-responsive" width="350"></div>
 <div class="container">
     <div class="row">
-      <div class="col-md-offset-1 col-md-11">
+      <div class="col-md-offset-3 col-md-9s">
         <h2>overview</h2>
         <div class="row">
           <div class="col-md-6">
-            <p class="text">we are a mechanical engineering firm involoved in undertaking engineering procurment and construction contracts for structures,piping,tankage and equipment erection across india and overseas for the last 40 years.our head quater is in mumbai in addition to our manufacturing facilities at aurangabad and goa in india..</p>
+            <p class="text">We are a mechanical engineering firm involved in undertaking engineering procurement and construction (EPC) contracts for Structures, Piping, Tankage and Equipment Erection across India and overseas for the last 40 years. Our head quarter is in Mumbai in addition to our manufacturing facilities at Aurangabad and Goa in India..</p>
             <div class="small-triangle pull-right">
             <span class="texts"><a href="#">know more</a></span>
             </div>
           </div>
-          <div class="col-md-6">
-            <p>undertaking engineering procurment and construction contracts for structures,piping,tankage and equipment erection across india and overseas for the last 40 years.</p>
+          <div class="col-md-4">
+            <p>Undertaking Engineering Procurement and Construction (EPC) contracts for structures,Piping,Tankages and Equipment Erection in Africa has added to its group experience of more than 40 years.</p>
           </div>
         </div>
       </div>
@@ -31,20 +33,56 @@
       <div class="col-md-8 padding0 ">
         <div class="mycl">
         <ul class="padding0 ">
-          <li><div class="image-hold" ng-style="{'background-image':'url(img/c2.jpg)'}"></div></li>
-          <li><div class="image-hold" ng-style="{'background-image':'url(img/c1.jpg)'}"></div></li>
-          <li><div class="image-hold" ng-style="{'background-image':'url(img/c4.jpg)'}"></div></li>
-          <li><div class="image-hold" ng-style="{'background-image':'url(img/c5.jpg)'}"></div></li>
+          <li>
+            <a href="#">
+              <div class="image-holder">
+            <div class="image-hold" ng-style="{'background-image':'url(img/c2.jpg)'}">
+            </div>
+            </div>
+              </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="image-holder">
+            <div class="image-hold" ng-style="{'background-image':'url(img/c1.jpg)'}">
+            </div>
+          </div>
+          </a>
+          </li>
+          <li>
+              <a href="#">
+                <div class="image-holder">
+            <div class="image-hold" ng-style="{'background-image':'url(img/c4.jpg)'}">
+            </div>
+            </div>
+              </a>
+          </li>
+          <li>
+               <a href="#">
+                 <div class="image-holder">
+            <div class="image-hold" ng-style="{'background-image':'url(img/c5.jpg)'}">
+            </div>
+            </div>
+              </a>
+          </li>
         </ul>
         </div>
       </div>
       <div class="col-md-4 padding0">
-        <div class="imag-side" ng-style="{'background-image':'url(img/c3.jpg)'}"></div>
-      
+         <a href="#">
+           <div class="image-holder">
+        <div class="imag-side" ng-style="{'background-image':'url(img/c3.jpg)'}">
+        </div>
+        </div>
+        </a>
       </div>
     </div>
   </div>
+  <div class="ribbon1">
+  <img src="img/ribons.png" class="img-responsive" width="350">
+  </div>
 </div>
+
 <div class="clients">
   <div class="container">
     <h2 class="text-center">clients</h2>
@@ -52,28 +90,28 @@
       <ul class="list-inline">
         <li>
           <div class="listing">
-          <a href="#" title=""><img src="img/addaxfond.jpg" alt="" class="img-responsive"></a>
+          <a href="#" title="Addax and Oryx"><img src="img/addaxfond.jpg" alt="Addax and Oryx" class="img-responsive"></a>
           </div>
         </li>
         <li>
           <div class="listing">
-            <a href="#" title="Gabriel"><img src="img/gabriel.jpg" alt="" class="img-responsive"></a>
+            <a href="#" title="Gabriel"><img src="img/gabriel.jpg" alt="Gabriel" class="img-responsive"></a>
              </div>
           </li>
         <li>
             <div class="listing">
-          <a href="#" title="Reliance"><img src="img/reliance.jpg" alt="" class="img-responsive"></a>
+          <a href="#" title="Reliance"><img src="img/reliance.jpg" alt="Reliance" class="img-responsive"></a>
         </div>
       </li>
         <li>
           <div class="listing">
-            <a href="#" title="Tetra pak"><img src="img/tetrapak.jpg" alt="" class="img-responsive"></a>
+            <a href="#" title="Tetra pak"><img src="img/tetrapak.jpg" alt="Tetra pak" class="img-responsive"></a>
           </div>
 
             </li>
         <li>
           <div class="listing">
-            <a href="#" title="Serengeti breweries"><img src="img/serengeti.jpg" alt="" class="img-responsive"></a>
+            <a href="#" title="Serengeti breweries"><img src="img/serengeti.jpg" alt="Serengeti breweries" class="img-responsive"></a>
           </div>
        </li>
       </ul>
@@ -82,27 +120,27 @@
       <ul class="list-inline">
         <li>
           <div class="listing">
-          <a href="#" title="Unilever"><img src="img/Unilever.jpg" alt="" class="img-responsive"></a>
+          <a href="#" title="Unilever"><img src="img/Unilever.jpg" alt="Unilever" class="img-responsive"></a>
         </div>
       </li>
         <li>
           <div class="listing">
-          <a href="#" title="Tanzania breweries"><img src="img/brew.jpg" alt="" class="img-responsive"></a>
+          <a href="#" title="Tanzania breweries"><img src="img/brew.jpg" alt="Tanzania breweries" class="img-responsive"></a>
         </div>
       </li>
         <li>
           <div class="listing">
-          <a href="#" title="SABMiller"><img src="img/SABMiller.jpg" alt="" class="img-responsive"></a>
+          <a href="#" title="SABMiller"><img src="img/SABMiller.jpg" alt="SABMiller" class="img-responsive"></a>
         </div>
       </li>
         <li>
           <div class="listing">
-          <a href="#" title="Endress-Hauser"><img src="img/Endress.jpg" alt="" class="img-responsive"></a>
+          <a href="#" title="Endress-Hauser"><img src="img/Endress.jpg" alt="Endress-Hauser" class="img-responsive"></a>
         </div>
       </li>
         <li>
           <div class="listing">
-          <a href="#" title="Huhtamaki"><img src="img/huhtamaki.jpg" alt="" class="img-responsive"></a>
+          <a href="#" title="Huhtamaki"><img src="img/huhtamaki.jpg" alt="Huhtamaki" class="img-responsive"></a>
         </div>
       </li>
       </ul>
@@ -110,14 +148,15 @@
   </div>
 </div>
 <div class="home-banner">
+  <a href="#">
+    <div class="setbanner-hover">
   <img src="img/banner.jpg" class="img-responsive">
-  <!-- <div class="ribbon">
-  <img src="img/right-line.png" width="350">
-  </div> -->
+</div>
+</a>
   <div class="container">
     <div class="home-bannertext">
         <div class="triangle"></div>
-    <p>quality is our prime objective by ensuring it with quality assurance plan.</p>
+    <p>quality is our <br>prime objective by <br>ensuring it with <br>quality assurance plan.</p>
   </div>
   </div>
 </div>
