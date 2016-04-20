@@ -85,11 +85,7 @@ a,
   src: url("../fonts/GOTHAM-BOLD_1.OTF");
   font-weight: 600;
 }
-// @font-face
-//   font-family: 'ProximaNova';
-//   src: url("../fonts/ProximaNova-Extrabold.otf");
-//   font-weight: 700;
-// }
+
 @font-face {
   font-family: 'Proxima';
   src: url("../fonts/ProximaNova-Semibold.otf");
@@ -100,6 +96,13 @@ a,
   src: url("../fonts/ProximaNova-Light.otf");
   font-weight: 700;
 }
+@font-face{
+  font-family: 'ProximaNova-Bold';
+  src:url("../fonts/ProximaNova-Bold.otf");
+}
+
+
+
 //bootstrap forms
 /* Start writing sass here */
 .content {
@@ -396,6 +399,7 @@ a {
   margin: 25px 0 15px;
 }
 .nav-tabs {
+  margin:0;
   background-color: $brand-primary;
 }
 .uib-tab {
@@ -405,18 +409,19 @@ uib-tab-heading {
   font-size: 18px;
   font-family: 'ProximaNova-Light';
   text-transform: capitalize;
-  padding: 10px 25px;
-  border-bottom: 4px solid $brand-success;
+  padding: 10px 20px;
   color: #fff;
 }
 
 .nav-link {
   background-color: transparent!important;
   border: none!important;
-  &:hover {
+  &:hover uib-tab-heading{
+      border-bottom: 4px solid $brand-success;
     color: $brand-success !important;
   }
 }
+
 .padding0 {
   padding-left: 0;
   padding-right: 0;
@@ -461,6 +466,16 @@ uib-tab-heading {
   min-height: 201px;
 }
 /*sectors page ended*/
+.client1{
+  margin: 0 0 35px 0;
+}
+
+.clients{
+  padding: 60px 0 50px 0;
+}
+.client-info{
+  margin: 50px 0 30px 0;
+}
 /*contact us page starts here*/
 .success {
   font-size: 30px;
@@ -470,8 +485,154 @@ address {
   font-size: 18px;
 }
 /*contact us page ends here*/
+/*about starts here*/
+.about-rd,.geography,.mission,.vision{
+  .success{
+    font-size: 60px;
+  font-family: 'ProximaNova-Light';
+  }
+  h3{
+  font-family: 'ProximaNova-Bold';
+  }
+}
+.geography{
+  ul{
+    padding: 0;
+  li{
+    list-style-type: disc;
+    a{
+      font-family: 'Proxima';
+      color: $brand-primary;
+    &:hover{
+        color: $brand-success;
+    }
+  }
+}
+}
+}
+.map-image{
+  margin: 20px 0;
+}
+
+/*about ends here*/
+
+/*mission starts here*/
+.mission,.vision {
+  ul{
+    padding: 0;
+    li{
+      font-size: 16px;
+      font-family: 'Proxima';
+      list-style-type: disc;
+  }
+}
+}
+.vision{
+  padding: 20px 0;
+  p{
+      font-size: 16px;
+  }
+}
+.mission{
+  padding: 30px 0;
+  position: relative;
+}
+.mission-image{
+  position: absolute;
+    right: 130px;
+    top: 54px;
+}
+
+/*mission ends here*/
+
+/*csr page starts here*/
+
+.csr{
+  .csr-info{
+    margin: 60px 0 10px 0;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+.csr{
+  .overview-images{
+    .image-hold{
+    width: 100%;
+    height: 192px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(204,204,204,0);
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 192px;
+  }
+  .imag-side{
+    width: 100%;
+    height: 385px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(204,204,204,0);
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+}
+
+
+/*csr page ends here*/
+/*rd-the brand page ends here*/
+
+.brand-info{
+  margin: 60px 0;
+  p{
+  margin-bottom: 30px;
+  }
+}
+.rd-brand{
+  .overview-images{
+    .image-hold{
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(204,204,204,0);
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 192px;
+  }
+  .imag-side{
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(204,204,204,0);
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+}
+
+/*rd-the brand page ends here*/
+
 /*main ends here*/
-/*footer starts here*/
+/*footerhome starts here*/
 footer {
   background-color: $brand-primary;
   color: #fff;
@@ -560,5 +721,28 @@ footer {
     }
   }
 }
+/*footerhome ends here*/
+/*footer starts here*/
+.main-footer{
+.list-head {
+  margin-top: 10px;
+  font-weight: 600;
+  a {
+    color: $brand-success;
+    font-family: 'Proxima';
+  }
+}
+}
+.main-footer{
+  .foot-social{
+    p,span{
+        color: $brand-success;
+    }
+  }
+}
+
+
+
 /*footer ends here*/
+
 @import "fancybox-override";

@@ -64,6 +64,18 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
         controller: 'ManagementCtrl'
     })
 
+    .state('about', {
+        url: "/about",
+        templateUrl: "views/template.html",
+        controller: 'AboutCtrl'
+    })
+
+    .state('rd-brand', {
+        url: "/rd-brand",
+        templateUrl: "views/template.html",
+        controller: 'RDBrandCtrl'
+    })
+
     .state('mission-vision', {
         url: "/mission-vision",
         templateUrl: "views/template.html",

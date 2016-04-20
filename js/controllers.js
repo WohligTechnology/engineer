@@ -10,6 +10,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.template.banner = "";
   $scope.navigation = NavigationService.getnav();
+  //  TemplateService.footer="views/footerhome.html";
 
   $scope.mySlides = [
     'img/s1.jpg',
@@ -26,10 +27,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
-.controller('OverviewCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('RDBrandCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
-  $scope.template = TemplateService.changecontent("overview");
-  $scope.menutitle = NavigationService.makeactive("Overview");
+  $scope.template = TemplateService.changecontent("rd-brand");
+  $scope.menutitle = NavigationService.makeactive("RD -The Brand");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 })
@@ -71,6 +72,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("CSR");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  TemplateService.banner="views/banner-csr.html";
 })
 
 .controller('ManagementCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -96,6 +98,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
+.controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("about");
+  $scope.menutitle = NavigationService.makeactive("About RD");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+})
 .controller('headerctrl', function($scope, TemplateService) {
   $scope.template = TemplateService;
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
