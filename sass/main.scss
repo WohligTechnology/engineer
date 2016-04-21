@@ -215,17 +215,7 @@ h2 {
 .certification {
   padding-top: 50px;
 }
-p {
-  font-family: 'Proxima';
-  text-transform: capitalize;
-  text-align: justify;
-}
-.resume,
-a {
-  font-size: 16px;
-  font-family: 'Proxima';
-  color: $brand-success;
-}
+
 /*home page starts here*/
 .slider {
   margin-top: -23px;
@@ -385,8 +375,6 @@ a {
   }
 }
 
-
-
 /*home page ends here*/
 /*sectors page started*/
 .sector-inf {
@@ -479,18 +467,25 @@ uib-tab-heading {
   margin: 50px 0 30px 0;
 }
 /*clients page ends here*/
-.director-optext{
 
+/*careers page starts here*/
+p {
+  font-family: 'Proxima';
+  text-transform: capitalize;
+  text-align: justify;
 }
-/*management page starts here*/
 
+.resume,
+a {
+  font-size: 16px;
+  font-family: 'Proxima';
+  color: $brand-success;
+}
 
-
-
-
-/*management pag ends here*/
+/*careers page ends*/
 
 /*contact us page starts here*/
+
 .success {
   font-size: 30px;
   font-family: "Proxima";
@@ -499,8 +494,40 @@ address {
   font-size: 18px;
 }
 /*contact us page ends here*/
+
+/*management page starts here*/
+.chairman-text,.director-optext,.director-fintext{
+  margin: 0 0 30px 0;
+  h3{
+    margin-top: -10px;
+    font-size: 19px;
+    color: $brand-success;
+    font-family: 'ProximaNova-Light';
+  }
+}
+.director-optext{
+margin: 0 -80px 30px 0;
+}
+
+.director-opimage,.director-finimage{
+  margin: 0 -20px;
+}
+.team {
+  h2{
+    font-size: 40px;
+    font-family: 'ProximaNova-Light';
+  }
+  .teams{
+      padding: 20px 0;
+  }
+}
+/*management page ends here*/
+
+
+
 /*about starts here*/
-.about-rd,.geography,.mission,.vision{
+
+.about-rd,.geography,.mission,.vision,.services{
   .success{
     font-size: 60px;
   font-family: 'ProximaNova-Light';
@@ -531,6 +558,7 @@ address {
 /*about ends here*/
 
 /*mission starts here*/
+
 .mission,.vision {
   ul{
     padding: 0;
@@ -600,9 +628,8 @@ address {
   }
 }
 }
-
-
 /*csr page ends here*/
+
 /*rd-the brand page ends here*/
 
 .brand-info{
@@ -644,7 +671,21 @@ address {
 }
 
 /*rd-the brand page ends here*/
+
 /*piping starts here*/
+.piping-arrow{
+  position: absolute;
+    right: 0;
+    top: 0;
+}
+.ceo{
+  position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+
+
 .services {
   padding: 30px 0 ;
   background-color: $brand-primary;
@@ -657,13 +698,14 @@ address {
   }
 }
 .services-text{
-  padding: 23px 0 0 0;
+  padding: 34px 0 0 0;
 }
 .projects{
   margin: 40px 0;
 }
 .client-speak{
-  padding: 50px 0;
+  position: relative;
+  padding: 90px 0;
   background-color: $brand-success;
   figcaption{
       font-family: 'Proxima';
@@ -680,8 +722,6 @@ address {
 }
 }
 
-
-
 .piping-text{
   padding: 50px 0 20px 0;
   p{
@@ -690,15 +730,80 @@ address {
 }
 .projects{
   a{
-    display: block;
+    display: inline-block;
+      }
+      span,h3{
+         font-family: 'Proxima';
+      }
+    address{
+      font-size: 16px;
+      font-family: 'ProximaNova-Light';
+  }
+  .address{
+    padding: 0;
   }
 }
+.piping-image{
+  padding: 0;
+  figcaption{
+    padding: 5px 0;
+    font-size: 20px;
+    font-family: 'Proxima';
+  }
+  span{
+      padding: 5px 0;
+  }
+  .success{
+    font-size: 20px;
+    font-family: 'Proxima';
+  }
+}
+.read{
+  a{
+    display: inline-block;
+    background-color:$brand-success;
+    height: 21px;
+    width: 21px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 23px;
+    color: #fff;
+}
+}
 
+.clientspeaks:before{
+  content: "\f10d";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: $brand-primary;
+    font-size: 40px;
+    position: absolute;
+    top: -42px;
+    left: -32px;
+}
+
+
+.arrows {
+  a{
+    margin: 5px 0;
+display: block;
+background-color: #fff;
+height: 30px;
+width: 30px;
+border-radius: 100%;
+text-align: center;
+line-height: 28px;
+border: 2px solid $brand_success;
+}
+}
 
 
 /*piping ends here*/
 
 /*main ends here*/
+
 /*footerhome starts here*/
 footer {
   background-color: $brand-primary;
@@ -761,7 +866,6 @@ footer {
   width: 100%;
   height: 330px;
   overflow: hidden;
-  background-image: url("../img/video/v1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-color: rgba(204,204,204,0);
@@ -807,9 +911,6 @@ footer {
     }
   }
 }
-
-
-
 /*footer ends here*/
 
 @import "fancybox-override";
