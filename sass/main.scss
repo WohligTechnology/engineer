@@ -466,6 +466,8 @@ uib-tab-heading {
   min-height: 201px;
 }
 /*sectors page ended*/
+
+/*clients page starts here*/
 .client1{
   margin: 0 0 35px 0;
 }
@@ -476,6 +478,18 @@ uib-tab-heading {
 .client-info{
   margin: 50px 0 30px 0;
 }
+/*clients page ends here*/
+.director-optext{
+
+}
+/*management page starts here*/
+
+
+
+
+
+/*management pag ends here*/
+
 /*contact us page starts here*/
 .success {
   font-size: 30px;
@@ -630,6 +644,59 @@ address {
 }
 
 /*rd-the brand page ends here*/
+/*piping starts here*/
+.services {
+  padding: 30px 0 ;
+  background-color: $brand-primary;
+  p{
+    font-size: 13px;
+    color: #fff;
+  }
+  h2{
+      font-family: 'ProximaNova-Light';
+  }
+}
+.services-text{
+  padding: 23px 0 0 0;
+}
+.projects{
+  margin: 40px 0;
+}
+.client-speak{
+  padding: 50px 0;
+  background-color: $brand-success;
+  figcaption{
+      font-family: 'Proxima';
+      }
+  span,p{
+    font-family: 'Proxima';
+    color: #fff;
+    display: block;
+}
+}
+.client-speak{
+  h2{
+  font-size: 40px;
+}
+}
+
+
+
+.piping-text{
+  padding: 50px 0 20px 0;
+  p{
+    margin-bottom: 30px;
+  }
+}
+.projects{
+  a{
+    display: block;
+  }
+}
+
+
+
+/*piping ends here*/
 
 /*main ends here*/
 /*footerhome starts here*/

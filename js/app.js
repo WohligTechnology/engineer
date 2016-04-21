@@ -76,6 +76,16 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
         controller: 'RDBrandCtrl'
     })
 
+    .state('piping', {
+        url: "/piping",
+        templateUrl: "views/template.html",
+        controller: 'PipingCtrl'
+    })
+
+
+
+
+
     .state('mission-vision', {
         url: "/mission-vision",
         templateUrl: "views/template.html",
