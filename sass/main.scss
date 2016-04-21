@@ -100,6 +100,11 @@ a,
   font-family: 'ProximaNova-Bold';
   src:url("../fonts/ProximaNova-Bold.otf");
 }
+//Line-height class//
+.line{
+  line-height: 180%;
+}
+
 
 
 
@@ -111,6 +116,7 @@ a,
 /*banner starts here*/
 .banner-text {
   h1 {
+    font-family: 'GOTHAM';
     text-transform: uppercase;
   }
 }
@@ -184,7 +190,7 @@ h2 {
     transform: translate(-50%,-50%);
     h1 {
       display: inline-block;
-      font-family: 'ProximaNova';
+
       font-size: 80px;
       color: #fff;
     }
@@ -214,6 +220,12 @@ h2 {
 }
 .certification {
   padding-top: 50px;
+  .success{
+    font-family: 'Proxima';
+    font-size: 14px;
+    line-height: 180%;
+
+  }
 }
 
 /*home page starts here*/
@@ -457,19 +469,36 @@ uib-tab-heading {
 
 /*clients page starts here*/
 .client1{
-  margin: 0 0 35px 0;
+  position: relative;
+  padding: 0 0 128px 0;
+.listing{
+  display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-
+}
 .clients{
-  padding: 60px 0 50px 0;
+  padding: 100px 0 0 0;
 }
 .client-info{
   margin: 50px 0 30px 0;
 }
+.client-types{
+  .nav-tabs{
+  margin: 0 19px;
+  }
+}
+
+
+
 /*clients page ends here*/
 
 /*careers page starts here*/
 p {
+  font-size: 13px;
+  line-height: 180%;
   font-family: 'Proxima';
   text-transform: capitalize;
   text-align: justify;
@@ -486,12 +515,16 @@ a {
 
 /*contact us page starts here*/
 
-.success {
-  font-size: 30px;
+.address{
+  .success {
+  font-size: 24px;
   font-family: "Proxima";
-}
+  line-height: 180%;
 address {
-  font-size: 18px;
+  font-size: 14px;
+    line-height: 180%;
+}
+}
 }
 /*contact us page ends here*/
 
@@ -514,11 +547,11 @@ margin: 0 -80px 30px 0;
 }
 .team {
   h2{
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'ProximaNova-Light';
   }
   .teams{
-      padding: 20px 0;
+      padding: 20px 0 40px 0;
   }
 }
 /*management page ends here*/
@@ -529,10 +562,11 @@ margin: 0 -80px 30px 0;
 
 .about-rd,.geography,.mission,.vision,.services{
   .success{
-    font-size: 60px;
+    font-size: 40px;
   font-family: 'ProximaNova-Light';
   }
   h3{
+  margin: 15px 0 6px 0;
   font-family: 'ProximaNova-Bold';
   }
 }
@@ -554,6 +588,14 @@ margin: 0 -80px 30px 0;
 .map-image{
   margin: 20px 0;
 }
+.about-rd{
+  margin: 40px 0;
+}
+.companies{
+  margin: 0;
+}
+
+
 
 /*about ends here*/
 
@@ -582,7 +624,7 @@ margin: 0 -80px 30px 0;
 .mission-image{
   position: absolute;
     right: 130px;
-    top: 54px;
+    top: 21px;
 }
 
 /*mission ends here*/
