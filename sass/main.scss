@@ -100,6 +100,14 @@ a,
   font-family: 'ProximaNova-Bold';
   src:url("../fonts/ProximaNova-Bold.otf");
 }
+
+@font-face{
+  font-family: 'ProximaNova-Regular';
+  src:url("../fonts/ProximaNova-Regular.otf");
+}
+
+
+
 //Line-height class//
 .line{
   line-height: 180%;
@@ -183,8 +191,8 @@ h2 {
   position: relative;
   .banner-text {
     position: absolute;
-    top: 48%;
-    left: 56%;
+    top: 50%;
+    left: 50%;
     @include transform(translate(-50%,-50%));
     h1 {
       display: inline-block;
@@ -206,12 +214,12 @@ h2 {
 
 .floating-left {
   position: absolute;
-  top: 55%;
+  top: 78%;
   left: 0;
 }
 .floating-right {
   position: absolute;
-  top: 62%;
+  top: 85%;
   right: 0;
 }
 .info {
@@ -479,7 +487,6 @@ uib-tab-heading {
   margin: 0 19px;
   }
 }
-
 /*clients page ends here*/
 
 /*careers page starts here*/
@@ -490,7 +497,6 @@ p {
   text-transform: capitalize;
   text-align: justify;
 }
-
 .resume,
 a {
   font-size: 16px;
@@ -516,8 +522,33 @@ address {
 /*contact us page ends here*/
 
 /*management page starts here*/
+.banner-management{
+  position: relative;
+  .triangle{
+    position: absolute;
+top: 50%;
+left: 39%;
+transform: translate(-50%,-50%);
+  }
+  .banner-text{
+    position: absolute;
+    top: 41%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    h1{
+      font-size: 80px;
+      font-family: 'GOTHAM';
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}
+
+
+
+
 .chairman-text,.director-optext,.director-fintext{
-  margin: 0 0 30px 0;
+  margin: 0 0 50px 0;
   h3{
     margin-top: -10px;
     font-size: 19px;
@@ -526,14 +557,12 @@ address {
   }
 }
 .director-optext{
-margin: 0 -80px 30px 0;
+margin: 0 -80px 50px 0;
 }
 
 .finance{
   margin-bottom: 30px;
 }
-
-
 
 .director-opimage,.director-finimage{
   margin: 0 -20px;
@@ -585,12 +614,30 @@ margin: 0 -80px 30px 0;
 .companies{
   margin: 0;
 }
-
-
-
 /*about ends here*/
 
 /*mission starts here*/
+.banner-mission{
+  position: relative;
+  .triangle{
+    position: absolute;
+top: 50%;
+left: 39%;
+transform: translate(-50%,-50%);
+  }
+  .banner-text{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    h1{
+      font-size: 80px;
+      font-family: 'GOTHAM';
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}
 
 .mission,.vision {
   ul{
@@ -610,19 +657,17 @@ margin: 0 -80px 30px 0;
   }
 }
 .mission{
-  padding: 30px 0;
+  padding-top: 30px;
   position: relative;
 }
 .mission-image{
   position: absolute;
     right: 190px;
-    top: 40px;
+    top: 23px;
 }
-
 /*mission ends here*/
 
 /*csr page starts here*/
-
 .csr{
   .csr-info{
     margin: 60px 0 10px 0;
@@ -711,6 +756,9 @@ margin: 0 -80px 30px 0;
   position: absolute;
     right: -20px;
     top: 30px;
+    figcaption{
+        margin-top:20px ;
+    }
 }
 
 .services {
@@ -725,10 +773,18 @@ margin: 0 -80px 30px 0;
   }
 }
 .services-text{
-  padding: 34px 0 0 0;
+  padding: 25px 0 0 0;
+  p{
+    line-height: 20px;
+  }
 }
 .projects{
   margin: 40px 0;
+  h3{
+    margin: 0px 0px 10px 0px;
+       font-family: 'Proxima';
+       font-size: 40px;
+  }
 }
 .client-speak{
   position: relative;
@@ -747,6 +803,9 @@ margin: 0 -80px 30px 0;
   h2{
   font-size: 40px;
 }
+p{
+  font-family: 'ProximaNova-Regular';
+}
 }
 
 .piping-text{
@@ -759,21 +818,18 @@ margin: 0 -80px 30px 0;
   a{
     display: inline-block;
       }
-      span,h3{
+      span{
          font-family: 'Proxima';
       }
     address{
       line-height: 180%;
-      font-size: 16px;
+      font-size: 14px;
       font-family: 'ProximaNova-Light';
-  }
-  .address{
-    padding: 0;
   }
 }
 .piping-image{
   padding: 0;
-  figcaption{
+  .factory{
     padding: 5px 0;
     font-size: 20px;
     font-family: 'Proxima';
@@ -797,11 +853,11 @@ margin: 0 -80px 30px 0;
 .read{
     display: inline-block;
     background-color:$brand-success;
-    height: 21px;
-    width: 21px;
+    height: 25px;
+    width: 25px;
     border-radius: 100%;
     text-align: center;
-    line-height: 23px;
+    line-height: 27px;
     color: #fff;
 }
 
@@ -814,10 +870,9 @@ margin: 0 -80px 30px 0;
     color: $brand-primary;
     font-size: 40px;
     position: absolute;
-    top: -42px;
+    top: 5px;
     left: -32px;
 }
-
 
 .arrows {
   a{
@@ -832,7 +887,6 @@ margin: 0 -80px 30px 0;
   border: 2px solid $brand_success;
 }
 }
-
 
 /*piping ends here*/
 
@@ -856,6 +910,7 @@ footer {
     }
   }
 }
+
 .list-head {
   margin-top: 10px;
   font-weight: 600;

@@ -81,14 +81,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Management");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  TemplateService.banner="views/banner-management.html";
 })
 
 .controller('MissionVisionCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
   $scope.template = TemplateService.changecontent("mission");
-  $scope.menutitle = NavigationService.makeactive("Mission and Vision");
+  $scope.menutitle = NavigationService.makeactive("Mission & Vision");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  TemplateService.banner="views/banner-mission.html";
 })
 
 .controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
