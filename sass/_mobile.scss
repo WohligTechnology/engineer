@@ -1,0 +1,144 @@
+
+@media (max-width: $screen-sm-max)  {
+  .ribbon2{
+    position: absolute;
+    bottom: 50%;
+  }
+  .nav{
+    margin-left: 0%;
+  }
+  .overview
+  {
+    position: relative;
+    p{
+    margin-top: 30px;
+  }
+}
+.foot-social{
+  float: none !important;
+  text-align: center;
+  li{
+    margin: 0 10px;
+  }
+  p{
+    display: inline-block;
+  }
+}
+.home-bannertext p {
+    line-height: 118%;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+}
+.clients2 {
+  padding: 30px 0 60px 0;
+}
+.padding0{
+  .image-holder {
+    position: relative;
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      opacity: 0;
+      background-color: rgba(0,0,0,0.7);
+      @include transition(opacity 0.2s);
+    }
+    &:after {
+      content: url("../img/arrows.png");
+      position: absolute;
+      top: 15%;
+      left: -20%;
+       transform: translate(-50%, -50%);
+       z-index: 1;
+       opacity: 0;
+       transform: scale(0.7,0.7);
+       transition: opacity 0.2s;
+    }
+  }
+  a {
+    &:hover .image-holder {
+      &:before,
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+.floating-left,
+.floating-right{
+  display: none;
+}
+.csr p{
+    font-size: 11px;
+}
+.client-types{
+  .uib-tab{
+    padding: 0;
+    margin: 0;
+  }
+  uib-tab-heading {
+    font-size: 14px;
+    font-family: 'ProximaNova-Light';
+    text-transform: capitalize;
+    padding: 10px 0;
+    color: #fff;
+}
+}
+.nav-tabs{
+  li{
+    a{
+      margin-right: 5px;
+    }
+  }
+}
+.geography ul li a{
+  font-size: 14px;
+}
+.mission-image{
+  display: none;
+}
+.piping-arrow{
+display: none;
+position: absolute;
+right: -3px;
+top: 0;
+}
+
+  .address address {
+    line-height: 180%;
+    font-size: 11px;
+    font-family: 'ProximaNova-Light';
+}
+.piping-image{
+  padding: 0;
+  .factory{
+    padding: 5px 0;
+    font-size: 14px;
+    font-family: 'Proxima';
+  }
+  span{
+      padding: 5px 0;
+  }
+  .success{
+    font-size: 14px;
+    font-family: 'Proxima';
+  }
+}
+.reading {
+  a{
+    font-size: 14px;
+    color: $brand-primary;
+    margin-right: 10px;
+}
+}
+.foot-list{
+  margin-bottom: 20px;
+}
+}

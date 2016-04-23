@@ -307,16 +307,11 @@ h2 {
   }
 }
 .clients1 {
-  padding: 15px 0;
-  li {
-    padding: 0 21px;
-  }
+  padding: 30px 0;
 }
 .clients2 {
-  padding: 15px 0;
-  li {
-    padding: 0 0 0 78px;
-  }
+  padding: 30px 0 60px 0;
+  margin: 0 -53px 0 53px;
 }
 .home-banner {
   position: relative;
@@ -448,8 +443,7 @@ uib-tab-heading {
   background-repeat: no-repeat;
   background-color: rgba(204,204,204,0);
   position: relative;
-
-  @include background(cover);
+  background-size:cover;
   min-height: 402px;
 }
 .images-hold {
@@ -459,7 +453,7 @@ uib-tab-heading {
   background-repeat: no-repeat;
   background-color: rgba(204,204,204,0);
   position: relative;
-  @include background(cover);
+  background-size:cover;
   min-height: 201px;
 }
 /*sectors page ended*/
@@ -543,9 +537,6 @@ transform: translate(-50%,-50%);
     }
   }
 }
-
-
-
 
 .chairman-text,.director-optext,.director-fintext{
   margin: 0 0 50px 0;
@@ -662,7 +653,7 @@ transform: translate(-50%,-50%);
 }
 .mission-image{
   position: absolute;
-    right: 190px;
+    right: 0px;
     top: 23px;
 }
 /*mission ends here*/
@@ -694,7 +685,7 @@ transform: translate(-50%,-50%);
     background-color: rgba(204,204,204,0);
     position: relative;
     min-height: 192px;
-    @include background(cover);
+    background-size:cover;
   }
   .imag-side{
     width: 100%;
@@ -704,7 +695,7 @@ transform: translate(-50%,-50%);
     background-repeat: no-repeat;
     background-color: rgba(204,204,204,0);
     position: relative;
-    @include background(cover);
+    background-size:cover;
   }
 }
 }
@@ -728,7 +719,7 @@ transform: translate(-50%,-50%);
     background-repeat: no-repeat;
     background-color: rgba(204,204,204,0);
     position: relative;
-    @include background(cover);
+    background-size:cover;
     min-height: 192px;
   }
   .imag-side{
@@ -739,7 +730,7 @@ transform: translate(-50%,-50%);
     background-repeat: no-repeat;
     background-color: rgba(204,204,204,0);
     position: relative;
-    @include background(cover);
+    background-size:cover;
   }
 }
 }
@@ -959,7 +950,7 @@ footer {
   background-repeat: no-repeat;
   background-color: rgba(204,204,204,0);
   position: relative;
-  @include background(cover);
+  background-size:cover;
   min-height: 330px;
 }
 .imag-side {
@@ -998,5 +989,5 @@ footer {
   }
 }
 /*footer ends here*/
-
 @import "fancybox-override";
+@import "mobile";
