@@ -7,6 +7,16 @@
   .nav{
     margin-left: 0%;
   }
+  .navbar-default .navbar-nav {
+    li {
+      a {
+        letter-spacing: normal;
+        font-family: 'Proxima';
+        font-size: 14px;
+        color: #a8a8ac;
+      }
+    }
+  }
   .overview
   {
     position: relative;
@@ -166,7 +176,7 @@ top: 0;
   .client1 .listing a {
    padding: 10px;
   }
-  
+
 .ceo{
   position: absolute;
     right: -20px;

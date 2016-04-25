@@ -12,6 +12,7 @@ templateservicemod.service('TemplateService', function() {
     this.menu = "views/menu.html";
     this.banner = "views/banner.html";
     this.content = "views/content/content.html";
+    this.certification = "views/certification.html";
     this.footer = "views/footer.html";
   };
 

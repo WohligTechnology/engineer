@@ -9,6 +9,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Home");
   TemplateService.title = $scope.menutitle;
   $scope.template.banner = "";
+  $scope.template.certification = "";
   $scope.navigation = NavigationService.getnav();
   //  TemplateService.footer="views/footerhome.html";
 
