@@ -14,6 +14,7 @@
     margin-top: 30px;
   }
 }
+/*footer*/
 .foot-social{
   float: none !important;
   text-align: center;
@@ -24,6 +25,12 @@
     display: inline-block;
   }
 }
+
+.foot-list{
+  margin-bottom: 20px;
+}
+
+/*footer*/
 .home-bannertext p {
     line-height: 118%;
     color: #fff;
@@ -32,9 +39,7 @@
     bottom: 10%;
     left: 60%;
 }
-.clients2 {
-  padding: 30px 0 60px 0;
-}
+
 .padding0{
   .image-holder {
     position: relative;
@@ -78,6 +83,10 @@
 .csr p{
     font-size: 11px;
 }
+/*clients*/
+.clients2 {
+  padding: 30px 0 60px 0;
+}
 .client-types{
   .uib-tab{
     padding: 0;
@@ -98,12 +107,19 @@
     }
   }
 }
+/*clients*/
+/*about*/
 .geography ul li a{
   font-size: 14px;
 }
+/*about*/
+/*mission-vision*/
 .mission-image{
   display: none;
 }
+/*mission-vision*/
+/*piping*/
+
 .piping-arrow{
 display: none;
 position: absolute;
@@ -111,11 +127,6 @@ right: -3px;
 top: 0;
 }
 
-  .address address {
-    line-height: 180%;
-    font-size: 11px;
-    font-family: 'ProximaNova-Light';
-}
 .piping-image{
   padding: 0;
   .factory{
@@ -131,6 +142,7 @@ top: 0;
     font-family: 'Proxima';
   }
 }
+
 .reading {
   a{
     font-size: 14px;
@@ -138,7 +150,27 @@ top: 0;
     margin-right: 10px;
 }
 }
-.foot-list{
-  margin-bottom: 20px;
+
+/*piping*/
+
+/*contact us*/
+  .address address {
+    line-height: 180%;
+    font-size: 11px;
+    font-family: 'ProximaNova-Light';
 }
+/*contact us*/
+}
+
+@media (max-width: $screen-xs-max)  {
+  .client1 .listing a {
+   padding: 10px;
+  }
+.csr-info{
+  p{
+    margin-top: 25px;
+  }
+}
+
+
 }
