@@ -166,11 +166,7 @@ top: 0;
   .client1 .listing a {
    padding: 10px;
   }
-.csr-info{
-  p{
-    margin-top: 25px;
-  }
-}
+  
 .ceo{
   position: absolute;
     right: -20px;
@@ -202,6 +198,7 @@ top: 0;
       width: 100%;
       z-index: 1;
       opacity: 0;
+      display: none;
       background-color: rgba(0,0,0,0.7);
       @include transition(opacity 0.2s);
     }
@@ -213,6 +210,7 @@ top: 0;
       transform: translate(-50%, -50%);
        z-index: 1;
        opacity: 0;
+       display: none;
     }
   }
   a {
@@ -255,4 +253,16 @@ top: 0;
     background-size: cover;
     min-height: 330px;
   }
+  .banner-management .banner-text {
+    position: absolute;
+    top: 72%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+.banner-mission .banner-text {
+    position: absolute;
+    top: 47%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+}
 }

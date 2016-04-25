@@ -83,7 +83,6 @@ a,
 @font-face {
   font-family: 'GOTHAM';
   src: url("../fonts/GOTHAM-BOLD_1.OTF");
-  font-weight: 600;
 }
 
 @font-face {
@@ -159,6 +158,7 @@ address {
 .navbar-default .navbar-nav {
   li {
     a {
+      letter-spacing: 2px;
       font-family: 'Proxima';
       font-size: 14px;
       color: #a8a8ac;
@@ -232,6 +232,13 @@ h2 {
     font-size: 14px;
     line-height: 180%;
   }
+  .list-inline{
+    margin-bottom: 15px;
+    li{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
 }
 /*home page starts here*/
 .slider {
@@ -288,6 +295,11 @@ h2 {
   }
   .list {
       padding: 20px 0 0 0;
+      margin-bottom: 15px;
+      li{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
   }
 }
 .listing {
@@ -311,7 +323,15 @@ h2 {
 }
 .clients2 {
   padding: 30px 0 60px 0;
-  margin: 0 -53px 0 53px;
+}
+.listing{
+  position: relative;
+}
+.listing img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .home-banner {
   position: relative;
@@ -462,13 +482,6 @@ uib-tab-heading {
 .client1{
   position: relative;
   padding: 0 0 30px 0;
-.listing a{
-  display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 }
 .clients{
   padding: 70px 0 0 0;
@@ -520,14 +533,14 @@ address {
   position: relative;
   .triangle{
     position: absolute;
-top: 50%;
-left: 39%;
+top: 51%;
+left: 38%;
 transform: translate(-50%,-50%);
   }
   .banner-text{
     position: absolute;
-    top: 41%;
-    left: 63%;
+    top: 42%;
+    left: 62%;
     transform: translate(-50%, -50%);
     h1{
       font-size: 80px;
@@ -544,7 +557,7 @@ transform: translate(-50%,-50%);
     margin-top: -10px;
     font-size: 19px;
     color: $brand-success;
-    font-family: 'ProximaNova-Light';
+    font-family: 'Proxima';
   }
 }
 .director-optext{
@@ -560,10 +573,12 @@ margin: 0 -80px 50px 0;
 }
 .team {
   h2{
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'ProximaNova-Light';
+    font-weight: 700;
   }
   .teams{
+    font-size: 45px;
       padding: 20px 0 40px 0;
   }
 }
@@ -582,11 +597,15 @@ margin: 0 -80px 50px 0;
   }
 }
 .geography{
+  h3{
+    font-size: 18px;
+  }
   ul{
     padding: 0;
   li{
     list-style-type: disc;
     a{
+      font-size: 14px;
       font-family: 'Proxima';
       color: $brand-primary;
     &:hover{
@@ -676,7 +695,7 @@ transform: translate(-50%,-50%);
 
 .csr{
   .overview-image{
-    .image-hold{
+    .imaging-hold{
     width: 100%;
     height: 192px;
     overflow: hidden;
@@ -687,7 +706,7 @@ transform: translate(-50%,-50%);
     min-height: 192px;
     background-size:cover;
   }
-  .imag-side{
+  .imaging-side{
     width: 100%;
     height: 385px;
     overflow: hidden;
@@ -773,7 +792,7 @@ transform: translate(-50%,-50%);
   margin: 40px 0;
   h3{
     margin: 0px 0px 10px 0px;
-       font-family: 'Proxima';
+    font-family: 'ProximaNova-Light';
        font-size: 40px;
   }
 }
@@ -792,6 +811,7 @@ transform: translate(-50%,-50%);
 }
 .client-speak{
   h2{
+    font-family: 'ProximaNova-Light';
   font-size: 40px;
 }
 p{
@@ -916,7 +936,7 @@ footer {
   p {
     font-family: 'ProximaNova-Light';
     padding-top: 10px;
-    margin-bottom: 0;
+    margin:-12px 0 0 0;
     text-transform: capitalize;
   }
   .social {
