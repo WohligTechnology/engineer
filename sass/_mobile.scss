@@ -120,7 +120,7 @@
 /*clients*/
 /*about*/
 .geography ul li a{
-  font-size: 14px;
+  font-size: 13px;
 }
 /*about*/
 /*mission-vision*/
@@ -270,9 +270,10 @@ top: 0;
     transform: translate(-50%, -50%);
 }
 .banner-mission .banner-text {
+    width: 60%;
     position: absolute;
-    top: 47%;
-    left: 71%;
+    top: 31%;
+    left: 69%;
     transform: translate(-50%, -50%);
 }
 }
