@@ -359,10 +359,36 @@ p{
       left: 61%;
       transform: translate(-50%, -50%);
   }
+  .client-speak p{
+    margin-top: 20px;
+  }
+  .clientspeaks:before{
+    top: -6px;
+    left: -14px;
+  }
+  .ceo {
+      position: absolute;
+      right: 7px;
+      top: -195px;
+  }
+.piping-image,
+.arrows{
+  display: none;
+}
 
+.csr-info{
+  img{
+    display: none;
+  }
+}
 
+.mycl ul li {
+    float: left;
+    display: inline-block;
+    width: 50%;
 
     }
+  }
 /*iphone 6*/
 
 /*smaller phones nexus4*/
@@ -425,6 +451,21 @@ p{
     position: absolute;
     right: 7px;
     top: -195px;
+}
+.piping-image,
+.arrows{
+  display: none;
+}
+.csr-info{
+  img{
+    display: none;
+  }
+}
+.mycl ul li {
+    float: left;
+    display: inline-block;
+    width: 50%;
+
 }
 }
 /*smaller phones nexus4*/
