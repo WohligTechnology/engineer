@@ -116,6 +116,18 @@ transform: translate(-50%, -50%);
 .csr p{
     font-size: 11px;
 }
+.mycl ul li {
+    float: left;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .myclis ul li {
+      float: left;
+      display: inline-block;
+      width: 50%;
+    }
+
 /*clients*/
 .clients2 {
   padding: 30px 0 60px 0;
@@ -219,6 +231,13 @@ top: 0;
     display: inline-block;
     width: 100%;
   }
+
+  .myclis ul li {
+      float: left;
+      display: inline-block;
+      width: 50%;
+    }
+
 
 .padding0{
   .image-holder {
@@ -368,8 +387,12 @@ p{
     display: none;
   }
 }
-
-.mycl ul li {
+.mycl ul li{
+  float: left;
+  display: inline-block;
+  width: 100%;
+}
+.myclis ul li {
     float: left;
     display: inline-block;
     width: 50%;
@@ -377,7 +400,26 @@ p{
     }
   }
 /*iphone 6*/
+/*iphone4*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+.ceo{
+  display: none;
+}
+.certification .list-inline li:nth-of-type(1){
+  display: block;
+}
+.clientspeaks:before {
+    top: -8px;
+    left: -5px;
+  }
+  .clientspeaks:before {
+      top: -8px;
+      left: -8px;
 
+}
+/*iphone4*/
 /*smaller phones nexus4*/
 @media (max-width: 480px) {
   .banner{
@@ -448,11 +490,16 @@ p{
     display: none;
   }
 }
-.mycl ul li {
+.myclis ul li {
     float: left;
     display: inline-block;
     width: 50%;
 
+}
+.mycl ul li{
+  float: left;
+  display: inline-block;
+  width: 100%;
 }
 }
 /*smaller phones nexus4*/
