@@ -90,37 +90,24 @@ transform: translate(-50%, -50%);
   .image-holder {
     position: relative;
     &:before {
-      content: " ";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 1;
-      opacity: 0;
-      background-color: rgba(0,0,0,0.7);
-      @include transition(opacity 0.2s);
+      display: none;
+      // content: " ";
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // height: 100%;
+      // width: 100%;
+      // z-index: 1;
+      // opacity: 0;
+      // background-color: rgba(0,0,0,0.7);
+      // @include transition(opacity 0.2s);
     }
     &:after {
-      content: url("../img/arrows.png");
-      position: absolute;
-      top: 15%;
-      left: -20%;
-       transform: translate(-50%, -50%);
-       z-index: 1;
-       opacity: 0;
-       transform: scale(0.7,0.7);
-       transition: opacity 0.2s;
+      display: none;
+
     }
   }
-  a {
-    &:hover .image-holder {
-      &:before,
-      &:after {
-        opacity: 1;
-      }
-    }
-  }
+
 }
 .floating-left,
 .floating-right{
