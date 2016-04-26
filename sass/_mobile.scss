@@ -1,5 +1,41 @@
-
+/*ipad mini*/
 @media (max-width: $screen-sm-max)  {
+  .banner{
+.banner-text{
+  h1{
+    font-size: 40px;
+  }
+}
+}
+.triangle {
+  width: 0;
+  height: 0;
+  margin: 0 -60px -30px 0;
+  display: inline-block;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 30px solid $brand-success;
+}
+
+.banner-management .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  h1{
+    font-size: 40px;
+  }
+}
+.banner-mission .banner-text {
+  position: absolute;
+top: 46%;
+left: 57%;
+width: 29%;
+transform: translate(-50%, -50%);
+  h1{
+    font-size: 40px;
+  }
+}
   .ribbon2{
     position: absolute;
     bottom: 50%;
@@ -44,7 +80,7 @@
 .home-bannertext p {
     line-height: 118%;
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
     position: absolute;
     bottom: 10%;
     left: 60%;
@@ -171,6 +207,7 @@ top: 0;
 }
 /*contact us*/
 }
+/*ipad mini*/
 
 @media (max-width: $screen-xs-max)  {
   .client1 .listing a {
@@ -277,12 +314,76 @@ top: 0;
     transform: translate(-50%, -50%);
 }
 }
+
+
+
 /*iphone 6*/
 @media only screen
     and (min-device-width : 375px)
-    and (max-device-width : 667px)
-    and (orientation : landscape) {
-    
+    and (max-device-width : 667px) {
+      .banner{
+    .banner-text{
+      h1{
+        font-size: 20px;
+      }
+    }
+    }
+      .certification .list-inline li {
+       padding-left: 5px;
+       padding-right: 5px;
+}
+  .certification .list-inline li:nth-of-type(1){
+    display: block;
+  }
+ .certification{
+   padding-top: 20px;
+ }
+.resume{
+  display: block;
+  margin-top: 20px;
+}
 
+p{
+  font-size: 12px;
+}
+
+.client-types .nav-tabs {
+    margin: 0 35px;
+}
+.team .teams {
+    font-size: 43px;
+  }
     }
 /*iphone 6*/
+
+/*smaller phones nexus4*/
+@media (max-width: 480px) {
+  .banner{
+.banner-text{
+  h1{
+    font-size: 20px;
+  }
+}
+}
+  //*footer*//
+.foot-social span{
+  font-size: 12px;
+  display: block;
+}
+  //*footer*//
+
+//*home page*//
+.home-bannertext p {
+  line-height: 118%;
+    color: #fff;
+    font-size: 13px;
+    position: absolute;
+    top: 34%;
+    left: 64%;
+}
+//*home page*//
+.team .teams {
+    font-size: 43px;
+  }
+}
+/*smaller phones nexus4*/
