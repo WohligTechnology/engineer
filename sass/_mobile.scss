@@ -411,7 +411,7 @@ p{
     width: 50%;
     }
     /*csr ends*/
-
+/*footer starts*/
 footer{
   ul{
     li{
@@ -422,6 +422,7 @@ footer{
     }
   }
 }
+/*footer ends*/
   }
 /*iphone 6 ends*/
 
@@ -448,6 +449,7 @@ font-size: 24px;
 .certification .list-inline li:nth-of-type(1){
   display: block;
 }
+/*piping starts*/
 .clientspeaks:before {
     top: -8px;
     left: -5px;
@@ -456,6 +458,7 @@ font-size: 24px;
       top: -8px;
       left: -8px;
 }
+/*piping ends*/
   .foot-social {
     margin-top: 0px;
     p{
@@ -477,15 +480,19 @@ font-size: 24px;
       }
     }
   }
+/*contact us starts*/
   .geography ul li a {
     font-size: 12px;
 }
+/*contact us ends*/
+/*management starts*/
 .team h2 {
     font-size: 24px;
 }
 .chairman-text h3, .director-optext h3, .director-fintext h3{
   font-size: 14px;
 }
+/*management ends*/
 }
 /*iphone4 ends*/
 /*nexus4 starts*/
