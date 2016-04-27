@@ -119,7 +119,7 @@ transform: translate(-50%, -50%);
 .mycl ul li {
     float: left;
     display: inline-block;
-    width: 100%;
+    width: 50%;
   }
 
   .myclis ul li {
@@ -321,8 +321,6 @@ top: 0;
 }
 }
 
-
-
 /*iphone 6*/
 @media only screen
     and (min-device-width : 375px)
@@ -334,6 +332,20 @@ top: 0;
       }
     }
     }
+    .overview h2 {
+    font-size: 24px;
+}
+.clients h2 {
+    font-family: 'ProximaNova-Light';
+    font-size: 24px;
+}
+    .foot-social {
+    margin-top: 0px;
+}
+    .overview,
+    .clients {
+    padding: 0 0 10px  0;
+}
       .certification .list-inline li {
        padding-left: 5px;
        padding-right: 5px;
@@ -398,6 +410,16 @@ p{
     width: 50%;
 
     }
+footer{
+  ul{
+    li{
+      a,
+      .listhead{
+          font-size: 12px;
+      }
+    }
+  }
+}
   }
 /*iphone 6*/
 /*iphone4*/
@@ -406,6 +428,19 @@ and (min-device-width : 320px)
 and (max-device-width : 480px){
 .ceo{
   display: none;
+}
+.team .teams {
+    font-size: 24px;
+}
+p{
+  font-size: 11px;
+}
+.banner .banner-text h1 {
+    font-size: 17px;
+}
+.overview h2 ,
+.clients h2{
+font-size: 24px;
 }
 .certification .list-inline li:nth-of-type(1){
   display: block;
@@ -417,11 +452,41 @@ and (max-device-width : 480px){
   .clientspeaks:before {
       top: -8px;
       left: -8px;
-
+}
+  .foot-social {
+    margin-top: 0px;
+    p{
+    text-align: center;
+    font-size: 12px;
+  }
+}
+  .overview,
+  .clients {
+  padding:  0 0 10px 0;
+}
+  footer{
+    ul{
+      li{
+        a,
+        .listhead{
+            font-size: 12px;
+        }
+      }
+    }
+  }
+  .geography ul li a {
+    font-size: 12px;
+}
+.team h2 {
+    font-size: 24px;
+}
+.chairman-text h3, .director-optext h3, .director-fintext h3{
+  font-size: 14px;
+}
 }
 /*iphone4*/
 /*smaller phones nexus4*/
-@media (max-width: 480px) {
+@media (max-width: 384px) {
   .banner{
 .banner-text{
   h1{
@@ -474,7 +539,7 @@ and (max-device-width : 480px){
 }
 .clientspeaks:before{
   top: -6px;
-  left: -14px;
+  left: -10px;
 }
 .ceo {
     position: absolute;
@@ -493,8 +558,11 @@ and (max-device-width : 480px){
 .myclis ul li {
     float: left;
     display: inline-block;
-    width: 50%;
+    width: 100%;
 
+}
+.imaging-side{
+  display: none;
 }
 .mycl ul li{
   float: left;
