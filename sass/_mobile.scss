@@ -91,23 +91,12 @@ transform: translate(-50%, -50%);
     position: relative;
     &:before {
       display: none;
-      // content: " ";
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      // height: 100%;
-      // width: 100%;
-      // z-index: 1;
-      // opacity: 0;
-      // background-color: rgba(0,0,0,0.7);
-      // @include transition(opacity 0.2s);
     }
     &:after {
       display: none;
 
     }
   }
-
 }
 .floating-left,
 .floating-right{
@@ -128,7 +117,7 @@ transform: translate(-50%, -50%);
       width: 50%;
     }
 
-/*clients*/
+/*clients starts*/
 .clients2 {
   padding: 30px 0 60px 0;
 }
@@ -152,19 +141,21 @@ transform: translate(-50%, -50%);
     }
   }
 }
-/*clients*/
-/*about*/
+/*clients ends*/
+
+/*about starts*/
 .geography ul li a{
   font-size: 13px;
 }
-/*about*/
+/*about ends*/
+
 /*mission-vision*/
 .mission-image{
   display: none;
 }
 /*mission-vision*/
-/*piping*/
 
+/*piping*/
 .piping-arrow{
 display: none;
 position: absolute;
@@ -195,7 +186,6 @@ top: 0;
     margin-right: 10px;
 }
 }
-
 /*piping*/
 
 /*contact us*/
@@ -208,11 +198,12 @@ top: 0;
 }
 /*ipad mini*/
 
+/*extra small devices*/
 @media (max-width: $screen-xs-max)  {
   .client1 .listing a {
    padding: 10px;
   }
-
+/*piping*/
 .ceo{
   position: absolute;
     right: -20px;
@@ -226,6 +217,7 @@ top: 0;
     margin-bottom: 20px;
   }
 }
+/*piping*/
 .mycl ul li {
     float: left;
     display: inline-block;
@@ -237,7 +229,6 @@ top: 0;
       display: inline-block;
       width: 50%;
     }
-
 
 .padding0{
   .image-holder {
@@ -315,13 +306,13 @@ top: 0;
 .banner-mission .banner-text {
     width: 60%;
     position: absolute;
-    top: 31%;
+    top: 33%;
     left: 69%;
     transform: translate(-50%, -50%);
 }
 }
-
-/*iphone 6*/
+/*extra small devices*/
+/*iphone 6 starts*/
 @media only screen
     and (min-device-width : 375px)
     and (max-device-width : 667px) {
@@ -346,16 +337,20 @@ top: 0;
     .clients {
     padding: 0 0 10px  0;
 }
-      .certification .list-inline li {
+
+  .certification .list-inline li {
        padding-left: 5px;
        padding-right: 5px;
 }
+
   .certification .list-inline li:nth-of-type(1){
     display: block;
   }
+
  .certification{
    padding-top: 20px;
  }
+
 .resume{
   display: block;
   margin-top: 20px;
@@ -368,6 +363,7 @@ p{
 .client-types .nav-tabs {
     margin: 0 35px;
 }
+/*management starts*/
 .team .teams {
     font-size: 42px;
   }
@@ -389,11 +385,16 @@ p{
       right: 7px;
       top: -195px;
   }
+  /*management ends*/
+
+  /*piping starts*/
 .piping-image,
 .arrows{
   display: none;
 }
+/*piping starts*/
 
+/*csr*/
 .csr-info{
   img{
     display: none;
@@ -408,8 +409,9 @@ p{
     float: left;
     display: inline-block;
     width: 50%;
-
     }
+    /*csr ends*/
+
 footer{
   ul{
     li{
@@ -421,8 +423,9 @@ footer{
   }
 }
   }
-/*iphone 6*/
-/*iphone4*/
+/*iphone 6 ends*/
+
+/*iphone4 starts*/
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px){
@@ -484,8 +487,8 @@ font-size: 24px;
   font-size: 14px;
 }
 }
-/*iphone4*/
-/*smaller phones nexus4*/
+/*iphone4 ends*/
+/*nexus4 starts*/
 @media (max-width: 384px) {
   .banner{
 .banner-text{
@@ -494,9 +497,7 @@ font-size: 24px;
   }
 }
 }
-.banner-management .banner-text h1 {
-    font-size: 20px;
-}
+
   //*footer*//
 .foot-social span{
   font-size: 12px;
@@ -514,6 +515,12 @@ font-size: 24px;
     left: 64%;
 }
 //*home page*//
+
+//*management starts*//
+.banner-management .banner-text h1 {
+    font-size: 20px;
+}
+
 .team .teams {
     font-size: 42px;
   }
@@ -534,6 +541,9 @@ font-size: 24px;
     left: 61%;
     transform: translate(-50%, -50%);
 }
+//*management ends*//
+
+//*piping starts*//
 .client-speak p{
   margin-top: 20px;
 }
@@ -550,6 +560,9 @@ font-size: 24px;
 .arrows{
   display: none;
 }
+//*piping ends*//
+
+//*csr starts*//
 .csr-info{
   img{
     display: none;
@@ -569,5 +582,6 @@ font-size: 24px;
   display: inline-block;
   width: 100%;
 }
+//*csr ends*//
 }
-/*smaller phones nexus4*/
+/*nexus4 ends*/
