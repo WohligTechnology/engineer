@@ -105,13 +105,6 @@ a,
   src:url("../fonts/ProximaNova-Regular.otf");
 }
 
-
-
-//Line-height class//
-.line{
-  line-height: 180%;
-}
-
 //bootstrap forms
 /* Start writing sass here */
 .content {
@@ -168,13 +161,14 @@ address {
 ul.dropdown-menu {
   position: absolute;
     top: 119%;
-    left: -50px;
+    left: -114px;
   padding: 0;
   background-color: $brand-success;
+  opacity: 0.9;
   li {
     padding: 0 10px 0 0;
     a {
-      padding: 10px 60px;
+      padding: 14px 51px;
       color: #fff!important;
       &:hover {
         background-color: $brand-primary;
@@ -242,7 +236,7 @@ h2 {
   padding-top: 50px;
   .success{
     font-family: 'Proxima';
-    font-size: 14px;
+    font-size: 16px;
     line-height: 180%;
   }
   .list-inline{
@@ -526,6 +520,14 @@ a {
   font-family: 'Proxima';
   color: $brand-success;
 }
+.resume{
+  a{
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+
 
 /*careers page ends*/
 
