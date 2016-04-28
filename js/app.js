@@ -16,17 +16,17 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             controller: 'HomeCtrl'
         })
 
-    .state('overview', {
-        url: "/overview",
-        templateUrl: "views/template.html",
-        controller: 'OverviewCtrl'
-    })
+    // .state('overview', {
+    //     url: "/overview",
+    //     templateUrl: "views/template.html",
+    //     controller: 'OverviewCtrl'
+    // })
 
-    .state('we-do', {
-        url: "/we-do",
-        templateUrl: "views/template.html",
-        controller: 'WeDoCtrl'
-    })
+    // .state('we-do', {
+    //     url: "/we-do",
+    //     templateUrl: "views/template.html",
+    //     controller: 'WeDoCtrl'
+    // })
 
     .state('sectors', {
         url: "/sectors",
