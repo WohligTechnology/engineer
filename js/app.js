@@ -28,11 +28,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     //     controller: 'WeDoCtrl'
     // })
 
-    .state('sectors', {
-        url: "/sectors",
-        templateUrl: "views/template.html",
-        controller: 'SectorsCtrl'
-    })
+    // .state('sectors', {
+    //     url: "/sectors",
+    //     templateUrl: "views/template.html",
+    //     controller: 'SectorsCtrl'
+    // })
 
     .state('clients', {
         url: "/clients",
