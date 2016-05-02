@@ -56,16 +56,14 @@ transform: translate(-50%, -50%);
   .overview
   {
     position: relative;
-    p{
-    margin-top: 30px;
-  }
+
 }
 /*footer*/
 .foot-social{
   float: none !important;
   text-align: center;
   li{
-    margin: 0 10px;
+    margin: 0 5px;
   }
   p{
     display: inline-block;
@@ -118,6 +116,13 @@ transform: translate(-50%, -50%);
     }
 
 /*clients starts*/
+.clients{
+  padding: 0;
+}
+.client1{
+  position: relative;
+  padding: 15px 0 30px 0;
+}
 .clients2 {
   padding: 30px 0 60px 0;
 }
@@ -266,10 +271,10 @@ top: 0;
     }
   }
 }
-  .ribbon1{
+ .ribbon1{
   display: none;
 }
-  .ribbon2{
+ .ribbon2{
   display: none;
  }
  .home-bannertext p {
@@ -281,10 +286,10 @@ top: 0;
     left: 60%;
   }
   .clients1{
-  padding: 20px 0 30px 0;
+  padding: 0px 0 30px 0;
   }
   .clients2{
-  padding: 20px 0 20px 0;
+  padding: 0px 0 20px 0;
   }
   .imag-side{
     width: 100%;
@@ -312,6 +317,7 @@ top: 0;
 }
 }
 /*extra small devices*/
+
 /*iphone 6 starts*/
 @media only screen
     and (min-device-width : 375px)
@@ -323,12 +329,18 @@ top: 0;
       }
     }
     }
+    .triangle {
+      display: none;
+    }
     .overview h2 {
     font-size: 24px;
 }
 .clients h2 {
     font-family: 'ProximaNova-Light';
     font-size: 24px;
+}
+.about-rd .success, .geography .success{
+  font-size: 24px;
 }
     .foot-social {
     margin-top: 0px;
@@ -337,7 +349,14 @@ top: 0;
     .clients {
     padding: 0 0 10px  0;
 }
-
+ul.dropdown-menu {
+    position: absolute;
+    top: 73%;
+    left: 0px;
+    padding: 0;
+    background-color: #f78f29;
+    opacity: 0.9;
+}
   .certification .list-inline li {
        padding-left: 5px;
        padding-right: 5px;
@@ -365,7 +384,7 @@ p{
 }
 /*management starts*/
 .team .teams {
-    font-size: 42px;
+    font-size: 24px;
   }
   .banner-management .banner-text {
       position: absolute;
@@ -410,7 +429,7 @@ p{
     display: inline-block;
     width: 50%;
     }
-    /*csr ends*/
+/*csr ends*/
 /*footer starts*/
 footer{
   ul{
@@ -421,6 +440,10 @@ footer{
       }
     }
   }
+}
+.client-speak{
+  position: relative;
+  padding: 10px 0;
 }
 /*footer ends*/
   }
@@ -433,8 +456,25 @@ and (max-device-width : 480px){
 .ceo{
   display: none;
 }
+.mission .header {
+    font-size: 24px;
+}
 .team .teams {
     font-size: 24px;
+}
+.client1{
+margin-top: 15px;
+}
+.about-rd .success, .geography .success{
+  font-size: 24px;
+}
+ul.dropdown-menu {
+    position: absolute;
+    top: 73%;
+    left: 0px;
+    padding: 0;
+    background-color: #f78f29;
+    opacity: 0.9;
 }
 p{
   font-size: 11px;
@@ -442,12 +482,18 @@ p{
 .banner .banner-text h1 {
     font-size: 17px;
 }
+.triangle {
+    display: none;
+  }
 .overview h2 ,
 .clients h2{
 font-size: 24px;
 }
 .certification .list-inline li:nth-of-type(1){
   display: block;
+}
+.certification{
+  padding-top: 20px;
 }
 /*piping starts*/
 .clientspeaks:before {
@@ -459,6 +505,7 @@ font-size: 24px;
       left: -8px;
 }
 /*piping ends*/
+
   .foot-social {
     margin-top: 0px;
     p{
@@ -484,6 +531,12 @@ font-size: 24px;
   .geography ul li a {
     font-size: 12px;
 }
+.banner .banner-text {
+    position: absolute;
+    top: 42%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
 /*contact us ends*/
 /*management starts*/
 .team h2 {
@@ -491,6 +544,10 @@ font-size: 24px;
 }
 .chairman-text h3, .director-optext h3, .director-fintext h3{
   font-size: 14px;
+}
+.client-speak{
+  position: relative;
+  padding: 10px 0;
 }
 /*management ends*/
 }
@@ -504,7 +561,30 @@ font-size: 24px;
   }
 }
 }
+.csr .csr-info {
+    margin: 20px 0 10px 0;
+}
+.client-info{
+  margin: 30px 0;
+}
+.info{
+  padding: 10px 0 20px 0;
 
+}
+.about-rd {
+    margin: 20px 0;
+}
+ul.dropdown-menu {
+    position: absolute;
+    top: 73%;
+    left: 0px;
+    padding: 0;
+    background-color: #f78f29;
+    opacity: 0.9;
+}
+.about-rd .success, .geography .success{
+  font-size: 24px;
+}
   //*footer*//
 .foot-social span{
   font-size: 12px;
@@ -516,7 +596,7 @@ font-size: 24px;
 .home-bannertext p {
   line-height: 118%;
     color: #fff;
-    font-size: 13px;
+    font-size: 10px;
     position: absolute;
     top: 34%;
     left: 64%;
@@ -529,8 +609,18 @@ font-size: 24px;
 }
 
 .team .teams {
-    font-size: 42px;
+    font-size: 24px;
+}
+.triangle {
+  display: none;
   }
+  .banner .banner-text {
+      position: absolute;
+      top: 46%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+    }
+  /*contact us ends*/
 
 .chairman-image{
   margin: 0 -13px;
@@ -542,6 +632,7 @@ font-size: 24px;
 .director-optext {
     margin: 0 -40px 50px 0;
 }
+
 .banner-management .banner-text {
     position: absolute;
     top: 39%;
@@ -556,7 +647,7 @@ font-size: 24px;
 }
 .clientspeaks:before{
   top: -6px;
-  left: -10px;
+  left: -7px;
 }
 .ceo {
     position: absolute;
@@ -588,6 +679,49 @@ font-size: 24px;
   float: left;
   display: inline-block;
   width: 100%;
+}
+.certification{
+  padding-top: 0px;
+}
+.certifications{
+  padding-top: 0;
+  .list{
+    padding: 0;
+  }
+}
+.about-rd {
+    margin: 20px 0 0 0;
+}
+.client-speak{
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+.piping-text {
+    padding: 25px 0 5px 0;
+ p {
+    margin-bottom: 20px;
+}
+}
+.mission {
+    padding-top: 20px;
+    position: relative;
+}
+.vision
+{
+  padding: 20px 0 0 0;
+  p{
+  margin-top: -15px;
+}
+}
+.clients h2{
+  margin-bottom: -20px;
+}
+.projects {
+    margin: 20px 0;
+}
+.finance{
+  margin-bottom: 0;
 }
 //*csr ends*//
 }
