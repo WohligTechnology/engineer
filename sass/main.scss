@@ -132,6 +132,7 @@ li {
     }
   }
 }
+
 address {
   font-family: 'Proxima';
 }
@@ -158,10 +159,17 @@ address {
     }
   }
 }
+
+.navbar-default .navbar-nav li a:hover{
+  color: $brand-primary;
+}
+
+
+
 ul.dropdown-menu {
   position: absolute;
     top: 119%;
-    left: -114px;
+    left: -88px;
   padding: 0;
   background-color: $brand-success;
   opacity: 0.9;
@@ -233,7 +241,7 @@ h2 {
   margin: 5% 0 0;
 }
 .certification {
-  padding-top: 50px;
+  padding-top: 30px;
   .success{
     font-family: 'Proxima';
     font-size: 16px;
@@ -304,8 +312,8 @@ h2 {
     color: $brand-success;
   }
   .list {
-      padding: 20px 0 0 0;
-      margin-bottom: 15px;
+      padding: 20px  0;
+      margin-bottom: 20px;
       li{
         padding-left: 10px;
         padding-right: 10px;
@@ -336,6 +344,7 @@ h2 {
 }
 .listing{
   position: relative;
+  margin: 15px 0 30px 0;
 }
 .listing img{
   position: absolute;
@@ -371,7 +380,7 @@ h2 {
 }
 .ribbon1 {
   position: absolute;
-  top: 67%;
+  top: 75%;
   right: 0;
 }
 .ribbon2 {
@@ -678,6 +687,13 @@ transform: translate(-50%,-50%);
   }
 }
 }
+
+.vision{
+  ul{
+  margin-left: 14px;
+  }
+}
+
 .vision{
   padding: 20px 0;
   p{
@@ -742,6 +758,11 @@ font-size: 40px;
   }
 }
 }
+.myclis ul li {
+    float: left;
+    display: inline-block;
+    width: 50%;
+  }
 /*csr page ends here*/
 
 /*rd-the brand page ends here*/
