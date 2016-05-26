@@ -28,20 +28,11 @@ var navigationservice = angular.module('navigationservice', [])
             name: "CSR",
             classis: "active",
             link: "csr"
-        }, {
-            name: "RD - The Brand",
-            classis: "active",
-            link: "the-brand"
         }]
     }, {
-        name: "What And How We Do",
+        name: "Our Services",
         classis: "active",
-        anchor: "we-do",
-        subnav: []
-    }, {
-        name: "Sectors",
-        classis: "active",
-        anchor: "sectors",
+        anchor: "our-services",
         subnav: []
     }, {
         name: "Clients",

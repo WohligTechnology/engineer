@@ -28,21 +28,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
-.controller('RDBrandCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("rd-brand");
-  $scope.menutitle = NavigationService.makeactive("RD -The Brand");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
-})
+// .controller('RDBrandCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+//   //Used to name the .html file
+//   $scope.template = TemplateService.changecontent("rd-brand");
+//   $scope.menutitle = NavigationService.makeactive("RD -The Brand");
+//   TemplateService.title = $scope.menutitle;
+//   $scope.navigation = NavigationService.getnav();
+// })
 
-.controller('SectorsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("sectors");
-  $scope.menutitle = NavigationService.makeactive("Sectors");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
-})
+// .controller('SectorsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+//   //Used to name the .html file
+//   $scope.template = TemplateService.changecontent("sectors");
+//   $scope.menutitle = NavigationService.makeactive("Sectors");
+//   TemplateService.title = $scope.menutitle;
+//   $scope.navigation = NavigationService.getnav();
+// })
 
 .controller('ClientsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
@@ -104,8 +104,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 .controller('WeDoCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
-  $scope.template = TemplateService.changecontent("we-do");
-  $scope.menutitle = NavigationService.makeactive("What And How We Do");
+  $scope.template = TemplateService.changecontent("ourservices");
+  $scope.menutitle = NavigationService.makeactive("Our Services");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 })
