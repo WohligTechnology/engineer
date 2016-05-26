@@ -108,6 +108,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Our Services");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  TemplateService.banner="views/banner-services.html";
 })
 
 .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout) {
