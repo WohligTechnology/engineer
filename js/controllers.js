@@ -36,13 +36,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 //   $scope.navigation = NavigationService.getnav();
 // })
 
-// .controller('SectorsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-//   //Used to name the .html file
-//   $scope.template = TemplateService.changecontent("sectors");
-//   $scope.menutitle = NavigationService.makeactive("Sectors");
-//   TemplateService.title = $scope.menutitle;
-//   $scope.navigation = NavigationService.getnav();
-// })
+.controller('SectorsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("sectors");
+  $scope.menutitle = NavigationService.makeactive("Sectors");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+})
 
 .controller('ClientsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
@@ -118,6 +118,47 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 })
+
+.controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("piping");
+  $scope.menutitle = NavigationService.makeactive("Piping");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+})
+
+.controller('TanksCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("tanks");
+  $scope.menutitle = NavigationService.makeactive("Tanks and Equipments");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+})
+
+.controller('InsulationCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("insulation");
+  $scope.menutitle = NavigationService.makeactive("Hot & Cold Insulation");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+})
+
+.controller('ModularCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("skidmodular");
+  $scope.menutitle = NavigationService.makeactive("Skid & Modular Plants");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+})
+
+.controller('SSMSCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("ssms");
+  $scope.menutitle = NavigationService.makeactive("SS & MS steel structure");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+})
+
 .controller('headerctrl', function($scope, TemplateService) {
   $scope.template = TemplateService;
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {

@@ -28,11 +28,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
         controller: 'WeDoCtrl'
     })
 
-    // .state('sectors', {
-    //     url: "/sectors",
-    //     templateUrl: "views/template.html",
-    //     controller: 'SectorsCtrl'
-    // })
+    .state('sectors', {
+        url: "/sectors",
+        templateUrl: "views/template.html",
+        controller: 'SectorsCtrl'
+    })
 
     .state('clients', {
         url: "/clients",
@@ -82,9 +82,26 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
         controller: 'PipingCtrl'
     })
 
-
-
-
+    .state('tanks-equipments', {
+        url: "/tanks-equipments",
+        templateUrl: "views/template.html",
+        controller: 'TanksCtrl'
+    })
+    .state('insulation', {
+        url: "/insulation",
+        templateUrl: "views/template.html",
+        controller: 'InsulationCtrl'
+    })
+    .state('skid-modular', {
+        url: "/skid-modular",
+        templateUrl: "views/template.html",
+        controller: 'ModularCtrl'
+    })
+    .state('ss-ms', {
+        url: "/ss-ms",
+        templateUrl: "views/template.html",
+        controller: 'SSMSCtrl'
+    })
 
     .state('mission-vision', {
         url: "/mission-vision",

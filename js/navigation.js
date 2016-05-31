@@ -33,18 +33,41 @@ var navigationservice = angular.module('navigationservice', [])
         name: "Our Services",
         classis: "active",
         anchor: "our-services",
-        subnav: []
+        subnav: [{
+          name: "Piping",
+          classis: "active",
+          link: "piping"
+      }, {
+          name: "Tanks and Equipments",
+          classis: "active",
+          link: "tanks-equipments"
+      }, {
+          name: "Hot & Cold Insulation",
+          classis: "active",
+          link: "insulation"
+      }, {
+          name: "Skid & Modular Plants",
+          classis: "active",
+          link: "skid-modular"
     }, {
-        name: "Clients",
+        name: "SS & MS steel structure",
         classis: "active",
-        anchor: "clients",
+        anchor: "ss-ms",
         subnav: []
-    }, {
+        }]
+    },
+     {
         name: "Careers",
         classis: "active",
         anchor: "careers",
         subnav: []
-    }, {
+    },
+    {
+       name: "Sectors",
+       classis: "active",
+       anchor: "sectors",
+       subnav: []
+   }, {
         name: "Contact Us",
         classis: "active",
         anchor: "contact-us",
