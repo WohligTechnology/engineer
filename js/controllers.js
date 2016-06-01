@@ -50,6 +50,40 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Clients");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  $scope.clients = [
+    'img/SABMiller.jpg',
+    'img/carlsberg.jpg',
+    'img/Unilever.jpg',
+    'img/de.jpg',
+    'img/logs.jpg',
+    'img/diageo.jpg',
+    'img/serengeti.jpg',
+    'img/brew.jpg',
+    'img/zieman.jpg',
+    'img/coco.png',
+    'img/loogos.jpg',
+    'img/set.jpg',
+    'img/cadbury.jpg',
+    'img/casella.jpg',
+    'img/krones.jpg',
+    'img/lafa.png',
+    'img/pepsico.jpg',
+    'img/abbot.jpg',
+    'img/itc.jpg',
+    'img/ee.jpg',
+    'img/tetrapak.jpg',
+    'img/lakhme.jpg',
+    'img/ADIE.png',
+    'img/nyanza.jpg'
+  ];
+  $scope.clients = _.chunk($scope.clients, 12);
+  for (var i=0;i<$scope.clients.length;i++)
+  {
+    $scope.clients[i]=_.chunk($scope.clients[i],6);
+  }
+  // $scope.clients.push(_.chunk(12));
+  console.log("this is client");
+  console.log($scope.clients);
 })
 
 .controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout) {

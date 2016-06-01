@@ -8,7 +8,7 @@
     </div>
   </div>
   </div>
-  <div class="client-types">
+  <!-- <div class="client-types">
     <uib-tabset active="active">
   <uib-tab index="0" heading="Vertical 1">
     <uib-tab-heading>food and beverages</uib-tab-heading>
@@ -23,8 +23,25 @@
       <uib-tab-heading>home and personal care</uib-tab-heading>
   </uib-tab>
 </uib-tabset>
+  </div> -->
+
+
+  <div class="client-slider">
+    <flex-slider class="carousel" flex-slide="img in clients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false" item-margin="20">
+      <li>
+        <div class="client-imgholder">
+          <div class="row" ng-repeat="row in img track by $index">
+            <div class="col-md-2 col-sm-2" ng-repeat="clientimg in row track by $index">
+              <div class="img-holder listing">
+                <img ng-src="{{clientimg}}" alt="" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </flex-slider>
   </div>
-  <div class="clients">
+  <!-- <div class="clients">
     <div class="client1">
     <div class="row">
       <div class="col-md-2 col-sm-2 col-xs-4">
@@ -161,6 +178,6 @@
       </div>
     </div>
   </div>
-  </div>
+  </div> -->
   </div>
 </div>
