@@ -1086,5 +1086,27 @@ footer {
   }
 }
 /*footer ends here*/
+
+
+//piping erection//
+.pipings-text{
+  padding: 40px 0;
+}
+
+.panel-heading{
+  background-color: #fff;
+}
+.panel-default{
+  border-top: 2px solid $brand-primary;
+  border-bottom: 2px solid $brand-primary;
+  border-left: transparent;
+  border-right: transparent;
+  span{
+      color: $brand-success;
+  }
+
+}
+
+//piping and erection//
 @import "fancybox-override";
 @import "mobile";

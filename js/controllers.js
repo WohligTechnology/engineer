@@ -175,6 +175,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Hot & Cold Insulation");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+      $scope.oneAtATime = true;
 })
 
 .controller('ModularCtrl', function($scope, TemplateService, NavigationService, $timeout) {
