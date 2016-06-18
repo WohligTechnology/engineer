@@ -1093,9 +1093,6 @@ footer {
   padding: 40px 0;
 }
 
-.panel-heading{
-  background-color: #fff;
-}
 .panel-default{
   border-top: 2px solid $brand-primary;
   border-bottom: 2px solid $brand-primary;
@@ -1104,8 +1101,18 @@ footer {
   span{
       color: $brand-success;
   }
-
+  .panel-heading{
+    background-color: #fff;
+  }
 }
+
+.erw-text{
+  h4{
+    font-size: 16px;
+  }
+}
+
+
 
 //piping and erection//
 @import "fancybox-override";
