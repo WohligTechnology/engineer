@@ -1093,6 +1093,12 @@ footer {
   padding: 40px 0;
 }
 
+.panel-default>.panel-heading{
+  background-color: #fff;
+  border-color: transparent;
+}
+
+
 .panel-default{
   border-top: 2px solid $brand-primary;
   border-bottom: 2px solid $brand-primary;
@@ -1101,9 +1107,7 @@ footer {
   span{
       color: $brand-success;
   }
-  .panel-heading{
-    background-color: #fff;
-  }
+
 }
 
 .erw-text{
