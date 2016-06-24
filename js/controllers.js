@@ -176,6 +176,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
       $scope.oneAtATime = true;
+      $scope.mySlides1 = [
+        'img/1.png',
+        'img/2.png',
+        'img/3.png'
+
+      ];
+      $scope.mySlides2 = [
+        'img/4.png',
+        'img/5.png',
+        'img/6.png'
+
+      ];
 })
 
 .controller('ModularCtrl', function($scope, TemplateService, NavigationService, $timeout) {
