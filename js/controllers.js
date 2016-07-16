@@ -136,12 +136,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.banner="views/banner-mission.html";
 })
 
-.controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout,$stateParams) {
   //Used to name the .html file
   $scope.template = TemplateService.changecontent("piping");
   $scope.menutitle = NavigationService.makeactive("Piping");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+
+  NavigationService.getSector($stateParams.id,function(data) {
+    $scope.SectorData = data;
+    console.log('$scope.SectorData', $scope.SectorData);
+  })
+
 })
 
 .controller('WeDoCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -161,13 +167,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
-.controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("piping");
-  $scope.menutitle = NavigationService.makeactive("Piping");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
-})
+// .controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+//   //Used to name the .html file
+//   $scope.template = TemplateService.changecontent("piping");
+//   $scope.menutitle = NavigationService.makeactive("Piping");
+//   TemplateService.title = $scope.menutitle;
+//   $scope.navigation = NavigationService.getnav();
+// })
 
 .controller('TanksCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file

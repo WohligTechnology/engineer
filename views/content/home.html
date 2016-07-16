@@ -33,20 +33,18 @@
     <div class="row padding0">
       <div class="col-md-8 padding0  col-sm-8 col-xs-12">
         <div class="mycl">
-        <ul class="padding0 ">
+        <ul class="padding0 " ng-repeat="sec in AllSectors">
           <li>
-            <a href="#">
+            <a ui-sref="piping({id:sec.id})">
               <div class="image-holder">
-                <span class="name text-uppercase">piping</span>
-            <div class="image-hold" ng-style="{'background-image':'url(img/c2.jpg)'}">
+            <div class="image-hold" ng-style="{'background-image':'url({{sec.image1 | serverimage}})'}">
             </div>
             </div>
               </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">
               <div class="image-holder">
-                    <span class="name text-uppercase">tanks and equipments</span>
             <div class="image-hold" ng-style="{'background-image':'url(img/c1.jpg)'}">
             </div>
           </div>
@@ -55,7 +53,6 @@
           <li>
               <a href="#">
                 <div class="image-holder">
-                      <span class="name text-uppercase">hot and cold insulation</span>
             <div class="image-hold" ng-style="{'background-image':'url(img/blue.jpg)'}">
             </div>
             </div>
@@ -64,19 +61,17 @@
           <li>
                <a href="#">
                  <div class="image-holder">
-                       <span class="name text-uppercase">skid and modular plants</span>
             <div class="image-hold" ng-style="{'background-image':'url(img/pipes.jpg)'}">
             </div>
             </div>
               </a>
-          </li>
+          </li> -->
         </ul>
         </div>
       </div>
       <div class="col-md-4 padding0 col-sm-4 col-xs-12">
          <a href="#">
            <div class="image-holder">
-                 <span class="name text-uppercase">ss and ms steel structure</span>
         <div class="imag-side" ng-style="{'background-image':'url(img/c3.jpg)'}">
         </div>
         </div>
@@ -84,9 +79,9 @@
       </div>
     </div>
   </div>
-  <div class="ribbon1">
+  <!-- <div class="ribbon1">
   <img src="img/ribons.png" class="img-responsive" width="350">
-  </div>
+  </div> -->
 </div>
 
 <div class="clients">

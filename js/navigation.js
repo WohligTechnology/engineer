@@ -86,6 +86,8 @@ var navigationservice = angular.module('navigationservice', [])
         getnav: function() {
             return navigation;
         },
+
+
         makeactive: function(menuname) {
             for (var i = 0; i < navigation.length; i++) {
                 if (navigation[i].name == menuname) {
@@ -99,6 +101,9 @@ var navigationservice = angular.module('navigationservice', [])
 
         getAllSectors: function(callback) {
             $http.get(adminurl + "getAllSectors").success(callback);
+        },
+      getSector: function(id, callback) {
+            $http.get(adminurl + "getSector?id=" + id).success(callback);
         },
 
     };

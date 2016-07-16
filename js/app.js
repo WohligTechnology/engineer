@@ -77,7 +77,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     })
 
     .state('piping', {
-        url: "/piping",
+        url: "/piping/:id",
         templateUrl: "views/template.html",
         controller: 'PipingCtrl'
     })
