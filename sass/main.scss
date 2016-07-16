@@ -393,6 +393,17 @@ h2 {
 }
 .padding0{
   .image-holder {
+    .name{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 3;
+      font-size: 24px;
+      color: $brand-success;
+    font-family: 'Proxima';
+      opacity: 0;
+    }
     position: relative;
     &:before {
       content: " ";
@@ -419,6 +430,9 @@ h2 {
   }
   a {
     &:hover .image-holder {
+      .name{
+        opacity: 1;
+      }
       &:before,
       &:after {
         opacity: 1;
