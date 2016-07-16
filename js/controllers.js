@@ -17,8 +17,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     'img/s1.jpg',
     'img/s1.jpg',
     'img/s1.jpg'
-
   ];
+  NavigationService.getAllSectors(function(data) {
+    $scope.AllSectors = data;
+    console.log('$scope.AllSectors', $scope.AllSectors);
+  })
+
+
+
+
+
 })
 .controller('OverviewCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file

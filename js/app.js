@@ -113,6 +113,15 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     $locationProvider.html5Mode(isproduction);
 });
 
+firstapp.filter('serverimage', function() {
+    return function(input) {
+        if (input) {
+            return imgurl + input;
+        } else {
+            return "";
+        }
+    };
+});
 
 firstapp.directive('img', function($compile, $parse) {
     return {

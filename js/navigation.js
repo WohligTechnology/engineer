@@ -1,13 +1,14 @@
-var adminURL = "";
-if (isproduction) {
-    adminURL = "http://www.wohlig.co.in/demo/index.php";
-} else {
-    adminURL = "http://localhost/demo/index.php";
-}
+var adminurl = "http://192.168.1.120/rdbackend/index.php/json/";
+var imgurl = "http://192.168.1.120/rdbackend/uploads/";
+// if (isproduction) {
+//     adminURL = "http://www.wohlig.co.in/demo/index.php";
+// } else {
+//     adminURL = "http://localhost/demo/index.php";
+// }
 
 var navigationservice = angular.module('navigationservice', [])
 
-.factory('NavigationService', function() {
+.factory('NavigationService', function($http) {
     var navigation = [{
         name: "Overview",
         classis: "active",
@@ -94,6 +95,10 @@ var navigationservice = angular.module('navigationservice', [])
                 }
             }
             return menuname;
+        },
+
+        getAllSectors: function(callback) {
+            $http.get(adminurl + "getAllSectors").success(callback);
         },
 
     };

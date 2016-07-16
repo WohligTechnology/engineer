@@ -20,7 +20,7 @@
             <span class="texts"><a href="#">know more</a></span>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12  col-xs-12">
+          <div class="col-md-4 col-sm-12  col-xs-12" >
             <p>Undertaking Engineering Procurement and Construction (EPC) contracts for structures,Piping,Tankages and Equipment Erection in Africa has added to its group experience of more than 40 years.</p>
           </div>
         </div>
@@ -30,19 +30,20 @@
 </div>
 <div class="overview-images">
   <div class="container-fluid">
-    <div class="row padding0">
-      <div class="col-md-8 padding0  col-sm-8 col-xs-12">
+    <div class="row padding0" >
+      <div class="col-md-8 padding0  col-sm-8 col-xs-12" ng-repeat="Sector in AllSectors" >
         <div class="mycl">
         <ul class="padding0 ">
           <li>
             <a href="#">
               <div class="image-holder">
-            <div class="image-hold" ng-style="{'background-image':'url(img/c2.jpg)'}">
+            <div class="image-hold" ng-style="{'background-image':'url(Sector.image1 |
+            serverimage)'}" >
             </div>
             </div>
               </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">
               <div class="image-holder">
             <div class="image-hold" ng-style="{'background-image':'url(img/c1.jpg)'}">
@@ -76,7 +77,7 @@
         </div>
         </div>
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="ribbon1">
