@@ -102,8 +102,11 @@ var navigationservice = angular.module('navigationservice', [])
         getAllSectors: function(callback) {
             $http.get(adminurl + "getAllSectors").success(callback);
         },
-      getSector: function(id, callback) {
+        getSector: function(id, callback) {
             $http.get(adminurl + "getSector?id=" + id).success(callback);
+        },
+        getClients: function(callback) {
+            $http.get(adminurl + "getClients").success(callback);
         },
 
     };

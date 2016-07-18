@@ -21,6 +21,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   NavigationService.getAllSectors(function(data) {
     $scope.AllSectors = data;
     console.log('$scope.AllSectors', $scope.AllSectors);
+  });
+  NavigationService.getClients(function(data) {
+    $scope.AllClients = data;
+    // console.log('$scope.AllClients', $scope.AllClients);
+
   })
 
 
@@ -58,41 +63,66 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Clients");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
-  $scope.clients = [
-    'img/SABMiller.jpg',
-    'img/carlsberg.jpg',
-    'img/Unilever.jpg',
-    'img/de.jpg',
-    'img/logs.jpg',
-    'img/diageo.jpg',
-    'img/serengeti.jpg',
-    'img/brew.jpg',
-    'img/zieman.jpg',
-    'img/coco.png',
-    'img/loogos.jpg',
-    'img/set.jpg',
-    'img/cadbury.jpg',
-    'img/casella.jpg',
-    'img/krones.jpg',
-    'img/lafa.png',
-    'img/pepsico.jpg',
-    'img/abbot.jpg',
-    'img/itc.jpg',
-    'img/ee.jpg',
-    'img/tetrapak.jpg',
-    'img/lakhme.jpg',
-    'img/ADIE.png',
-    'img/nyanza.jpg'
-  ];
-  $scope.clients = _.chunk($scope.clients, 12);
-  for (var i=0;i<$scope.clients.length;i++)
-  {
-    $scope.clients[i]=_.chunk($scope.clients[i],6);
-  }
-  // $scope.clients.push(_.chunk(12));
-  console.log("this is client");
-  console.log($scope.clients);
-})
+  // $scope.clients = [
+  //   'img/SABMiller.jpg',
+  //   'img/carlsberg.jpg',
+  //   'img/Unilever.jpg',
+  //   'img/de.jpg',
+  //   'img/logs.jpg',
+  //   'img/diageo.jpg',
+  //   'img/serengeti.jpg',
+  //   'img/brew.jpg',
+  //   'img/zieman.jpg',
+  //   'img/coco.png',
+  //   'img/loogos.jpg',
+  //   'img/set.jpg',
+  //   'img/cadbury.jpg',
+  //   'img/casella.jpg',
+  //   'img/krones.jpg',
+  //   'img/lafa.png',
+  //   'img/pepsico.jpg',
+  //   'img/abbot.jpg',
+  //   'img/itc.jpg',
+  //   'img/ee.jpg',
+  //   'img/tetrapak.jpg',
+  //   'img/lakhme.jpg',
+  //   'img/ADIE.png',
+  //   'img/nyanza.jpg'
+  // ];
+
+  NavigationService.getClients(function(data) {
+    $scope.AllClients = data;
+    $scope.AllClients  = _.chunk($scope.AllClients , 12);
+    for (var i=0;i<$scope.AllClients .length;i++)
+    {
+      $scope.AllClients [i]=_.chunk($scope.AllClients [i],6);
+        console.log($scope.AllClients );
+    }
+    console.log("this is client");
+    console.log($scope.AllClients );
+  })
+  // $scope.clients = _.chunk($scope.clients, 12);
+ // for (var i=0;i<$scope.clients.length;i++)
+ // {
+ //   $scope.clients[i]=_.chunk($scope.clients[i],6);
+ // }
+ // // $scope.clients.push(_.chunk(12));
+ // console.log("this is client");
+ // console.log($scope.clients);
+ })
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
@@ -145,7 +175,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   NavigationService.getSector($stateParams.id,function(data) {
     $scope.SectorData = data;
-    console.log('$scope.SectorData', $scope.SectorData.services[0].project.length);
+    // console.log('$scope.SectorData', $scope.SectorData.services[0].project.length);
+    console.log('SectorData',$scope.SectorData);
   })
 
 })

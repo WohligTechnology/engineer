@@ -392,54 +392,103 @@ h2 {
   z-index: 2;
 }
 .padding0{
-  .image-holder {
-    .name{
-      position: absolute;
-      top:50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      z-index: 3;
-      font-size: 24px;
-      color: $brand-success;
-    font-family: 'Proxima';
-      opacity: 0;
-    }
-    position: relative;
-    &:before {
-      content: " ";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 1;
-      opacity: 0;
-      background-color: rgba(0,0,0,0.7);
-      @include transition(opacity 0.2s);
-    }
-    &:after {
-      content:url('../img/arrows.png');
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      @include transform(translate(-50%,-50%));
-      z-index: 1;
-      opacity: 0;
-      @include transition(opacity 0.2s);
-    }
-  }
-  a {
-    &:hover .image-holder {
-      .name{
-        opacity: 1;
-      }
-      &:before,
-      &:after {
-        opacity: 1;
-      }
-    }
-  }
+ .image-holder {
+   .name{
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     z-index: 3;
+     font-size: 24px;
+     color: $brand-success;
+   font-family: 'Proxima';
+     opacity: 0;
+   }
+   position: relative;
+   &:before {
+     content: " ";
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     z-index: 1;
+     opacity: 0;
+     background-color: rgba(0,0,0,0.7);
+     @include transition(opacity 0.2s);
+   }
+   &:after {
+     content:url('../img/arrows.png');
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     @include transform(translate(-50%,-50%));
+     z-index: 1;
+     opacity: 0;
+     @include transition(opacity 0.2s);
+   }
+ }
+ a {
+   &:hover .image-holder {
+     .name{
+       opacity: 1;
+     }
+     &:before,
+     &:after {
+       opacity: 1;
+     }
+   }
+ }
 }
+// .padding0{
+//   .image-holder {
+//     .name{
+//       position: absolute;
+//       top:50%;
+//       left: 50%;
+//       transform: translate(-50%,-50%);
+//       z-index: 3;
+//       font-size: 24px;
+//       color: $brand-success;
+//     font-family: 'Proxima';
+//       opacity: 0;
+//     }
+//     position: relative;
+//     &:before {
+//       content: " ";
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       height: 100%;
+//       width: 100%;
+//       z-index: 1;
+//       opacity: 0;
+//       background-color: rgba(0,0,0,0.7);
+//       @include transition(opacity 0.2s);
+//     }
+//     &:after {
+//       content:url('../img/arrows.png');
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       @include transform(translate(-50%,-50%));
+//       z-index: 1;
+//       opacity: 0;
+//       @include transition(opacity 0.2s);
+//     }
+//   }
+//   a {
+//     &:hover .image-holder {
+//       .name{
+//         opacity: 1;
+//       }
+//       &:before,
+//       &:after {
+//         opacity: 1;
+//       }
+//     }
+//   }
+// }
 
 /*home page ends here*/
 /*sectors page started*/

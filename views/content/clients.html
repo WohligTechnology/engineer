@@ -25,8 +25,24 @@
 </uib-tabset>
   </div> -->
 
-
   <div class="client-slider">
+    <flex-slider class="carousel" flex-slide="img in AllClients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false" item-margin="20">
+      <li>
+        <div class="client-imgholder">
+          <div class="row" ng-repeat="row in img track by $index">
+            <div class="col-md-2 col-sm-2" ng-repeat="clientimg in row track by $index">
+              <div class="img-holder listing">
+                <img ng-src="{{clientimg.logo|serverimage}}" alt="" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </flex-slider>
+  </div>
+
+
+  <!-- <div class="client-slider">
     <flex-slider class="carousel" flex-slide="img in clients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false" item-margin="20">
       <li>
         <div class="client-imgholder">
@@ -40,7 +56,11 @@
         </div>
       </li>
     </flex-slider>
-  </div>
+  </div> -->
+
+
+
+
   <!-- <div class="clients">
     <div class="client1">
     <div class="row">
