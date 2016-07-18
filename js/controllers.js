@@ -145,7 +145,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   NavigationService.getSector($stateParams.id,function(data) {
     $scope.SectorData = data;
-    console.log('$scope.SectorData', $scope.SectorData);
+    console.log('$scope.SectorData', $scope.SectorData.services[0].project.length);
   })
 
 })

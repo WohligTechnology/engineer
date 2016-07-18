@@ -17,15 +17,73 @@
            <uib-accordion-heading>
             {{data.name}}  <i class="pull-right fa " ng-class="{'fa fa-minus': status.open1, 'fa fa-plus': !status.open1}"></i>
            </uib-accordion-heading>
-           <div ng-bind-html="data.description"></div>
+           <div ng-bind-html="data.description"> </div>
+
+             <div class="projects">
+             <h2 class="text-uppercase">projects</h2>
+             <div class="india" ng-repeat="proj in data.project">
+             <h4>{{proj.title}}</h4>
+             <div class="slides">
+               <div class="row">
+                 <div class="col-md-4" ng-repeat="img in proj.images">
+                   <img ng-src="{{img.image | serverimage}}" class="img-responsive" alt="">
+                 </div>
+                 <!-- <div class="col-md-4">
+                     <img src="img/2.png" class="img-responsive" alt="">
+                 </div>
+                 <div class="col-md-4">
+                     <img src="img/3.png" class="img-responsive" alt="">
+                 </div> -->
+               </div>
+             </div>
+             </div>
+             <!-- <div class="sri-lanka">
+             <h4>Unilever Sri Lanka</h4>
+             <div class="slides">
+               <div class="row">
+                 <div class="col-md-4">
+                   <img src="img/1.png" class="img-responsive" alt="">
+                 </div>
+                 <div class="col-md-4">
+                     <img src="img/2.png" class="img-responsive" alt="">
+                 </div>
+                 <div class="col-md-4">
+                     <img src="img/3.png" class="img-responsive" alt="">
+                 </div>
+               </div>
+             </div>
+             </div> -->
+             <div class="south-africa" ng-repeat="proj in data.project">
+             <h4>{{proj.title}}</h4>
+
+             </div>
+             <!-- <div class="ghana">
+             <h4>Unilever Ghana</h4>
+             </div>
+             <div class="ethiopia">
+             <h4>Unilever Ethiopia</h4>
+             </div>
+             <div class="cadbury">
+             <h4>Cadbury - India (Makson/Barmalt)</h4>
+             </div>
+             <div class="kals">
+             <h4>Kals - India , Ziemann</h4>
+             </div> -->
+
+             </div>
+
+
+
          </uib-accordion-group>
-        <!-- <uib-accordion-group is-open="status.open1">
+
+         <!--
+        <uib-accordion-group is-open="status.open1">
        <uib-accordion-heading>
         CS NB SLMS IBR PIPING  <i class="pull-right fa " ng-class="{'fa fa-minus': status.open1, 'fa fa-plus': !status.open1}"></i>
        </uib-accordion-heading>
        This is just some content to illustrate fancy headings.
-     </uib-accordion-group> -->
-        <!-- <uib-accordion-group is-open="status.open2">
+     </uib-accordion-group>
+        <uib-accordion-group is-open="status.open2">
        <uib-accordion-heading>
         CS NB SLMS NON-IBR PIPING <i class="pull-right fa " ng-class="{'fa fa-minus': status.open2, 'fa fa-plus': !status.open2}"></i>
 
@@ -38,13 +96,21 @@
 
     </uib-accordion-heading>
     This is just some content to illustrate fancy headings.
-  </uib-accordion-group>
+  </uib-accordion-group> -->
+
+
+
+
+
+<!--
   <uib-accordion-group is-open="status.open4">
  <uib-accordion-heading>
   CS ERW <i class="pull-right fa " ng-class="{'fa fa-minus': status.open4, 'fa fa-plus': !status.open4}"></i>
  </uib-accordion-heading>
  <div class="erw-text">
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+
+
 <div class="projects">
 <h2 class="text-uppercase">projects</h2>
 <div class="india">
@@ -98,7 +164,13 @@
 
 </div>
  </div>
-</uib-accordion-group>
+</uib-accordion-group> -->
+
+
+
+
+<!--
+
 <uib-accordion-group is-open="status.open5">
 <uib-accordion-heading>
 GI PIPING <i class="pull-right fa " ng-class="{'fa fa-minus': status.open5, 'fa fa-plus': !status.open5}"></i>
@@ -132,7 +204,9 @@ This is just some content to illustrate fancy headings.
 
    </uib-accordion-heading>
    This is just some content to illustrate fancy headings.
-   </uib-accordion-group> -->
+   </uib-accordion-group>  -->
+
+
       </div>
     </div>
   </div>
