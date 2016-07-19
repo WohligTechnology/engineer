@@ -1,5 +1,5 @@
-var adminurl = "http://192.168.1.120/rdbackend/index.php/json/";
-var imgurl = "http://192.168.1.120/rdbackend/uploads/";
+var adminurl = "http://wohlig.co.in/rdbackend/index.php/json/";
+var imgurl = "http://wohlig.co.in/rdbackend/uploads/";
 // if (isproduction) {
 //     adminURL = "http://www.wohlig.co.in/demo/index.php";
 // } else {
@@ -99,8 +99,18 @@ var navigationservice = angular.module('navigationservice', [])
             return menuname;
         },
 
+        // getAllSectors: function(callback) {
+        //     $http.get(adminurl + "getAllSectors").success(callback);
+        // },
+
+
+
         getAllSectors: function(callback) {
-            $http.get(adminurl + "getAllSectors").success(callback);
+            $http({
+                url: adminurl + 'getAllSectors',
+                method: 'GET',
+                withCredentials: true
+            }).success(callback);
         },
         getSector: function(id, callback) {
             $http.get(adminurl + "getSector?id=" + id).success(callback);
