@@ -1,4 +1,5 @@
 var adminurl = "http://wohlig.co.in/rdbackend/index.php/json/";
+// var adminurl = "http://wohlig.co.in/rdbackend/index.php/json/getAllSectors";
 var imgurl = "http://wohlig.co.in/rdbackend/uploads/";
 // if (isproduction) {
 //     adminURL = "http://www.wohlig.co.in/demo/index.php";
@@ -105,12 +106,17 @@ var navigationservice = angular.module('navigationservice', [])
 
 
 
+        // getAllSectors: function(callback) {
+        //     $http({
+        //         url: adminurl + 'getAllSectors',
+        //         method: 'GET'
+        //     }).success(callback);
+        // },
         getAllSectors: function(callback) {
-            $http({
-                url: adminurl + 'getAllSectors',
-                method: 'GET',
-                withCredentials: true
-            }).success(callback);
+          return $http({
+            url: adminurl + 'getAllSectors',
+            method: "GET"
+          }).success(callback);
         },
         getSector: function(id, callback) {
             $http.get(adminurl + "getSector?id=" + id).success(callback);
