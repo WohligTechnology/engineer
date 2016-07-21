@@ -1,5 +1,5 @@
 var adminurl = "http://wohlig.co.in/rdbackend/index.php/json/";
-// var adminurl = "http://wohlig.co.in/rdbackend/index.php/json/getAllSectors";
+
 var imgurl = "http://wohlig.co.in/rdbackend/uploads/";
 // if (isproduction) {
 //     adminURL = "http://www.wohlig.co.in/demo/index.php";
