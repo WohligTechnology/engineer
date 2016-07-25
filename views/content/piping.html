@@ -17,7 +17,8 @@
            <uib-accordion-heading>
             {{data.name}}  <i class="pull-right fa " ng-class="{'fa fa-minus': status.open1, 'fa fa-plus': !status.open1}"></i>
            </uib-accordion-heading>
-           <div ng-bind-html="data.description"> </div>
+
+           <p ng-bind-html="data.description"> </p>
 
              <div class="projects">
              <h2 class="text-uppercase">projects</h2>

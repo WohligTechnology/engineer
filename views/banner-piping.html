@@ -1,0 +1,14 @@
+<div class="banner" ng-controllor="PipingCtrl">
+  <!-- <img src="img/main.jpg" class="img-responsive"> -->
+<img ng-src="{{SectorData.image2 | serverimage}}" class="img-responsive">
+    <div class="banner-text">
+      <div class="triangle"></div>
+        <h1>{{SectorData.name}}</h1>
+    </div>
+    <div class="floating-left">
+        <img src="img/left-arrow.png" width="200">
+    </div>
+    <div class="floating-right">
+        <img src="img/arw.png" width="350">
+    </div>
+</div>
