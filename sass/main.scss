@@ -271,7 +271,13 @@ h2 {
   z-index: 2;
   bottom:0;
 }
-.flex-direction-nav { display: block; }
+.flex-direction-nav { display: none; }
+
+.client-slider{
+  .flex-direction-nav { display: block; }
+
+}
+
 
 .flexslider { border: none;}
 
