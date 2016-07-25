@@ -394,16 +394,17 @@ h2 {
 .padding0{
  .image-holder {
    .name{
-     position: absolute;
-     top:50%;
-     left: 55%;
-     transform: translate(-50%,-50%);
-     z-index: 3;
-     font-size: 27px;
-     color: $brand-success;
-     font-family: 'Proxima';
-     opacity: 0;
-     width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      font-size: 27px;
+      color: #f78f29;
+      font-family: 'Proxima';
+      opacity: 0;
+      width: 90%;
+      text-align: center;
    }
    position: relative;
    &:before {
