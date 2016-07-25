@@ -1182,7 +1182,19 @@ footer {
         outline: 0;
       }
   }
+  .list-yes{
+    ul{
+      li{
+        list-style-type: disc;
+      }
+    }
 
+  }
+// .panel-body{
+//   li{
+//     list-style-type: disc;
+//   }
+// }
 }
 .projects{
   h4{
