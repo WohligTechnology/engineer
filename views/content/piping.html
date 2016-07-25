@@ -26,7 +26,12 @@
              <div class="slides">
                <div class="row">
                  <div class="col-md-4" ng-repeat="img in proj.images">
-                   <img ng-src="{{img.image | serverimage}}" class="img-responsive" alt="">
+                   <li>
+                     <a href="{{img.image | serverimage}}" fancybox-box>
+                     <img ng-src="{{img.image | serverimage}}" class="img-responsive" alt="">
+                       </a>
+                   </li>
+
                  </div>
                  <!-- <div class="col-md-4">
                      <img src="img/2.png" class="img-responsive" alt="">
