@@ -1177,13 +1177,18 @@ footer {
   }
   span{
       color: $brand-success;
+      font-size: 18px;
       &:focus{
         outline: 0;
       }
   }
 
 }
-
+.projects{
+  h4{
+    font-size: 14px;
+  }
+}
 .erw-text{
   h4{
     font-size: 16px;

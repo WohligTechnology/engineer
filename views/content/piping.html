@@ -60,7 +60,16 @@
              </div> -->
              <div class="south-africa" ng-repeat="proj in data.project">
              <h4>{{proj.title}}</h4>
+             <div class="slides">
+               <div class="row">
+                 <div class="col-md-4" ng-repeat="img in proj.images">
+                   <li>
+                     <a href="{{img.image | serverimage}}" fancybox-box>
+                     <img ng-src="{{img.image | serverimage}}" class="img-responsive" alt="">
+                       </a>
+                   </li>
 
+                 </div>
              </div>
              <!-- <div class="ghana">
              <h4>Unilever Ghana</h4>
@@ -76,7 +85,7 @@
              </div> -->
 
              </div>
-
+</div>
 
 
          </uib-accordion-group>
