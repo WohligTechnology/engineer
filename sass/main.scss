@@ -1169,8 +1169,17 @@ footer {
   border-bottom: 2px solid $brand-primary;
   border-left: transparent;
   border-right: transparent;
+  a{
+    outline: 0;
+    &:focus{
+      outline: 0;
+    }
+  }
   span{
       color: $brand-success;
+      &:focus{
+        outline: 0;
+      }
   }
 
 }
