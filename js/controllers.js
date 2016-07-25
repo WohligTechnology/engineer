@@ -176,6 +176,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Piping");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+      TemplateService.banner = "views/banner-piping.html";
 
     NavigationService.getSector($stateParams.id, function(data) {
         $scope.SectorData = data;
