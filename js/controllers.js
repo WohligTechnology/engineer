@@ -12,7 +12,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.template.certification = "";
         $scope.navigation = NavigationService.getnav();
         //  TemplateService.footer="views/footerhome.html";
-
+        $scope.trimForURL = function(value){
+          return value.toLowerCase().replace(/ /g, '');
+        };
         $scope.mySlides = [
             'img/s1.jpg',
             'img/s1.jpg',
@@ -170,7 +172,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.banner = "views/banner-mission.html";
 })
 
-.controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout, $stateParams) {
+.controller('SectorsCtrl', function($scope, TemplateService, NavigationService, $timeout, $stateParams) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("piping");
     $scope.menutitle = NavigationService.makeactive("Piping");

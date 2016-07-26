@@ -76,10 +76,10 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
         controller: 'RDBrandCtrl'
     })
 
-    .state('piping', {
-        url: "/piping/:id",
+    .state('sectors', {
+        url: "/sectors/:name/:id",
         templateUrl: "views/template.html",
-        controller: 'PipingCtrl'
+        controller: 'SectorsCtrl'
     })
 
     .state('tanks-equipments', {
