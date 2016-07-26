@@ -11,78 +11,78 @@ var navigationservice = angular.module('navigationservice', [])
 
 .factory('NavigationService', function($http) {
     var navigation = [{
-        name: "Overview",
-        classis: "active",
-        anchor: "overview",
-        subnav: [{
-            name: "About RD + Geography",
+            name: "Overview",
             classis: "active",
-            link: "about"
+            anchor: "overview",
+            subnav: [{
+                name: "About RD + Geography",
+                classis: "active",
+                link: "about-geo"
+            }, {
+                name: "Mission and Vision",
+                classis: "active",
+                link: "mission-vision"
+            }, {
+                name: "Management",
+                classis: "active",
+                link: "management"
+            }, {
+                name: "CSR",
+                classis: "active",
+                link: "csr"
+            }]
         }, {
-            name: "Mission and Vision",
+            name: "Our Services",
             classis: "active",
-            link: "mission-vision"
+            anchor: "our-services",
+            subnav: [{
+                name: "Piping",
+                classis: "active",
+                link: "piping"
+            }, {
+                name: "Tanks and Equipments",
+                classis: "active",
+                link: "tanks-equipments"
+            }, {
+                name: "Hot & Cold Insulation",
+                classis: "active",
+                link: "insulation"
+            }, {
+                name: "Skid & Modular Plants",
+                classis: "active",
+                link: "skid-modular"
+            }, {
+                name: "SS & MS steel structure",
+                classis: "active",
+                anchor: "ss-ms",
+                subnav: []
+            }]
         }, {
-            name: "Management",
+            name: "Careers",
             classis: "active",
-            link: "management"
-        }, {
-            name: "CSR",
-            classis: "active",
-            link: "csr"
-        }]
-    }, {
-        name: "Our Services",
-        classis: "active",
-        anchor: "our-services",
-        subnav: [{
-          name: "Piping",
-          classis: "active",
-          link: "piping"
-      }, {
-          name: "Tanks and Equipments",
-          classis: "active",
-          link: "tanks-equipments"
-      }, {
-          name: "Hot & Cold Insulation",
-          classis: "active",
-          link: "insulation"
-      }, {
-          name: "Skid & Modular Plants",
-          classis: "active",
-          link: "skid-modular"
-    }, {
-        name: "SS & MS steel structure",
-        classis: "active",
-        anchor: "ss-ms",
-        subnav: []
-        }]
-    },
-     {
-        name: "Careers",
-        classis: "active",
-        anchor: "careers",
-        subnav: []
-    },
+            anchor: "careers",
+            subnav: []
+        },
 
-    {
-       name: "Clients",
-       classis: "active",
-       anchor: "clients",
-       subnav: []
-   },
-  //   {
-  //      name: "Sectors",
-  //      classis: "active",
-  //      anchor: "sectors",
-  //      subnav: []
-  //  },
-   {
-        name: "Contact Us",
-        classis: "active",
-        anchor: "contact-us",
-        subnav: []
-    }];
+        {
+            name: "Clients",
+            classis: "active",
+            anchor: "clients",
+            subnav: []
+        },
+        //   {
+        //      name: "Sectors",
+        //      classis: "active",
+        //      anchor: "sectors",
+        //      subnav: []
+        //  },
+        {
+            name: "Contact Us",
+            classis: "active",
+            anchor: "contact-us",
+            subnav: []
+        }
+    ];
 
     return {
         getnav: function() {
@@ -114,10 +114,10 @@ var navigationservice = angular.module('navigationservice', [])
         //     }).success(callback);
         // },
         getAllSectors: function(callback) {
-          return $http({
-            url: adminurl + 'getAllSectors',
-            method: "GET"
-          }).success(callback);
+            return $http({
+                url: adminurl + 'getAllSectors',
+                method: "GET"
+            }).success(callback);
         },
         getSector: function(id, callback) {
             $http.get(adminurl + "getSector?id=" + id).success(callback);

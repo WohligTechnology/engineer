@@ -21,8 +21,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             'img/s1.jpg'
         ];
         NavigationService.getAllSectors(function(data) {
-            $scope.AllSectors = data;
-            $scope.AllSectors = _.groupBy($scope.AllSectors, 'type');
+            $scope.AllSectors10 = data;
+            console.log('dfghjk',$scope.AllSectors);
+            $scope.AllSectors = _.groupBy($scope.AllSectors10, 'type');
             // _.each($scope.AllSectors, function(value, key) {
             //     console.log(key);
             //     if (key == "1" || key == 1) {
