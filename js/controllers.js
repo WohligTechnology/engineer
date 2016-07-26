@@ -24,6 +24,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.AllSectors10 = data;
             console.log('dfghjk',$scope.AllSectors);
             $scope.AllSectors = _.groupBy($scope.AllSectors10, 'type');
+            
             // _.each($scope.AllSectors, function(value, key) {
             //     console.log(key);
             //     if (key == "1" || key == 1) {
