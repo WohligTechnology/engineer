@@ -17,7 +17,7 @@ var navigationservice = angular.module('navigationservice', [])
         subnav: [{
             name: "About RD + Geography",
             classis: "active",
-            link: "about-geo"
+            link: "about"
         }, {
             name: "Mission and Vision",
             classis: "active",
@@ -64,7 +64,7 @@ var navigationservice = angular.module('navigationservice', [])
         anchor: "careers",
         subnav: []
     },
-  
+
     {
        name: "Clients",
        classis: "active",
