@@ -35,28 +35,7 @@ var navigationservice = angular.module('navigationservice', [])
             name: "Our Services",
             classis: "active",
             anchor: "our-services",
-            subnav: [{
-                name: "Piping",
-                classis: "active",
-                link: "piping"
-            }, {
-                name: "Tanks and Equipments",
-                classis: "active",
-                link: "tanks-equipments"
-            }, {
-                name: "Hot & Cold Insulation",
-                classis: "active",
-                link: "insulation"
-            }, {
-                name: "Skid & Modular Plants",
-                classis: "active",
-                link: "skid-modular"
-            }, {
-                name: "SS & MS steel structure",
-                classis: "active",
-                anchor: "ss-ms",
-                subnav: []
-            }]
+            subnav: []
         }, {
             name: "Careers",
             classis: "active",
@@ -86,7 +65,25 @@ var navigationservice = angular.module('navigationservice', [])
 
     return {
         getnav: function() {
-            return navigation;
+          var subnavGen  = [];
+          $http({
+              url: adminurl + 'getAllSectors',
+              method: "GET"
+          }).success(function (data) {
+            if(data){
+              _.each (data,function (key) {
+                  subnavGen.push({
+                    name : key.name,
+                    classis:"active",
+                    link: "sectors({id:"+key.id+",name:'"+key.name.toLowerCase().replace(/ /g,'')+"'})"
+                  });
+              });
+              navigation[1].subnav = subnavGen;
+            }
+          });
+          return navigation;
+
+
         },
 
 
