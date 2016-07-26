@@ -1224,7 +1224,9 @@ border-top:none;
   .fancybox-image{
       opacity: 1;
 }
-
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+  background-color: transparent;
+}
 // .panel-default > .panel-heading + .panel-collapse > .panel-body
 //piping and erection//
 @import "fancybox-override";
