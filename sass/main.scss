@@ -1227,6 +1227,33 @@ border-top:none;
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
   background-color: transparent;
 }
+.gallery{
+    // border: 2px solid #000;
+    margin-bottom: 15px;
+  .slidings{
+  margin: 0;
+    .flex-control-nav{
+      bottom: -25px;
+    }
+    .flex-direction-nav{
+      display: block;
+    }
+    .flexslider{
+       margin-bottom: 20px;
+      .slides {
+        li{
+          margin-right: 10px !important;
+        }
+      }
+    }
+    // .flex-next{
+    //   display: block;
+    //   height: 50px;
+    //   width: 50px;
+    // }
+
+  }
+}
 // .panel-default > .panel-heading + .panel-collapse > .panel-body
 //piping and erection//
 @import "fancybox-override";

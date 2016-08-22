@@ -20,7 +20,7 @@
            <div ng-bind-html="data.description" class="list-yes">
            </div>
 
-             <div class="projects">
+             <!-- <div class="projects">
              <h2 class="text-uppercase">projects</h2>
              <div class="india" ng-repeat="proj in data.project">
              <h4>{{proj.title}}</h4>
@@ -33,16 +33,16 @@
                        </a>
                    </li>
 
-                 </div>
+                 </div> -->
                  <!-- <div class="col-md-4">
                      <img src="img/2.png" class="img-responsive" alt="">
                  </div>
                  <div class="col-md-4">
                      <img src="img/3.png" class="img-responsive" alt="">
                  </div> -->
-               </div>
+               <!-- </div>
              </div>
-             </div>
+             </div> -->
              <!-- <div class="sri-lanka">
              <h4>Unilever Sri Lanka</h4>
              <div class="slides">
@@ -59,7 +59,7 @@
                </div>
              </div>
              </div> -->
-             <div class="south-africa" ng-repeat="proj in data.project">
+             <!-- <div class="south-africa" ng-repeat="proj in data.project">
              <h4>{{proj.title}}</h4>
              <div class="slides">
                <div class="row">
@@ -71,7 +71,7 @@
                    </li>
 
                  </div>
-             </div>
+             </div> -->
              <!-- <div class="ghana">
              <h4>Unilever Ghana</h4>
              </div>
@@ -85,11 +85,11 @@
              <h4>Kals - India , Ziemann</h4>
              </div> -->
 
-             </div>
+             <!-- </div>
 </div>
 
 
-         </uib-accordion-group>
+         </uib-accordion-group> -->
 
          <!--
         <uib-accordion-group is-open="status.open1">
@@ -222,8 +222,37 @@ This is just some content to illustrate fancy headings.
    </uib-accordion-group>  -->
 
 
-      </div>
+      <!-- </div> -->
     </div>
   </div>
   </div>
+  <div class="gallery">
+    <div class="slidings">
+        <h2 class="title slide-text">gallery</h2>
+        <flex-slider class="carousel" flex-slide="s in mySlides8 track by $index" item-width="250" animation="slide" animationLoop="true" >
+            <li>
+              <a href="{{s}}" fancybox-box>
+                <img ng-src="{{s}}">
+                </a>
+            </li>
+        </flex-slider>
+    </div>
+  </div>
+
+  <!-- <div class="slider">
+    <h2 class="title slide-text">gallery</h2>
+    <flex-slider class="carousel" flex-slide="img in AllClients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false" item-margin="20">
+      <li>
+        <div class="client-imgholder">
+          <div class="row" ng-repeat="row in img track by $index">
+            <div class="col-md-2 col-sm-2" ng-repeat="clientimg in row track by $index">
+              <div class="img-holder listing">
+                <img ng-src="{{clientimg.logo|serverimage}}" alt="" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </flex-slider>
+  </div> -->
 </div>
