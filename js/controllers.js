@@ -24,7 +24,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.AllSectors10 = data;
             console.log('dfghjk',$scope.AllSectors);
             $scope.AllSectors = _.groupBy($scope.AllSectors10, 'type');
-            
+
             // _.each($scope.AllSectors, function(value, key) {
             //     console.log(key);
             //     if (key == "1" || key == 1) {
@@ -181,6 +181,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
       TemplateService.banner = "views/banner-piping.html";
+      $scope.mySlides8 = [
+          'img/1.png',
+          'img/2.png',
+          'img/3.png',
+          'img/4.png',
+          'img/5.png'
+
+      ];
 
     NavigationService.getSector($stateParams.id, function(data) {
         $scope.SectorData = data;
