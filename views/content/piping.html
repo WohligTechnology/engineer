@@ -228,7 +228,13 @@ This is just some content to illustrate fancy headings.
    <div class="gallery" ng-if="SectorData.images.length>0">
       <div class="slidings">
          <h2 class="title slide-text text-center">gallery</h2>
-         <flex-slider class="carousel" flex-slide="s in SectorData.images track by $index" item-width="275" item-margin="20" animation="slide" animationLoop="true">
+         <!-- <flex-slider  flex-slide="s in SectorData.images track by $index" class="carousel piping-slider" >
+            <li>
+               <a href="{{s.image | serverimage}}" fancybox-box>
+                  <img ng-src="{{s.image |serverimage}}">
+               </a>
+            </li>
+         </flex-slider> -->
             <li>
                <a href="{{s.image | serverimage}}" fancybox-box>
                   <img ng-src="{{s.image |serverimage}}">

@@ -1180,10 +1180,9 @@ footer {
 
 
 .panel-default{
-  border-top: 2px solid $brand-primary;
-  border-bottom: 2px solid $brand-primary;
-  border-left: transparent;
-  border-right: transparent;
+  // border-top: 2px solid $brand-primary;
+  // border-bottom: 2px solid $brand-primary;
+  border: transparent;
   a{
     outline: 0;
     &:focus{
@@ -1252,6 +1251,15 @@ border-top:none;
     //   width: 50px;
     // }
 
+  }
+}
+.accordion{
+  .panel-group{
+    border-top: 2px solid $brand-primary;
+    border-bottom: 2px solid $brand-primary;
+    .panel + .panel{
+      border-top: 2px solid $brand-primary;
+    }
   }
 }
 // .panel-default > .panel-heading + .panel-collapse > .panel-body

@@ -16,9 +16,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
           return value.toLowerCase().replace(/ /g, '');
         };
         $scope.mySlides = [
-            'img/s1.jpg',
-            'img/s1.jpg',
-            'img/s1.jpg'
+            // 'img/new/image1.jpg',
+            'img/new/image2.jpg',
+            'img/new/image3.jpg',
+            'img/new/image4.jpg',
+            'img/new/image5.jpg'
         ];
         NavigationService.getAllSectors(function(data) {
             $scope.AllSectors10 = data;
@@ -189,12 +191,24 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
           'img/5.png'
 
       ];
+      setTimeout(function(){
+        console.log("abc");
+        $('.piping-slider').flexslider({
+        animation: "slide",
+        move: 4,
+        itemWidth: 275,
+        itemMargin: 10,
+      });
+    },2000);
 
     NavigationService.getSector($stateParams.id, function(data) {
         $scope.SectorData = data;
         // console.log('$scope.SectorData', $scope.SectorData.services[0].project.length);
         console.log('SectorData', $scope.SectorData);
-    })
+    });
+  // $(document).ready(function(){
+  //
+  // });
 
 })
 
