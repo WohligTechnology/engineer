@@ -235,6 +235,7 @@ This is just some content to illustrate fancy headings.
                </a>
             </li>
          </flex-slider> -->
+         <flex-slider class="carousel"  flex-slide="s in SectorData.images track by $index"  item-width="275" item-margin="20"   animation="slide" animationLoop="true">
             <li>
                <a href="{{s.image | serverimage}}" fancybox-box>
                   <img ng-src="{{s.image |serverimage}}">
