@@ -1,0 +1,203 @@
+
+<div class="client-intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+    <div class="client-info">
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo nulla provident, excepturi consequatur. Non temporibus soluta accusamus consequuntur, fugit, ullam quidem saepe praesentium. Neque aliquam consectetur quisquam, voluptatum enimlorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo nulla provident, excepturi consequatur. Non temporibus soluta accusamus consequuntur, fugit, ullam quidem saepe praesentium. Neque aliquam consectetur quisquam, voluptatum enimlorem.</p> -->
+    </div>
+  </div>
+  </div>
+  <!-- <div class="client-types">
+    <uib-tabset active="active">
+  <uib-tab index="0" heading="Vertical 1">
+    <uib-tab-heading>food and beverages</uib-tab-heading>
+  </uib-tab>
+  <uib-tab index="1" heading="Vertical 2">
+      <uib-tab-heading>pharma and agro</uib-tab-heading>
+  </uib-tab>
+  <uib-tab index="2" heading="Vertical 3">
+      <uib-tab-heading>oil and gas engineering</uib-tab-heading>
+  </uib-tab>
+  <uib-tab index="3" heading="Vertical 4">
+      <uib-tab-heading>home and personal care</uib-tab-heading>
+  </uib-tab>
+</uib-tabset>
+  </div> -->
+
+  <div class="client-slider">
+    <flex-slider class="carousel" flex-slide="img in AllClients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false" item-margin="20">
+      <li>
+        <div class="client-imgholder">
+          <div class="row" ng-repeat="row in img track by $index">
+            <div class="col-md-2 col-sm-2" ng-repeat="clientimg in row track by $index">
+              <div class="img-holder listing">
+                <img ng-src="{{clientimg.logo|serverimage}}" alt="" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </flex-slider>
+  </div>
+
+
+  <!-- <div class="client-slider">
+    <flex-slider class="carousel" flex-slide="img in clients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false" item-margin="20">
+      <li>
+        <div class="client-imgholder">
+          <div class="row" ng-repeat="row in img track by $index">
+            <div class="col-md-2 col-sm-2" ng-repeat="clientimg in row track by $index">
+              <div class="img-holder listing">
+                <img ng-src="{{clientimg}}" alt="" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </flex-slider>
+  </div> -->
+
+
+
+
+  <!-- <div class="clients">
+    <div class="client1">
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="SABMiller"><img src="img/SABMiller.jpg" alt="SABMiller" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Carlsberg"><img src="img/carlsberg.jpg" alt="SABMiller" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Unilever"><img src="img/Unilever.jpg" alt="SABMiller" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+      <a href="#" title="GlaxosmithKline"><img src="img/de.jpg" alt="GlaxosmithKline" class="img-responsive"></a>
+      </div>
+    </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Addax and Oryx"><img src="img/logs.jpg" alt="SABMiller" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Diageo"><img src="img/diageo.jpg" alt="SABMiller" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="client1">
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Serengeti Breweries"><img src="img/serengeti.jpg" alt="Serengeti Breweries" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Tanzania Breweries"><img src="img/brew.jpg" alt="Tanzania Breweries" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="ziemann"><img src="img/zieman.jpg" alt="ziemann" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+      <a href="#" title="coco-cola"><img src="img/coco.png" alt="coco-cola" class="img-responsive"></a>
+      </div>
+    </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Distelleries"><img src="img/loogos.jpg" alt="Distelleries" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="SPX"><img src="img/set.jpg" alt="SPX" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="client1">
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Cadbury"><img src="img/cadbury.jpg" alt="Cadbury" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Casella"><img src="img/casella.jpg" alt="Casella" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Krones"><img src="img/krones.jpg" alt="Krones" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+      <a href="#" title="Alfa Laval"><img src="img/lafa.png" alt="Alfa Laval" class="img-responsive"></a>
+      </div>
+    </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Pepsico"><img src="img/pepsico.jpg" alt="Pepsico" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Abbot"><img src="img/abbot.jpg" alt="Abbot" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="client1">
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Itc"><img src="img/itc.jpg" alt="Itc" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="e and e"><img src="img/ee.jpg" alt="e and e" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Tetrapak"><img src="img/tetrapak.jpg" alt="Tetrapak" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+      <a href="#" title="Lakhme Lever"><img src="img/lakhme.jpg" alt="Lakhme Lever" class="img-responsive"></a>
+      </div>
+    </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Addie-Broswson"><img src="img/ADIE.png" alt="Addie-Broswson" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <div class="listing">
+        <a href="#" title="Nyanza"><img src="img/nyanza.jpg" alt="Nyanza" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> -->
+  </div>
+</div>
