@@ -981,6 +981,7 @@ p{
   padding: 50px 0 20px 0;
   p{
     margin-bottom: 30px;
+
   }
 }
 .projects{
@@ -1172,6 +1173,9 @@ footer {
 //piping erection//
 .pipings-text{
   padding: 40px 0;
+  p{
+      font-size: 14px!important;
+  }
 }
 
 .panel-default>.panel-heading{
@@ -1198,6 +1202,9 @@ footer {
       }
   }
   .list-yes{
+    // p{
+    //   font-size: 14px!important;
+    // }
     ul{
       li{
         list-style-type: disc;
@@ -1262,7 +1269,9 @@ border-top:none;
       border-top: 2px solid $brand-primary;
     }
   }
+
 }
+
 // .panel-default > .panel-heading + .panel-collapse > .panel-body
 //piping and erection//
 @import "fancybox-override";

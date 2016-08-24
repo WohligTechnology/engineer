@@ -200,7 +200,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         itemMargin: 10,
       });
     },2000);
-
+$scope.oneAtATime = true;
     NavigationService.getSector($stateParams.id, function(data) {
         $scope.SectorData = data;
         // console.log('$scope.SectorData', $scope.SectorData.services[0].project.length);
