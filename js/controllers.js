@@ -79,6 +79,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Clients");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+      TemplateService.banner = "views/banner-client.html";
     // $scope.clients = [
     //   'img/SABMiller.jpg',
     //   'img/carlsberg.jpg',
@@ -140,6 +141,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Careers");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+          TemplateService.banner = "views/banner-career.html";
     })
     .controller('ContactUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
@@ -147,6 +149,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Contact Us");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+          TemplateService.banner = "views/banner-contact.html";
     })
 
 .controller('CsrCtrl', function($scope, TemplateService, NavigationService, $timeout) {
