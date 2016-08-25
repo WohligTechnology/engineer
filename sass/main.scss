@@ -304,6 +304,10 @@ h2 {
   .text {
     color: #fff;
     text-transform: none;
+    text-align: left;
+  }
+  .extra{
+    text-align: left;
   }
   .texts {
     padding: 0 5px;
@@ -405,7 +409,7 @@ h2 {
 }
 .ribbon2 {
   position: absolute;
-  bottom: 30%;
+  bottom: 50%;
   left: 0;
   z-index: 2;
 }
@@ -1286,7 +1290,7 @@ border-top:none;
 p{
   text-transform: none!important;
 }
-.dubai,.india,.uganda,.africa{
+.dubai,.india,.uganda,.africa,.tanzania{
     position: absolute;
     top: 40%;
     left: 60%;
@@ -1298,14 +1302,17 @@ p{
   left: 68%;
 }
 .uganda{
-  top: 66%;
-  left: 56%;
+  top: 59%;
+  left: 50%;
 }
 .africa{
   top: 75%;
   left: 53%;
 }
-
+.tanzania{
+  top: 65%;
+  left: 55%;
+}
 
 
 
