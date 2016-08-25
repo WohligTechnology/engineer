@@ -167,6 +167,22 @@ address {
 .relative{
   position: relative;
 }
+.pad{
+  padding: 5px 0;
+}
+.block{
+  display: block;
+}
+.india-text{
+  display: inline-block;
+  border: 2px solid orange;
+  padding: 5px 20px;
+  border-radius: 7px;
+}
+.new{
+  font-size: 13px;
+  color: $brand-primary;
+}
 .uppercase{
   text-transform: uppercase;
 }
