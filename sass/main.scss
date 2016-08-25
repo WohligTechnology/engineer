@@ -174,10 +174,14 @@ address {
   display: block;
 }
 .india-text{
-  display: inline-block;
+  // display: inline-block;
   border: 2px solid orange;
   padding: 5px 20px;
   border-radius: 7px;
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  background-color: #fff;
 }
 .new{
   font-size: 13px;
@@ -1317,14 +1321,14 @@ p{
 }
 .dubai,.india,.uganda,.africa,.tanzania{
     position: absolute;
-    top: 40%;
-    left: 60%;
+    top: 41%;
+    left: 56%;
     height: 150px;
     width: 150px;
 }
 .india{
-  top: 48%;
-  left: 68%;
+  top: 45%;
+  left: 64%;
 }
 .uganda{
   top: 59%;
