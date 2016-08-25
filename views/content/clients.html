@@ -30,7 +30,7 @@
       <li>
         <div class="client-imgholder">
           <div class="row" ng-repeat="row in img track by $index">
-            <div class="col-md-2 col-sm-2" ng-repeat="clientimg in row track by $index">
+            <div class="col-md-2 col-md-offset-1 col-sm-2" ng-repeat="clientimg in row track by $index">
               <div class="img-holder listing">
                 <img ng-src="{{clientimg.logo|serverimage}}" alt="" class="img-responsive">
               </div>

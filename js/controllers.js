@@ -108,9 +108,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     NavigationService.getClients(function(data) {
             $scope.AllClients = data;
-            $scope.AllClients = _.chunk($scope.AllClients, 12);
+            $scope.AllClients = _.chunk($scope.AllClients, 8);
             for (var i = 0; i < $scope.AllClients.length; i++) {
-                $scope.AllClients[i] = _.chunk($scope.AllClients[i], 6);
+                $scope.AllClients[i] = _.chunk($scope.AllClients[i], 4);
                 console.log($scope.AllClients);
             }
             console.log("this is client");
