@@ -49,13 +49,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
     })
-    .controller('OverviewCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-        //Used to name the .html file
-        $scope.template = TemplateService.changecontent("overview");
-        $scope.menutitle = NavigationService.makeactive("Overview");
-        TemplateService.title = $scope.menutitle;
-        $scope.navigation = NavigationService.getnav();
-    })
+    // .controller('OverviewCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    //     //Used to name the .html file
+    //     $scope.template = TemplateService.changecontent("overview");
+    //     $scope.menutitle = NavigationService.makeactive("Overview");
+    //     TemplateService.title = $scope.menutitle;
+    //     $scope.navigation = NavigationService.getnav();
+    // })
 
 // .controller('RDBrandCtrl', function($scope, TemplateService, NavigationService, $timeout) {
 //   //Used to name the .html file
@@ -158,14 +158,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.banner = "views/banner-csr.html";
 })
 
-.controller('ManagementCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-    //Used to name the .html file
-    $scope.template = TemplateService.changecontent("management");
-    $scope.menutitle = NavigationService.makeactive("Management");
-    TemplateService.title = $scope.menutitle;
-    $scope.navigation = NavigationService.getnav();
-    TemplateService.banner = "views/banner-management.html";
-})
+// .controller('ManagementCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+//     //Used to name the .html file
+//     $scope.template = TemplateService.changecontent("management");
+//     $scope.menutitle = NavigationService.makeactive("Management");
+//     TemplateService.title = $scope.menutitle;
+//     $scope.navigation = NavigationService.getnav();
+//     TemplateService.banner = "views/banner-management.html";
+// })
 
 .controller('MissionVisionCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file

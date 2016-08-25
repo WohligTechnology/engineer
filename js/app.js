@@ -16,11 +16,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             controller: 'HomeCtrl'
         })
 
-    .state('overview', {
-        url: "/overview",
-        templateUrl: "views/template.html",
-        controller: 'OverviewCtrl'
-    })
+    // .state('overview', {
+    //     url: "/overview",
+    //     templateUrl: "views/template.html",
+    //     controller: 'OverviewCtrl'
+    // })
 
     .state('our-services', {
         url: "/our-services",
@@ -58,11 +58,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
         controller: 'CsrCtrl'
     })
 
-    .state('management', {
-        url: "/management",
-        templateUrl: "views/template.html",
-        controller: 'ManagementCtrl'
-    })
+    // .state('management', {
+    //     url: "/management",
+    //     templateUrl: "views/template.html",
+    //     controller: 'ManagementCtrl'
+    // })
 
     .state('about', {
         url: "/about",

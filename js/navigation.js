@@ -22,11 +22,13 @@ var navigationservice = angular.module('navigationservice', [])
                 name: "Mission and Vision",
                 classis: "active",
                 link: "mission-vision"
-            }, {
-                name: "Management",
-                classis: "active",
-                link: "management"
-            }, {
+              },
+            // }, {
+            //     name: "Management",
+            //     classis: "active",
+            //     link: "management"
+            // }, {
+                {
                 name: "CSR",
                 classis: "active",
                 link: "csr"
