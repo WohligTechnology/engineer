@@ -230,6 +230,7 @@ $scope.oneAtATime = true;
     $scope.menutitle = NavigationService.makeactive("About RD");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.visible=false;    
 })
 
 // .controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {

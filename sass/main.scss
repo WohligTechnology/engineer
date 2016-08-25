@@ -310,7 +310,10 @@ h2 {
     display: block;
     background: rgba(0,0,0,0.2);
 }
-.flexslider { border: none;}
+.flexslider {
+  border: none;
+ background-color: transparent;
+}
 
 .overview {
   margin-top: -60px;
@@ -324,9 +327,11 @@ h2 {
     color: #fff;
     text-transform: none;
     text-align: left;
+    font-size: 16px;
   }
   .extra{
     text-align: left;
+    font-size: 16px;
   }
   .texts {
     padding: 0 5px;
@@ -710,6 +715,7 @@ transform: translate(-50%,-50%);
 
 
 .client-slider{
+  padding: 0px 20px;
   .flexslider .slides img{
 max-height: 100%;
 width: auto;
@@ -1313,8 +1319,8 @@ p{
     position: absolute;
     top: 40%;
     left: 60%;
-    height: 75px;
-    width: 75px;
+    height: 150px;
+    width: 150px;
 }
 .india{
   top: 48%;
@@ -1322,15 +1328,15 @@ p{
 }
 .uganda{
   top: 59%;
-  left: 50%;
+  left: 47%;
 }
 .africa{
-  top: 75%;
-  left: 53%;
+  top: 73%;
+  left: 52%;
 }
 .tanzania{
   top: 65%;
-  left: 55%;
+  left: 53%;
 }
 
 
