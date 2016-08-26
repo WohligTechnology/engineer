@@ -39,13 +39,13 @@
   <div class="entire relative">
     <div class="map-image relative">
       <img src="img/new/map.png" class="img-responsive" alt="map">
-      <a href="" class="dubai" ng-click="visibility=!visibility"><img src="img/new/dubai.png" class="img-responsive" alt=""></a>
-      <a href="" class="india" ng-click="visible=!visible" ><img src="img/new/india.png" class="img-responsive" alt=""></a>
-      <a href="" class="africa" ng-click="bye=!bye"><img src="img/new/africa.png" class="img-responsive" alt=""></a>
-      <a href="" class="uganda" ng-click="visiby=!visiby"><img src="img/new/uganda.png" class="img-responsive" alt=""></a>
-        <a href="" class="tanzania" ng-click="hey=!hey"><img src="img/new/tanzania.png" class="img-responsive" alt=""></a>
+      <a href="" class="dubai" ng-click="ticker= 'dubai'"><img src="img/new/dubai.png" class="img-responsive" alt=""></a>
+      <a href="" class="india" ng-click="ticker= 'india'" ><img src="img/new/india.png" class="img-responsive" alt=""></a>
+      <a href="" class="africa" ng-click="ticker= 'africa'"><img src="img/new/africa.png" class="img-responsive" alt=""></a>
+      <a href="" class="uganda" ng-click="ticker= 'uganda'"><img src="img/new/uganda.png" class="img-responsive" alt=""></a>
+        <a href="" class="tanzania" ng-click="ticker= 'tanzania'"><img src="img/new/tanzania.png" class="img-responsive" alt=""></a>
     </div>
-    <div class="india-text" ng-show="visible">
+    <div class="india-text" ng-show="ticker == 'india'">
       <address>
         Office Nos - 607,608,609, 6th Floor,
           <br>
@@ -59,7 +59,7 @@
             <a href="tel:+91 22 20851414" class="new">/  +91 22 20851414</a>
             <a href="mailto:sales@rd-engineering.com" class="new block text-center pad">sales@rd-engineering.com</a>
     </div>
-    <div class="dubai-text" ng-show="visibility">
+    <div class="dubai-text" ng-show="ticker == 'dubai'">
       <address>
         Jumeirah Lake Tower, 1805,
           <br>
@@ -71,7 +71,7 @@
             <!-- <a href="tel:+91 22 20851414" class="new">/  +91 22 20851414</a> -->
             <a href="mailto:sales@ransonoverseas.com" class="new block text-center pad">sales@ransonoverseas.com</a>
     </div>
-    <div class="tanzania-text" ng-show="hey">
+    <div class="tanzania-text" ng-show="ticker == 'tanzania'">
       <address>
       Avalon House 1st floor,
           <br>
@@ -84,7 +84,7 @@
            <a href="tel:+255222120000" class="new block text-center">+255222120000</a>
             <a href="mailto:sales@abrica.com" class="new block text-center pad">sales@abrica.com</a>
     </div>
-    <div class="uganda-text" ng-show="visiby">
+    <div class="uganda-text" ng-show="ticker == 'uganda'">
       <address>
         Post Box No 2903,
           <br>
@@ -94,7 +94,7 @@
             <a href="tel:+91 22 20851414" class="new">/  +91 22 20851414</a>
             <a href="mailto:sales@ransonoverseas.com" class="new block text-center pad">sales@ransonoverseas.com</a> -->
     </div>
-    <div class="africa-text" ng-show="bye">
+    <div class="africa-text" ng-show="ticker == 'africa'">
       <address>
         6th Floor, Office Block1, The Cliffs,
           <br>

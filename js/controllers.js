@@ -235,6 +235,8 @@ $scope.oneAtATime = true;
     $scope.visiby=false;
     $scope.hey=false;
     $scope.bye=false;
+
+    $scope.ticker = '';
 })
 
 // .controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
