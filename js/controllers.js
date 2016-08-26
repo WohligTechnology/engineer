@@ -15,13 +15,25 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.trimForURL = function(value){
           return value.toLowerCase().replace(/ /g, '');
         };
-        $scope.mySlides = [
-            'img/new/image2.jpg',
-            'img/new/image3.jpg',
-            'img/new/image4.jpg',
-            'img/new/image5.jpg',
-            'img/new/image6.jpg'
-        ];
+         NavigationService.getallslider(function(data) {
+           console.log(data);
+             $scope.mySlides = data;
+            console.log($scope.mySlides);
+            $scope.mySlides=[];
+            _.each(data,function(n){
+              $scope.mySlides.push(n.image);
+            })
+              console.log("array of strings",$scope.mySlides);
+
+      })
+
+        // $scope.mySlides = [
+        //     'img/new/image2.jpg',
+        //     'img/new/image3.jpg',
+        //     'img/new/image4.jpg',
+        //     'img/new/image5.jpg',
+        //     'img/new/image6.jpg'
+        // ];
         NavigationService.getAllSectors(function(data) {
             $scope.AllSectors10 = data;
             console.log('dfghjk',$scope.AllSectors);
@@ -33,11 +45,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             // console.log('$scope.AllClients', $scope.AllClients);
 
         })
-        NavigationService.getallslider(function(data) {
-            $scope.mySlides = data.image;
-            console.log($scope.mySlides);
 
-        })
 
 
 
