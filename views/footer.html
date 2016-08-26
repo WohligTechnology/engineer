@@ -1,5 +1,5 @@
 <footer>
-  <div class="container">
+  <div class="container" ng-controller='footerctrl'>
     <div class="row">
       <div class="col-md-7 col-sm-12  foot-list">
         <div class="col-md-4 col-sm-4 col-xs-4">
@@ -14,13 +14,15 @@
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
           <ul>
-            <li class="list-head"><a ui-sref="our-services">our services</a></li>
-            <li><a ui-sref="piping">Piping</a></li>
-            <li><a ui-sref="tanks-equipments">Tanks and Equipment</a></li>
+            <!-- <li class="list-head" ng-repeat="sector in allSectorData"><a ui-sref="sectors/{{sector.name}}/{{sector.id}}">{{sector.name}}</a></li> -->
+            <li class="list-head" ><a ui-sref="">Services</a></li>
+            <li ng-repeat="sector in allSectorData"><a class="about"   ng-click="goToSectors(sector)">{{sector.name}}</a></li>
+            <!-- <li><a ui-sref="piping">Piping</a></li> -->
+            <!-- <li><a ui-sref="sectors/tanksandequipment/8">Tanks and Equipment</a></li>
             <li><a ui-sref="insulation">Hot &amp; Cold Insulation</a></li>
             <li><a ui-sref="skid-modular">Mounted modular plants</a></li>
             <li><a ui-sref="ss-ms">SS &amp; MS steel structure</a></li>
-            <li><a ui-sref="ss-ms">piping and erection</a></li>
+            <li><a ui-sref="ss-ms">piping and erection</a></li> -->
           </ul>
         </div>
         <!-- <div class="col-md-2 col-sm-2 col-xs-2">

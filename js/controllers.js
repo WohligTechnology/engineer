@@ -183,6 +183,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 })
 
 .controller('SectorsCtrl', function($scope, TemplateService, NavigationService, $timeout, $stateParams) {
+  console.log("In sectorss");
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("piping");
     $scope.menutitle = NavigationService.makeactive("Piping");
@@ -206,6 +207,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         itemMargin: 10,
       });
     },2000);
+    console.log("stateparam",$stateParams.id);
 $scope.oneAtATime = true;
     NavigationService.getSector($stateParams.id, function(data) {
         $scope.SectorData = data;
@@ -233,7 +235,50 @@ $scope.oneAtATime = true;
     $scope.menutitle = NavigationService.makeactive("About RD");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-    $scope.ticker = '';
+
+    $scope.clearPop = function() {
+      $scope.india = false;
+      $scope.africa = false;
+      $scope.uganda = false;
+      $scope.tanzania = false;
+      $scope.dubai = false;
+    }
+    $scope.clearPop();
+    $scope.popIndia = function() {
+      $scope.india = !$scope.india;
+      $scope.africa = false;
+      $scope.uganda = false;
+      $scope.tanzania = false;
+      $scope.dubai = false;
+    }
+    $scope.popAfrica = function() {
+      $scope.india = false;
+      $scope.africa = !$scope.africa;
+      $scope.uganda = false;
+      $scope.tanzania = false;
+      $scope.dubai = false;
+    }
+    $scope.popUganda = function() {
+      $scope.india = false;
+      $scope.africa = false;
+      $scope.uganda = !$scope.uganda;
+      $scope.tanzania = false;
+      $scope.dubai = false;
+    }
+    $scope.popTanzania = function() {
+      $scope.india = false;
+      $scope.africa = false;
+      $scope.uganda = false;
+      $scope.tanzania = !$scope.tanzania;
+      $scope.dubai = false;
+    }
+    $scope.popDubai = function() {
+      $scope.india = false;
+      $scope.africa = false;
+      $scope.uganda = false;
+      $scope.tanzania = false;
+      $scope.dubai = !$scope.dubai;
+    }
 })
 
 // .controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -294,6 +339,23 @@ $scope.oneAtATime = true;
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
+})
+.controller('footerctrl', function($scope, TemplateService,NavigationService, $timeout,$state ) {
+    $scope.template = TemplateService;
+    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+        $(window).scrollTop(0);
+    });
+    NavigationService.getAllSectors(function(data) {
+        $scope.allSectorData = data;
+
+        console.log('allSectorData', $scope.allSectorData);
+    });
+    $scope.goToSectors=function(sector){
+      $scope.sector=sector;
+      $state.go('sectors', {id:$scope.sector.id,name: $scope.sector.name});
+//       var result = { id:'jimbob', name:37, etc:'bluebell' };
+// $state.go('toState', result);
+    }
 })
 
 ;
