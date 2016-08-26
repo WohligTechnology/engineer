@@ -16,11 +16,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
           return value.toLowerCase().replace(/ /g, '');
         };
         $scope.mySlides = [
-            // 'img/new/image1.jpg',
             'img/new/image2.jpg',
             'img/new/image3.jpg',
             'img/new/image4.jpg',
-            'img/new/image5.jpg'
+            'img/new/image5.jpg',
+            'img/new/image6.jpg'
         ];
         NavigationService.getAllSectors(function(data) {
             $scope.AllSectors10 = data;
