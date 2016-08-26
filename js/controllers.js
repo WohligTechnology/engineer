@@ -230,12 +230,6 @@ $scope.oneAtATime = true;
     $scope.menutitle = NavigationService.makeactive("About RD");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-    $scope.visible=false;
-    $scope.visibility=false;
-    $scope.visiby=false;
-    $scope.hey=false;
-    $scope.bye=false;
-
     $scope.ticker = '';
 })
 
