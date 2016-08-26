@@ -184,14 +184,14 @@ address {
   background-color: #fff;
 }
 .dubai-text{
-  top: 150px;
-  right: 450px;
+  top: 172px;
+    right: 410px;
 }
 .uganda-text{
-  top: 280px;
-right: 500px;
+  top: 310px;
+  right: 474px;
 }
-.tanzania-text{
+.tanzania-text,.africa-text{
   position: absolute;
   border: 2px solid orange;
   padding: 5px 20px;
@@ -199,6 +199,10 @@ right: 500px;
   background-color: #fff;
   bottom: 156px;
   right: 480px;
+}
+.africa-text{
+  bottom: 109px;
+  right: 514px;
 }
 .new{
   font-size: 13px;
@@ -1340,7 +1344,7 @@ p{
     position: absolute;
     top: 41%;
     left: 56%;
-    height: 150px;
+    height: 60px;
     width: 150px;
 }
 .india{

@@ -232,7 +232,9 @@ $scope.oneAtATime = true;
     $scope.navigation = NavigationService.getnav();
     $scope.visible=false;
     $scope.visibility=false;
-    $scope.visiby=false; 
+    $scope.visiby=false;
+    $scope.hey=false;
+    $scope.bye=false;
 })
 
 // .controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
