@@ -26,21 +26,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.AllSectors10 = data;
             console.log('dfghjk',$scope.AllSectors);
             $scope.AllSectors = _.groupBy($scope.AllSectors10, 'type');
-
-            // _.each($scope.AllSectors, function(value, key) {
-            //     console.log(key);
-            //     if (key == "1" || key == 1) {
-            //         var xyz = _.chunk(value, 2);
-            //         value = [];
-            //         value.push(xyz);
-            //         console.log(value);
-            //     }
-            // })
             console.log('$scope.AllSectors', $scope.AllSectors);
         });
         NavigationService.getClients(function(data) {
             $scope.AllClients = data;
             // console.log('$scope.AllClients', $scope.AllClients);
+
+        })
+        NavigationService.getallslider(function(data) {
+            $scope.mySlides = data.image;
+            console.log($scope.mySlides);
 
         })
 

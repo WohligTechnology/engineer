@@ -124,6 +124,9 @@ var navigationservice = angular.module('navigationservice', [])
         getClients: function(callback) {
             $http.get(adminurl + "getClients").success(callback);
         },
+        getallslider: function(callback) {
+            $http.get(adminurl + "getallslider").success(callback);
+        },
 
     };
 });
