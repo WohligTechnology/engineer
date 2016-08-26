@@ -22,11 +22,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     //     controller: 'OverviewCtrl'
     // })
 
-    .state('our-services', {
-        url: "/our-services",
-        templateUrl: "views/template.html",
-        controller: 'WeDoCtrl'
-    })
+    // .state('our-services', {
+    //     url: "/our-services",
+    //     templateUrl: "views/template.html",
+    //     controller: 'WeDoCtrl'
+    // })
 
     // .state('sectors', {
     //     url: "/sectors",

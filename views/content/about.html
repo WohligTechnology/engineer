@@ -39,10 +39,10 @@
   <div class="entire relative">
     <div class="map-image relative">
       <img src="img/new/map.png" class="img-responsive" alt="map">
-      <a href="" class="dubai"><img src="img/new/dubai.png" class="img-responsive" alt=""></a>
+      <a href="" class="dubai" ng-click="visibility=!visibility"><img src="img/new/dubai.png" class="img-responsive" alt=""></a>
       <a href="" class="india" ng-click="visible=!visible" ><img src="img/new/india.png" class="img-responsive" alt=""></a>
       <a href="" class="africa"><img src="img/new/africa.png" class="img-responsive" alt=""></a>
-      <a href="" class="uganda"><img src="img/new/uganda.png" class="img-responsive" alt=""></a>
+      <a href="" class="uganda" ng-click="visiby=!visiby"><img src="img/new/uganda.png" class="img-responsive" alt=""></a>
         <a href="" class="tanzania"><img src="img/new/tanzania.png" class="img-responsive" alt=""></a>
     </div>
     <div class="india-text" ng-show="visible">
@@ -59,7 +59,7 @@
             <a href="tel:+91 22 20851414" class="new">/  +91 22 20851414</a>
             <a href="mailto:sales@rd-engineering.com" class="new block text-center pad">sales@rd-engineering.com</a>
     </div>
-    <div class="dubai-text">
+    <div class="dubai-text" ng-show="visibility">
       <address>
         Jumeirah Lake Tower, 1805,
           <br>
@@ -67,9 +67,32 @@
         </address>
 
 
-           <a href="tel:+971 55 999 6684" class="new">+971 55 999 6684 </a>
+           <a href="tel:+971 55 999 6684" class="new block text-center">+971 55 999 6684 </a>
             <!-- <a href="tel:+91 22 20851414" class="new">/  +91 22 20851414</a> -->
             <a href="mailto:sales@ransonoverseas.com" class="new block text-center pad">sales@ransonoverseas.com</a>
+    </div>
+    <div class="tanzania-text">
+      <address>
+      Avalon House 1st floor,
+          <br>
+          Zanaki Street,P O Box 38317,
+          <br>
+          Dar Es Salaam, Tanzania
+        </address>
+
+
+           <a href="tel:+255222120000" class="new block text-center">+255222120000</a>
+            <a href="mailto:sales@abrica.com" class="new block text-center pad">sales@abrica.com</a>
+    </div>
+    <div class="uganda-text" ng-show="visiby">
+      <address>
+        Post Box No 2903,
+          <br>
+          Kampala, Uganda
+        </address>
+           <!-- <a href="tel:+971 55 999 6684" class="new block text-center">+971 55 999 6684 </a>
+            <a href="tel:+91 22 20851414" class="new">/  +91 22 20851414</a>
+            <a href="mailto:sales@ransonoverseas.com" class="new block text-center pad">sales@ransonoverseas.com</a> -->
     </div>
     </div>
   </div>
