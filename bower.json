@@ -1,6 +1,6 @@
 {
-  "name": "RDEngineering",
-  "description": "RDEngineering",
+  "name": "rdengineering",
+  "description": "rdengineering",
   "main": "gulpfile.js",
   "authors": [
     "chintan@wohlig.com"
