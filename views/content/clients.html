@@ -26,14 +26,14 @@
   </div> -->
 
 <div class="row">
-    <div class="col-md-1"></div>
-  <div class=" col-md-10">
+    <div class="col-md-1 col-sm-1"></div>
+  <div class=" col-md-10 col-sm-10 col-xs-10 col-xs-offset-1">
     <div class="client-slider">
       <flex-slider class="carousel" flex-slide="img in AllClients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false" item-margin="10">
         <li>
           <div class="client-imgholder">
             <div class="row" ng-repeat="row in img track by $index">
-              <div class="col-md-3 col-sm-3" ng-repeat="clientimg in row track by $index">
+              <div class="col-md-3 col-sm-3 col-xs-12" ng-repeat="clientimg in row track by $index">
                 <div class="img-holder listing">
                   <img ng-src="{{clientimg.logo|serverimage}}" alt="" class="img-responsive">
                 </div>

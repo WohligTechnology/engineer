@@ -1,5 +1,14 @@
 /*ipad mini*/
 @media (max-width: $screen-sm-max)  {
+
+  .entire{
+    height: 400px;
+    overflow-x: scroll;
+    overflow-y: auto;
+  }
+
+
+
   .banner{
 .banner-text{
   h1{
@@ -212,6 +221,22 @@ top: 0;
 
 /*extra small devices*/
 @media (max-width: $screen-xs-max)  {
+
+.entire{
+  height: 400px;
+  overflow-x: scroll;
+  overflow-y: auto;
+}
+.clients1{
+  .listing{
+    width: 90px;
+      height: 90px;
+  }
+
+}
+.text,.extra{
+  font-size: 11px!important;
+}
   .client1 .listing a {
    padding: 10px;
   }
@@ -322,6 +347,31 @@ top: 0;
     left: 69%;
     transform: translate(-50%, -50%);
 }
+.panel-default {
+  span{
+    font-size: 12px;
+  }
+}
+.accordion,.slidings{
+  h2{
+    font-size: 24px;
+  }
+}
+.pipings-text {
+  p{
+    font-size: 11px!important;
+  }
+}
+h2{
+  font-size: 16px!important;
+}
+.resume{
+  font-size: 14px;
+  a{
+    font-size: 14px;
+  }
+}
+
 }
 /*extra small devices*/
 
@@ -484,7 +534,7 @@ ul.dropdown-menu {
     opacity: 0.9;
 }
 p{
-  font-size: 11px;
+  font-size: 11px !important;
 }
 .banner .banner-text h1 {
     font-size: 17px;
