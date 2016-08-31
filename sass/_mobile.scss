@@ -221,7 +221,30 @@ top: 0;
 
 /*extra small devices*/
 @media (max-width: $screen-xs-max)  {
+.addresses{
+  .address{
+    address{
+        font-family: 'ProximaNova-Bold';
+    }
+  }
+}
 
+.tanzania-text{
+        @include position(absolute,69% null null 175%);
+  address,a{
+    font-size: 11px;
+  }
+}
+.uganda-text{
+      @include position(absolute,65% null null 195%);
+      address,a{
+        font-size: 11px;
+      }
+}
+
+.gallery .slidings .flexslider .slides li{
+  width: 200px !important;
+}
 .entire{
   height: 400px;
   overflow-x: scroll;
@@ -357,10 +380,32 @@ top: 0;
     transform: translate(-50%, -50%);
 }
 .panel-default {
+  .panel-heading{
+    border-bottom: 1px solid #000!important;
+
+  }
   span{
-    font-size: 12px;
+    font-size: 18px;
   }
 }
+
+.panel-body{
+  padding: 10px 0;
+  ul{
+    padding: 0 25px;
+    li{
+      padding: 5px 0;
+      a{
+        font-size: 12px!important;
+      }
+    }
+  }
+
+}
+.panel{
+  box-shadow: none;
+}
+
 .accordion,.slidings{
   h2{
     font-size: 24px;

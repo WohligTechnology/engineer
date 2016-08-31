@@ -436,12 +436,13 @@ h2 {
     @include transform(translate(-50%,-50%));
   }
   p {
+    text-align: center;
     line-height: 118%;
     color: #fff;
     font-size: 24px;
     position: absolute;
     bottom: 10%;
-    left: 55%;
+    left: 50%;
     @include transform(translate(-50%,-50%));
     text-transform: uppercase;
     font-family: 'Proxima';
@@ -694,7 +695,7 @@ a {
   line-height: 180%;
 address {
   font-size: 14px;
-    line-height: 180%;
+  line-height: 180%;
 }
 }
 }
@@ -843,8 +844,8 @@ transform: translate(-50%,-50%);
   }
   .banner-text{
     position: absolute;
-    top: 39%;
-    left: 60%;
+    top: 33%;
+    left: 55%;
     transform: translate(-50%, -50%);
     h1{
       font-size: 80px;
@@ -887,10 +888,10 @@ transform: translate(-50%,-50%);
 .mission-image{
   position: absolute;
     right: 0px;
-    top: -70px;
-    img{
-      height: 300px;
-    }
+    top: 0px;
+    // img{
+    //   height: 300px;
+    // }
 
 }
 
@@ -1245,7 +1246,7 @@ footer {
 .pipings-text{
   padding: 40px 0;
   p{
-      font-size: 14px!important;
+      font-size: 15px!important;
       text-transform: none;
   }
 }
@@ -1356,24 +1357,35 @@ p{
 }
 .india{
   top: 45%;
-  left: 64%;
+    left: 63.2%;
 }
 .uganda{
-  top: 57%;
-  left: 47%;
+  top: 55%;
+  left: 50%;
 }
 .africa{
   top: 73%;
   left: 52%;
 }
 .tanzania{
-  top: 65%;
-  left: 53%;
+  top: 62%;
+      left: 54%;
 }
 
+.about-rd{
+  p{
+    font-size: 15px !important;
+  }
+}
+.csr{
+  p{
+        font-size: 15px !important;
+  }
+}
+p{
 
-
-
+        font-size: 15px !important;
+}
 // .panel-default > .panel-heading + .panel-collapse > .panel-body
 //piping and erection//
 @import "fancybox-override";

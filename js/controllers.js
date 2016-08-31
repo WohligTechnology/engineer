@@ -339,6 +339,8 @@ $scope.oneAtATime = true;
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
+    $scope.oneAtATime = true;
+
 })
 .controller('footerctrl', function($scope, TemplateService,NavigationService, $timeout,$state ) {
     $scope.template = TemplateService;
