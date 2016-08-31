@@ -886,13 +886,7 @@ transform: translate(-50%,-50%);
   position: relative;
 }
 .mission-image{
-  position: absolute;
-    right: 0px;
-    top: 0px;
-    // img{
-    //   height: 300px;
-    // }
-
+margin-top: 50%;
 }
 
 .mission{
@@ -1385,6 +1379,11 @@ p{
 p{
 
         font-size: 15px !important;
+}
+.home-bannertext{
+    p{
+        font-size: 24px !important;
+  }
 }
 // .panel-default > .panel-heading + .panel-collapse > .panel-body
 //piping and erection//

@@ -19,7 +19,7 @@ var navigationservice = angular.module('navigationservice', [])
                 classis: "active",
                 link: "about"
             }, {
-                name: "Mission and Vision",
+                name: "Mission & Vision",
                 classis: "active",
                 link: "mission-vision"
               },
