@@ -80,29 +80,38 @@ a,
   outline: 0;
   @include box-shadow(none);
 }
-@font-face {
-  font-family: 'GOTHAM';
-  src: url("../fonts/GOTHAM-BOLD_1.OTF");
+// @font-face {
+//   font-family: 'GOTHAM';
+//   src: url("../fonts/GOTHAM-BOLD_1.OTF");
+// }
+//
+// @font-face {
+//   font-family: 'Proxima';
+//   src: url("../fonts/ProximaNova-Semibold.otf");
+//   font-weight: 500;
+// }
+// @font-face {
+//   font-family: 'ProximaNova-Light';
+//   src: url("../fonts/ProximaNova-Light.otf");
+//   font-weight: 700;
+// }
+// @font-face{
+//   font-family: 'ProximaNova-Bold';
+//   src:url("../fonts/ProximaNova-Bold.otf");
+// }
+//
+// @font-face{
+//   font-family: 'ProximaNova-Regular';
+//   src:url("../fonts/ProximaNova-Regular.otf");
+// }
+@font-face{
+  font-family: 'DroidSans-Bold';
+  src:url("../fonts/DroidSans-Bold.ttf");
 }
 
-@font-face {
-  font-family: 'Proxima';
-  src: url("../fonts/ProximaNova-Semibold.otf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'ProximaNova-Light';
-  src: url("../fonts/ProximaNova-Light.otf");
-  font-weight: 700;
-}
 @font-face{
-  font-family: 'ProximaNova-Bold';
-  src:url("../fonts/ProximaNova-Bold.otf");
-}
-
-@font-face{
-  font-family: 'ProximaNova-Regular';
-  src:url("../fonts/ProximaNova-Regular.otf");
+  font-family: 'DroidSans';
+  src:url("../fonts/DroidSans.ttf");
 }
 
 //bootstrap forms
@@ -113,7 +122,7 @@ a,
 /*banner starts here*/
 .banner-text {
   h1 {
-    font-family: 'GOTHAM';
+    font-family: 'DroidSans-Bold';
     text-transform: uppercase;
   }
 }
@@ -123,7 +132,7 @@ li {
   list-style-type: none;
 }
 .nav {
-  margin-left: 13%;
+  margin-left: 20%;
   li {
     margin-right: -10px;
     a {
@@ -134,7 +143,8 @@ li {
 }
 
 address {
-  font-family: 'Proxima';
+  font-family: 'DroidSans';
+    font-weight: 600;
 }
 .navbar-default .navbar-nav >.active >a {
   background-color: transparent;
@@ -153,7 +163,7 @@ address {
   li {
     a {
       letter-spacing: 2px;
-      font-family: 'Proxima';
+      font-family: 'DroidSans';
       font-size: 14px;
       color: #a8a8ac;
     }
@@ -212,6 +222,9 @@ address {
   text-transform: uppercase;
 }
 
+.orangy{
+  color: #f78f29;
+}
 ul.dropdown-menu {
   position: absolute;
     top: 100%;
@@ -245,7 +258,7 @@ ul.dropdown-menu {
 /*main starts here*/
 h3,
 h2 {
-  font-family: 'ProximaNova-Light';
+  font-family: 'DroidSans';
   text-transform: capitalize;
 }
 .banner {
@@ -291,7 +304,7 @@ h2 {
 .certification {
   padding-top: 30px;
   .success{
-    font-family: 'Proxima';
+    font-family: 'DroidSans';
     font-size: 16px;
     line-height: 180%;
   }
@@ -379,17 +392,17 @@ h2 {
   border-bottom: 5px solid $brand-primary;
 }
 .certifications {
-      padding: 20px 0 0 0;
+      padding: 0;
   h3 {
-    font-family: 'Proxima';
+    font-family: 'DroidSans';
     color: $brand-success;
   }
   .list {
-      padding: 20px  0;
-      margin-bottom: 20px;
+      padding: 0 0 10px 0;
+      margin-bottom: 0;
       li{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
       }
   }
 }
@@ -405,7 +418,7 @@ h2 {
 .clients {
   padding: 20px 0;
   h2 {
-    font-family: 'ProximaNova-Light';
+    font-family: 'DroidSans';
     font-size: 60px;
   }
 }
@@ -445,7 +458,7 @@ h2 {
     left: 50%;
     @include transform(translate(-50%,-50%));
     text-transform: uppercase;
-    font-family: 'Proxima';
+    font-family: 'DroidSans';
     font-weight: 600;
   }
 }
@@ -473,7 +486,7 @@ h2 {
       z-index: 3;
       font-size: 27px;
       color: #f78f29;
-      font-family: 'Proxima';
+      font-family: 'DroidSans';
       opacity: 0;
       width: 90%;
       text-align: center;
@@ -584,7 +597,7 @@ h2 {
 }
 uib-tab-heading {
   font-size: 18px;
-  font-family: 'ProximaNova-Light';
+  font-family: 'DroidSans';
   text-transform: capitalize;
   padding: 10px 20px;
   color: #fff;
@@ -658,14 +671,14 @@ uib-tab-heading {
 p {
   font-size: 14px;
   line-height: 180%;
-  font-family: 'Proxima';
+  font-family: 'DroidSans';
   text-transform: capitalize;
   text-align: justify;
 }
 .resume,
 a {
   font-size: 16px;
-  font-family: 'Proxima';
+  font-family: 'DroidSans';
   color: $brand-success;
 }
 .resume{
@@ -683,19 +696,22 @@ a {
 .addresses{
   .success{
     font-size: 24px;
-    font-family: "Proxima";
+    font-family: "DroidSans";
     line-height: 180%;
   }
-
+a{
+  font-weight: 600;
+}
 }
 .address{
   .success {
   font-size: 18px;
-  font-family: "Proxima";
+  font-family: "DroidSans";
   line-height: 180%;
 address {
   font-size: 14px;
   line-height: 180%;
+
 }
 }
 }
@@ -717,7 +733,7 @@ transform: translate(-50%,-50%);
     transform: translate(-50%, -50%);
     h1{
       font-size: 80px;
-      font-family: 'GOTHAM';
+      font-family: 'DroidSans-Bold';
       text-transform: uppercase;
       color: #fff;
     }
@@ -739,7 +755,7 @@ transform: translate(-50%,-50%);
     transform: translate(-50%, -50%);
     h1{
       font-size: 80px;
-      font-family: 'GOTHAM';
+      font-family: 'DroidSans-Bold';
       text-transform: uppercase;
       color: #fff;
     }
@@ -760,7 +776,7 @@ width: auto;
     margin-top: -10px;
     font-size: 19px;
     color: $brand-success;
-    font-family: 'Proxima';
+    font-family: 'DroidSans';
   }
 }
 // .director-optext{
@@ -777,7 +793,7 @@ width: auto;
 .team {
   h2{
     font-size: 30px;
-    font-family: 'ProximaNova-Light';
+    font-family: 'DroidSans';
     font-weight: 700;
   }
   .teams{
@@ -792,11 +808,11 @@ width: auto;
 .about-rd,.geography,.vision,.services{
   .success{
     font-size: 40px;
-  font-family: 'ProximaNova-Light';
+  font-family: 'DroidSans';
   }
   h3{
   margin: 15px 0 6px 0;
-  font-family: 'ProximaNova-Bold';
+  font-family: 'DroidSans-Bold';
   }
 }
 .geography{
@@ -809,7 +825,7 @@ width: auto;
     list-style-type: disc;
     a{
       font-size: 13px;
-      font-family: 'Proxima';
+      font-family: 'DroidSans';
       color: $brand-primary;
     &:hover{
         color: $brand-success;
@@ -849,7 +865,7 @@ transform: translate(-50%,-50%);
     transform: translate(-50%, -50%);
     h1{
       font-size: 80px;
-      font-family: 'GOTHAM';
+      font-family: 'DroidSans-Bold';
       text-transform: uppercase;
       color: #fff;
     }
@@ -862,7 +878,7 @@ transform: translate(-50%,-50%);
     li{
       line-height: 180%;
       font-size: 14px;
-      font-family: 'Proxima';
+      font-family: 'DroidSans';
       list-style-type: disc;
   }
 }
@@ -1003,7 +1019,7 @@ font-size: 40px;
     color: #fff;
   }
   h2{
-      font-family: 'ProximaNova-Light';
+      font-family: 'DroidSans';
   }
 }
 .services-text{
@@ -1016,7 +1032,7 @@ font-size: 40px;
   margin: 40px 0;
   h3{
     margin: 0px 0px 10px 0px;
-    font-family: 'ProximaNova-Light';
+    font-family: 'DroidSans';
        font-size: 40px;
   }
 }
@@ -1025,21 +1041,21 @@ font-size: 40px;
   padding: 90px 0;
   background-color: $brand-success;
   figcaption{
-      font-family: 'Proxima';
+      font-family: 'DroidSans';
       }
   span,p{
-    font-family: 'Proxima';
+    font-family: 'DroidSans';
     color: #fff;
     display: block;
 }
 }
 .client-speak{
   h2{
-    font-family: 'ProximaNova-Light';
+    font-family: 'DroidSans';
   font-size: 40px;
 }
 p{
-  font-family: 'ProximaNova-Regular';
+  font-family: 'DroidSans';
 }
 }
 
@@ -1055,12 +1071,12 @@ p{
     display: inline-block;
       }
       span{
-         font-family: 'Proxima';
+         font-family: 'DroidSans';
       }
     address{
       line-height: 180%;
       font-size: 14px;
-      font-family: 'ProximaNova-Light';
+      font-family: 'DroidSans';
   }
 }
 .piping-image{
@@ -1068,14 +1084,14 @@ p{
   .factory{
     padding: 5px 0;
     font-size: 20px;
-    font-family: 'Proxima';
+    font-family: 'DroidSans';
   }
   span{
       padding: 5px 0;
   }
   .success{
     font-size: 20px;
-    font-family: 'Proxima';
+    font-family: 'DroidSans';
   }
 }
 
@@ -1139,7 +1155,7 @@ footer {
     li {
       list-style-type: none;
       a {
-        font-family: 'ProximaNova-Light';
+        font-family: 'DroidSans';
         text-transform: capitalize;
         color: #fff;
       }
@@ -1152,14 +1168,14 @@ footer {
   font-weight: 600;
   color: #fff;
   a {
-    font-family: 'Proxima';
+    font-family: 'DroidSans';
   }
 }
 .foot-social {
   margin-top: 64px;
   span,
   p {
-    font-family: 'ProximaNova-Light';
+    font-family: 'DroidSans';
     padding-top: 10px;
     margin:-12px 0 0 0;
     text-transform: capitalize;
@@ -1222,7 +1238,7 @@ footer {
   font-weight: 600;
   a {
     color: $brand-success;
-    font-family: 'Proxima';
+    font-family: 'DroidSans';
   }
 }
 }
@@ -1308,7 +1324,7 @@ border-top:none;
   .slidings{
   margin: 0;
     .flex-control-nav{
-      bottom: -25px;
+      bottom: -40px;
     }
     .flex-direction-nav{
       display: block;
@@ -1385,6 +1401,24 @@ p{
         font-size: 24px !important;
   }
 }
+.flexslider{
+  // .flex-control-paging{
+  //   li{
+  //     a{
+  //       .flex-active{
+  //         background: rgba(247,143,41,1)!important;
+  //       }
+  //     }
+  //   }
+  // }
+  .flex-control-paging li a.flex-active{
+      background: rgba(247,143,41,1)!important;
+  }
+}
+
+
+
+
 // .panel-default > .panel-heading + .panel-collapse > .panel-body
 //piping and erection//
 @import "fancybox-override";
