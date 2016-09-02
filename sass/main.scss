@@ -145,6 +145,7 @@ li {
 address {
   font-family: 'DroidSans';
     font-weight: 600;
+    font-size: 15px!important;
 }
 .navbar-default .navbar-nav >.active >a {
   background-color: transparent;
@@ -703,6 +704,7 @@ a {
     line-height: 180%;
   }
 a{
+    font-size: 15px!important;
   font-weight: 600;
 }
 }
@@ -712,7 +714,7 @@ a{
   font-family: "DroidSans";
   line-height: 180%;
 address {
-  font-size: 14px;
+  font-size: 15px!important;
   line-height: 180%;
 
 }
