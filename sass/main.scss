@@ -1421,6 +1421,15 @@ p{
   }
 }
 
+.certifications{
+  li{
+    a{
+      span{
+        color: $brand-primary;
+      }
+    }
+  }
+}
 
 
 

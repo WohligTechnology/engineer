@@ -707,9 +707,9 @@ ul.dropdown-menu {
 .home-bannertext p {
   line-height: 118%;
     color: #fff;
-    font-size: 10px;
+    font-size: 9px!important;
     position: absolute;
-    top: 34%;
+    top: 46%;
     left: 64%;
 }
 //*home page*//
@@ -837,3 +837,14 @@ ul.dropdown-menu {
 //*csr ends*//
 }
 /*nexus4 ends*/
+@media (max-width: $screen-xs-max){
+  .home-bannertext p {
+    line-height: 118%;
+      color: #fff;
+      font-size: 9px!important;
+      position: absolute;
+      top: 46%;
+      left: 64%;
+  }
+
+}
