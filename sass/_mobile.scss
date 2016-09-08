@@ -794,12 +794,12 @@ ul.dropdown-menu {
 .certification{
   padding-top: 0px;
 }
-.certifications{
-  padding-top: 0;
-  .list{
-    padding: 0;
-  }
-}
+// .certifications{
+//   padding-top: 0;
+//   .list{
+//     padding: 0;
+//   }
+// }
 .about-rd {
     margin: 20px 0 0 0;
 }
@@ -846,5 +846,17 @@ ul.dropdown-menu {
       top: 46%;
       left: 64%;
   }
+.certifications{
+  .list{
+    li{
+      margin: 5px 0 !important;
+      a{
+        span{
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
 
+}
 }
