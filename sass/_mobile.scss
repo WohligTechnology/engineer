@@ -230,15 +230,32 @@ top: 0;
 }
 
 .tanzania-text{
-        @include position(absolute,69% null null 175%);
+        @include position(absolute,69% null null 179%);
   address,a{
-    font-size: 11px;
+      font-size: 11px !important;
+        margin-bottom: 0;
   }
 }
+
 .uganda-text{
       @include position(absolute,65% null null 195%);
       address,a{
-        font-size: 11px;
+          font-size: 11px !important;
+            margin-bottom: 0;
+      }
+}
+.africa-text{
+      @include position(absolute,316px null null 475px);
+      address,a{
+        font-size: 11px !important;
+          margin-bottom: 0;
+      }
+}
+.india-text{
+      @include position(absolute,10% null null 223%);
+      address,a{
+        font-size: 11px !important;
+        margin-bottom: 0;
       }
 }
 
@@ -904,5 +921,10 @@ ul.dropdown-menu {
 }
 .banner-mission .banner-text h1{
   font-size: 20px;
+}
+.about-rd {
+  p{
+    font-size: 11px!important;
+  }
 }
 }

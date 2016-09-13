@@ -211,12 +211,12 @@ address {
   padding: 5px 20px;
   border-radius: 7px;
   background-color: #fff;
-  bottom: 156px;
-  right: 480px;
+  top: 256px;
+  left: 445px;
 }
 .africa-text{
-  bottom: 109px;
-  right: 514px;
+  top: 300px;
+  left: 334px;
 }
 .new{
   font-size: 13px;
@@ -1431,8 +1431,15 @@ p{
   }
 }
 
-
-
+.separate{
+  text-transform: capitalize;
+    font-size: 18px;
+}
+.career{
+  .panel-body{
+    padding: 0;
+  }
+}
 // .panel-default > .panel-heading + .panel-collapse > .panel-body
 //piping and erection//
 @import "fancybox-override";
