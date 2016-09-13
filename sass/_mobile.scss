@@ -116,9 +116,9 @@ top: 66%;
 .floating-right{
   display: none;
 }
-.csr p{
-    font-size: 11px;
-}
+
+
+
 .mycl ul li {
     float: left;
     display: inline-block;
@@ -257,15 +257,7 @@ top: 0;
   }
 
 }
-// .client-slider{
-//   .flexslider{
-//     .slides{
-//       li{
-//         margin: 0 auto;
-//       }
-//     }
-//   }
-// }
+
 .text,.extra{
   font-size: 11px!important;
 }
@@ -426,6 +418,13 @@ h2{
   }
 }
 
+.overview{
+  .texts{
+    a{
+      font-size: 14px;
+  }
+}
+}
 }
 /*extra small devices*/
 
@@ -847,16 +846,63 @@ ul.dropdown-menu {
       left: 64%;
   }
 .certifications{
+  h3{
+    font-size: 16px;
+  }
   .list{
     li{
       margin: 5px 0 !important;
       a{
         span{
-          font-size: 12px !important;
+          font-size: 11px !important;
         }
       }
     }
   }
 
+}
+.csr p{
+    font-size: 11px !important;
+    margin: 0;
+}
+.csr .overview-image .imaging-hold{
+  margin-bottom: 10px;
+}
+.addresses {
+  h2{
+    margin: 0 0 10px 0;
+  }
+  a{
+    font-size: 11px!important;
+  }
+  .address{
+    h2{
+      font-size: 14px !important;
+      margin: 10px 0;
+    }
+    address{
+      font-size: 11px!important;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.resume{
+  font-size: 12px;
+  a{
+    font-size: 12px;
+  }
+}
+
+.mission {
+  .header{
+    margin: 10px 0;
+  }
+  ul li{
+   font-size: 11px;
+ }
+}
+.banner-mission .banner-text h1{
+  font-size: 20px;
 }
 }
