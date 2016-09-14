@@ -10,6 +10,7 @@
 
 
   .banner{
+    margin-top: 0;
 .banner-text{
   h1{
     font-size: 40px;
@@ -276,7 +277,7 @@ top: 0;
 }
 
 .text,.extra{
-  font-size: 11px!important;
+  font-size: 13px!important;
 }
   .client1 .listing a {
    padding: 10px;
@@ -389,10 +390,10 @@ top: 0;
     transform: translate(-50%, -50%);
 }
 .panel-default {
-  .panel-heading{
-    border-bottom: 1px solid #000!important;
-
-  }
+  // .panel-heading{
+  //   border-bottom: 1px solid #000!important;
+  //
+  // }
   span{
     font-size: 18px;
   }
@@ -411,10 +412,15 @@ top: 0;
   }
 
 }
-.panel{
-  box-shadow: none;
-}
 
+.accordion{
+  .panel-group{
+    .panel{
+      box-shadow: none !important;
+    }
+  }
+
+}
 .accordion,.slidings{
   h2{
     font-size: 24px;
@@ -422,7 +428,7 @@ top: 0;
 }
 .pipings-text {
   p{
-    font-size: 11px!important;
+    font-size: 13px!important;
   }
 }
 h2{
@@ -604,7 +610,7 @@ ul.dropdown-menu {
     opacity: 0.9;
 }
 p{
-  font-size: 11px !important;
+  font-size: 13px !important;
 }
 .banner .banner-text h1 {
     font-size: 17px;
@@ -879,7 +885,7 @@ ul.dropdown-menu {
 
 }
 .csr p{
-    font-size: 11px !important;
+    font-size: 13px !important;
     margin: 0;
 }
 .csr .overview-image .imaging-hold{
@@ -916,7 +922,7 @@ ul.dropdown-menu {
     margin: 10px 0;
   }
   ul li{
-   font-size: 11px;
+   font-size: 13px;
  }
 }
 .banner-mission .banner-text h1{
@@ -924,7 +930,73 @@ ul.dropdown-menu {
 }
 .about-rd {
   p{
-    font-size: 11px!important;
+    font-size: 13px!important;
   }
 }
+}
+.gallery .slidings .flex-control-nav{
+      bottom: -27px;
+}
+// .accordion{
+//   .fa{
+//     display: none;
+//   }
+// }
+.padding0{
+ .image-holder {
+   .name{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      font-size: 27px;
+      color: #f78f29;
+      font-family: 'DroidSans';
+      opacity: 0;
+      width: 90%;
+      text-align: center;
+   }
+   position: relative;
+   &:before {
+     content: " ";
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     z-index: 1;
+     opacity: 0;
+     background-color: rgba(0,0,0,0.7);
+     @include transition(opacity 0.2s);
+   }
+   &:after {
+     content:url('../img/arrows.png');
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     @include transform(translate(-50%,-50%));
+     z-index: 1;
+     opacity: 0;
+     @include transition(opacity 0.2s);
+   }
+ }
+ a {
+   .image-holder {
+     .name{
+       opacity: 1;
+       color: #fff;
+     }
+     &:before,
+     &:after {
+       opacity: 1;
+     }
+   }
+ }
+}
+
+.finally{
+  .panel-body{
+    padding: 0;
+  }
 }

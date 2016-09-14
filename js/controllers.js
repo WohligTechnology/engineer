@@ -340,6 +340,11 @@ $scope.oneAtATime = true;
         $(window).scrollTop(0);
     });
     $scope.oneAtATime = true;
+ //    $scope.status = {
+ //   isCustomHeaderOpen: false,
+ //   isFirstOpen: true,
+ //   isFirstDisabled: false
+ // };
 
 })
 .controller('footerctrl', function($scope, TemplateService,NavigationService, $timeout,$state ) {
