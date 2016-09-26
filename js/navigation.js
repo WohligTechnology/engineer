@@ -1,6 +1,6 @@
-var adminurl = "http://wohlig.co.in/rdbackend/index.php/json/";
+var adminurl = "rd-engineering.com/admin/index.php/json/";
 
-var imgurl = "http://wohlig.co.in/rdbackend/uploads/";
+var imgurl = "rd-engineering.com/admin/uploads/";
 // if (isproduction) {
 //     adminURL = "http://www.wohlig.co.in/demo/index.php";
 // } else {
@@ -9,30 +9,31 @@ var imgurl = "http://wohlig.co.in/rdbackend/uploads/";
 
 var navigationservice = angular.module('navigationservice', [])
 
-.factory('NavigationService', function($http) {
+.factory('NavigationService', function ($http) {
     var navigation = [{
             name: "Overview",
             classis: "active",
             anchor: "overview",
             subnav: [{
-                name: "About RD + Geography",
-                classis: "active",
-                link: "about"
-            }, {
-                name: "Mission & Vision",
-                classis: "active",
-                link: "mission-vision"
-              },
-            // }, {
-            //     name: "Management",
-            //     classis: "active",
-            //     link: "management"
-            // }, {
+                    name: "About RD + Geography",
+                    classis: "active",
+                    link: "about"
+                }, {
+                    name: "Mission & Vision",
+                    classis: "active",
+                    link: "mission-vision"
+                },
+                // }, {
+                //     name: "Management",
+                //     classis: "active",
+                //     link: "management"
+                // }, {
                 {
-                name: "CSR",
-                classis: "active",
-                link: "csr"
-            }]
+                    name: "CSR",
+                    classis: "active",
+                    link: "csr"
+                }
+            ]
         }, {
             name: "Our Services",
             classis: "active",
@@ -66,30 +67,30 @@ var navigationservice = angular.module('navigationservice', [])
     ];
 
     return {
-        getnav: function() {
-          var subnavGen  = [];
-          $http({
-              url: adminurl + 'getAllSectors',
-              method: "GET"
-          }).success(function (data) {
-            if(data){
-              _.each (data,function (key) {
-                  subnavGen.push({
-                    name : key.name,
-                    classis:"active",
-                    link: "sectors({id:"+key.id+",name:'"+key.name.toLowerCase().replace(/ /g,'')+"'})"
-                  });
-              });
-              navigation[1].subnav = subnavGen;
-            }
-          });
-          return navigation;
+        getnav: function () {
+            var subnavGen = [];
+            $http({
+                url: adminurl + 'getAllSectors',
+                method: "GET"
+            }).success(function (data) {
+                if (data) {
+                    _.each(data, function (key) {
+                        subnavGen.push({
+                            name: key.name,
+                            classis: "active",
+                            link: "sectors({id:" + key.id + ",name:'" + key.name.toLowerCase().replace(/ /g, '') + "'})"
+                        });
+                    });
+                    navigation[1].subnav = subnavGen;
+                }
+            });
+            return navigation;
 
 
         },
 
 
-        makeactive: function(menuname) {
+        makeactive: function (menuname) {
             for (var i = 0; i < navigation.length; i++) {
                 if (navigation[i].name == menuname) {
                     navigation[i].classis = "active";
@@ -112,19 +113,19 @@ var navigationservice = angular.module('navigationservice', [])
         //         method: 'GET'
         //     }).success(callback);
         // },
-        getAllSectors: function(callback) {
+        getAllSectors: function (callback) {
             return $http({
                 url: adminurl + 'getAllSectors',
                 method: "GET"
             }).success(callback);
         },
-        getSector: function(id, callback) {
+        getSector: function (id, callback) {
             $http.get(adminurl + "getSector?id=" + id).success(callback);
         },
-        getClients: function(callback) {
+        getClients: function (callback) {
             $http.get(adminurl + "getClients").success(callback);
         },
-        getallslider: function(callback) {
+        getallslider: function (callback) {
             $http.get(adminurl + "getallslider").success(callback);
         },
 
