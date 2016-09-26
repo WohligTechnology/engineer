@@ -1,6 +1,6 @@
-var adminurl = "rd-engineering.com/admin/index.php/json/";
+var adminurl = "admin/index.php/json/";
 
-var imgurl = "rd-engineering.com/admin/uploads/";
+var imgurl = "admin/uploads/";
 // if (isproduction) {
 //     adminURL = "http://www.wohlig.co.in/demo/index.php";
 // } else {
