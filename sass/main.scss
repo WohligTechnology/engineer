@@ -224,7 +224,6 @@ address {
 }
 
 .india-text,
-.dubai-text,
 .uganda-text {
   // display: inline-block;
   border: 2px solid orange;
@@ -240,14 +239,6 @@ address {
 //   top: 172px;
 //   right: 410px;
 // }
-.uganda-text {
-  top: 54%;
-  left: 44%;
-  address {
-    margin: 10px 0;
-  }
-}
-
 .tanzania-text,
 .africa-text {
   position: absolute;
@@ -1540,7 +1531,6 @@ p {
   text-transform: none!important;
 }
 
-.dubai,
 .india,
 .uganda,
 .africa,
@@ -1550,26 +1540,6 @@ p {
   left: 56%;
   height: 60px;
   width: 150px;
-}
-
-.india {
-  top: 45%;
-  left: 63.2%;
-}
-
-.uganda {
-  top: 55%;
-  left: 52%;
-}
-
-.africa {
-  top: 73%;
-  left: 52%;
-}
-
-.tanzania {
-  top: 62%;
-  left: 54%;
 }
 
 .about-rd {
@@ -1630,13 +1600,115 @@ p {
   }
 }
 
-.dubai-text {
-  display: none;
+.dubai {
+  position: absolute;
+  top: 41%;
+  left: 56%;
+  height: 60px;
+  width: 150px;
+  .dubai-text {
+    border: 2px solid orange;
+    padding: 5px 20px;
+    border-radius: 7px;
+    position: absolute;
+    top: 29%;
+    left: 70%;
+    // top: 172px;
+    // right: 410px;
+    background-color: #fff;
+    display: none;
+    z-index: 999;
+  }
+  &:hover {
+    .dubai-text {
+      display: block;
+    }
+  }
 }
 
-.dubai:hover {
-  .dubai-text {
-    display: block;
+.india {
+  top: 45%;
+  left: 63.2%;
+  .india-text {
+    border: 2px solid orange;
+    padding: 5px 20px;
+    border-radius: 7px;
+    position: absolute;
+    top: 16%;
+    left: 78%;
+    background-color: #fff;
+    display: none;
+    z-index: 999;
+  }
+  &:hover {
+    .india-text {
+      display: block;
+    }
+  }
+}
+
+.uganda {
+  top: 55%;
+  left: 50%;
+  .uganda-text {
+    top: 0;
+    left: 53px;
+    border: 2px solid orange;
+    padding: 5px 20px;
+    border-radius: 7px;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    z-index: 999;
+  }
+  // address {
+  //   margin: 10px 0;
+  // }
+  &:hover {
+    .uganda-text {
+      display: block;
+    }
+  }
+}
+
+.tanzania {
+  left: 52%;
+  top: 63%;
+  .tanzania-text {
+    position: absolute;
+    border: 2px solid orange;
+    padding: 5px 20px;
+    border-radius: 7px;
+    background-color: #fff;
+    top: 6px;
+    left: 145px;
+    display: none;
+    z-index: 999;
+  }
+  &:hover {
+    .tanzania-text {
+      display: block;
+    }
+  }
+}
+
+.africa {
+  top: 73%;
+  left: 52%;
+  .africa-text {
+    position: absolute;
+    border: 2px solid orange;
+    padding: 5px 20px;
+    border-radius: 7px;
+    background-color: #fff;
+    display: none;
+    top: 30px;
+    left: 30px;
+  }
+  &:hover {
+    .africa-text {
+      display: block;
+    }
   }
 }
 
