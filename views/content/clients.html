@@ -1,14 +1,15 @@
-
 <div class="client-intro">
   <div class="container">
     <div class="row">
       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-    <div class="client-info">
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo nulla provident, excepturi consequatur. Non temporibus soluta accusamus consequuntur, fugit, ullam quidem saepe praesentium. Neque aliquam consectetur quisquam, voluptatum enimlorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo nulla provident, excepturi consequatur. Non temporibus soluta accusamus consequuntur, fugit, ullam quidem saepe praesentium. Neque aliquam consectetur quisquam, voluptatum enimlorem.</p> -->
+        <h2 class="text-center upperacse success">OUR CLIENTS OVER THE YEARS</h2>
+        <div class="client-info ">
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo nulla provident, excepturi consequatur. Non temporibus soluta accusamus consequuntur, fugit, ullam quidem saepe praesentium. Neque aliquam consectetur quisquam, voluptatum enimlorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo nulla provident, excepturi consequatur. Non temporibus soluta accusamus consequuntur, fugit, ullam quidem saepe praesentium. Neque aliquam consectetur quisquam, voluptatum enimlorem.</p> -->
+          <!--<p class="text-center">OUR CLIENTS OVER THE YEARS</p>-->
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
-  <!-- <div class="client-types">
+    <!-- <div class="client-types">
     <uib-tabset active="active">
   <uib-tab index="0" heading="Vertical 1">
     <uib-tab-heading>food and beverages</uib-tab-heading>
@@ -25,30 +26,31 @@
 </uib-tabset>
   </div> -->
 
-<div class="row">
-    <div class="col-md-1 "></div>
-  <div class=" col-md-10 col-xs-12">
-    <div class="client-slider">
-      <flex-slider class="carousel" flex-slide="img in AllClients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false" >
-        <li>
-          <div class="client-imgholder">
-            <div class="row" ng-repeat="row in img track by $index">
-              <div class="col-md-3 col-sm-3 col-xs-12" ng-repeat="clientimg in row track by $index">
-                <div class="img-holder listing">
-                  <img ng-src="{{clientimg.logo|serverimage}}" alt="" class="img-responsive">
+    <div class="row">
+      <div class="col-md-1 "></div>
+      <div class=" col-md-10 col-xs-12">
+        <div class="client-slider">
+          <flex-slider class="carousel" flex-slide="img in AllClients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider"
+            slide-show="false">
+            <li>
+              <div class="client-imgholder">
+                <div class="row" ng-repeat="row in img track by $index">
+                  <div class="col-md-3 col-sm-3 col-xs-12" ng-repeat="clientimg in row track by $index">
+                    <div class="img-holder listing">
+                      <img ng-src="{{clientimg.logo|serverimage}}" alt="" class="img-responsive">
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </li>
-      </flex-slider>
+            </li>
+          </flex-slider>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
-  </div>
-  <div class="col-md-1"></div>
-</div>
 
 
-  <!-- <div class="client-slider">
+    <!-- <div class="client-slider">
     <flex-slider class="carousel" flex-slide="img in clients track by $index" animation="slide" animation-loop="false" as-nav-for="#slider" slide-show="false" item-margin="20">
       <li>
         <div class="client-imgholder">
@@ -67,7 +69,7 @@
 
 
 
-  <!-- <div class="clients">
+    <!-- <div class="clients">
     <div class="client1">
     <div class="row">
       <div class="col-md-2 col-sm-2 col-xs-4">

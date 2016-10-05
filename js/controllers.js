@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider'])
 
-.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
 
         console.log("Testing Consoles");
@@ -12,20 +12,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.template.certification = "";
         $scope.navigation = NavigationService.getnav();
         //  TemplateService.footer="views/footerhome.html";
-        $scope.trimForURL = function(value){
-          return value.toLowerCase().replace(/ /g, '');
+        $scope.trimForURL = function (value) {
+            return value.toLowerCase().replace(/ /g, '');
         };
-         NavigationService.getallslider(function(data) {
-           console.log(data);
-             $scope.mySlides = data;
+        NavigationService.getallslider(function (data) {
+            console.log(data);
+            $scope.mySlides = data;
             console.log($scope.mySlides);
-            $scope.mySlides=[];
-            _.each(data,function(n){
-              $scope.mySlides.push(n.image);
+            $scope.mySlides = [];
+            _.each(data, function (n) {
+                $scope.mySlides.push(n.image);
             })
-              console.log("array of strings",$scope.mySlides);
+            console.log("array of strings", $scope.mySlides);
 
-      })
+        })
 
         // $scope.mySlides = [
         //     'img/new/image2.jpg',
@@ -34,13 +34,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         //     'img/new/image5.jpg',
         //     'img/new/image6.jpg'
         // ];
-        NavigationService.getAllSectors(function(data) {
+        NavigationService.getAllSectors(function (data) {
             $scope.AllSectors10 = data;
-            console.log('dfghjk',$scope.AllSectors);
+            console.log('dfghjk', $scope.AllSectors);
             $scope.AllSectors = _.groupBy($scope.AllSectors10, 'type');
             console.log('$scope.AllSectors', $scope.AllSectors);
         });
-        NavigationService.getClients(function(data) {
+        NavigationService.getClients(function (data) {
             $scope.AllClients = data;
             // console.log('$scope.AllClients', $scope.AllClients);
 
@@ -76,13 +76,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 //   $scope.navigation = NavigationService.getnav();
 // })
 
-.controller('ClientsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('ClientsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("clients");
     $scope.menutitle = NavigationService.makeactive("Clients");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-      TemplateService.banner = "views/banner-client.html";
+    TemplateService.banner = "views/banner-client.html";
     // $scope.clients = [
     //   'img/SABMiller.jpg',
     //   'img/carlsberg.jpg',
@@ -110,7 +110,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //   'img/nyanza.jpg'
     // ];
 
-    NavigationService.getClients(function(data) {
+    NavigationService.getClients(function (data) {
             $scope.AllClients = data;
             $scope.AllClients = _.chunk($scope.AllClients, 8);
             for (var i = 0; i < $scope.AllClients.length; i++) {
@@ -138,24 +138,24 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
 
-.controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('CareersCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("careers");
         $scope.menutitle = NavigationService.makeactive("Careers");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-          TemplateService.banner = "views/banner-career.html";
+        TemplateService.banner = "views/banner-career.html";
     })
-    .controller('ContactUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    .controller('ContactUsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("contactus");
         $scope.menutitle = NavigationService.makeactive("Contact Us");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-          TemplateService.banner = "views/banner-contact.html";
+        TemplateService.banner = "views/banner-contact.html";
     })
 
-.controller('CsrCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('CsrCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("csr");
     $scope.menutitle = NavigationService.makeactive("CSR");
@@ -173,7 +173,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 //     TemplateService.banner = "views/banner-management.html";
 // })
 
-.controller('MissionVisionCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('MissionVisionCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("mission");
     $scope.menutitle = NavigationService.makeactive("Mission & Vision");
@@ -182,45 +182,45 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.banner = "views/banner-mission.html";
 })
 
-.controller('SectorsCtrl', function($scope, TemplateService, NavigationService, $timeout, $stateParams) {
-  console.log("In sectorss");
+.controller('SectorsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $stateParams) {
+    console.log("In sectorss");
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("piping");
     $scope.menutitle = NavigationService.makeactive("Piping");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-      TemplateService.banner = "views/banner-piping.html";
-      $scope.mySlides8 = [
-          'img/1.png',
-          'img/2.png',
-          'img/3.png',
-          'img/4.png',
-          'img/5.png'
+    TemplateService.banner = "views/banner-piping.html";
+    $scope.mySlides8 = [
+        'img/1.png',
+        'img/2.png',
+        'img/3.png',
+        'img/4.png',
+        'img/5.png'
 
-      ];
-      setTimeout(function(){
+    ];
+    setTimeout(function () {
         console.log("abc");
         $('.piping-slider').flexslider({
-        animation: "slide",
-        move: 4,
-        itemWidth: 275,
-        itemMargin: 10,
-      });
-    },2000);
-    console.log("stateparam",$stateParams.id);
-$scope.oneAtATime = true;
-    NavigationService.getSector($stateParams.id, function(data) {
+            animation: "slide",
+            move: 4,
+            itemWidth: 275,
+            itemMargin: 10,
+        });
+    }, 2000);
+    console.log("stateparam", $stateParams.id);
+    $scope.oneAtATime = true;
+    NavigationService.getSector($stateParams.id, function (data) {
         $scope.SectorData = data;
         // console.log('$scope.SectorData', $scope.SectorData.services[0].project.length);
         console.log('SectorData', $scope.SectorData);
     });
-  // $(document).ready(function(){
-  //
-  // });
+    // $(document).ready(function(){
+    //
+    // });
 
 })
 
-.controller('WeDoCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('WeDoCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("ourservices");
     $scope.menutitle = NavigationService.makeactive("Our Services");
@@ -229,56 +229,56 @@ $scope.oneAtATime = true;
     TemplateService.banner = "views/banner-services.html";
 })
 
-.controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('AboutCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("about");
     $scope.menutitle = NavigationService.makeactive("About RD");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
-    $scope.clearPop = function() {
-      $scope.india = false;
-      $scope.africa = false;
-      $scope.uganda = false;
-      $scope.tanzania = false;
-      $scope.dubai = false;
-    }
-    $scope.clearPop();
-    $scope.popIndia = function() {
-      $scope.india = !$scope.india;
-      $scope.africa = false;
-      $scope.uganda = false;
-      $scope.tanzania = false;
-      $scope.dubai = false;
-    }
-    $scope.popAfrica = function() {
-      $scope.india = false;
-      $scope.africa = !$scope.africa;
-      $scope.uganda = false;
-      $scope.tanzania = false;
-      $scope.dubai = false;
-    }
-    $scope.popUganda = function() {
-      $scope.india = false;
-      $scope.africa = false;
-      $scope.uganda = !$scope.uganda;
-      $scope.tanzania = false;
-      $scope.dubai = false;
-    }
-    $scope.popTanzania = function() {
-      $scope.india = false;
-      $scope.africa = false;
-      $scope.uganda = false;
-      $scope.tanzania = !$scope.tanzania;
-      $scope.dubai = false;
-    }
-    $scope.popDubai = function() {
-      $scope.india = false;
-      $scope.africa = false;
-      $scope.uganda = false;
-      $scope.tanzania = false;
-      $scope.dubai = !$scope.dubai;
-    }
+    // $scope.clearPop = function() {
+    //   $scope.india = false;
+    //   $scope.africa = false;
+    //   $scope.uganda = false;
+    //   $scope.tanzania = false;
+    //   $scope.dubai = false;
+    // }
+    // $scope.clearPop();
+    // $scope.popIndia = function() {
+    //   $scope.india = !$scope.india;
+    //   $scope.africa = false;
+    //   $scope.uganda = false;
+    //   $scope.tanzania = false;
+    //   $scope.dubai = false;
+    // }
+    // $scope.popAfrica = function() {
+    //   $scope.india = false;
+    //   $scope.africa = !$scope.africa;
+    //   $scope.uganda = false;
+    //   $scope.tanzania = false;
+    //   $scope.dubai = false;
+    // }
+    // $scope.popUganda = function() {
+    //   $scope.india = false;
+    //   $scope.africa = false;
+    //   $scope.uganda = !$scope.uganda;
+    //   $scope.tanzania = false;
+    //   $scope.dubai = false;
+    // }
+    // $scope.popTanzania = function() {
+    //   $scope.india = false;
+    //   $scope.africa = false;
+    //   $scope.uganda = false;
+    //   $scope.tanzania = !$scope.tanzania;
+    //   $scope.dubai = false;
+    // }
+    // $scope.popDubai = function() {
+    //   $scope.india = false;
+    //   $scope.africa = false;
+    //   $scope.uganda = false;
+    //   $scope.tanzania = false;
+    //   $scope.dubai = !$scope.dubai;
+    // }
 })
 
 // .controller('PipingCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -289,7 +289,7 @@ $scope.oneAtATime = true;
 //   $scope.navigation = NavigationService.getnav();
 // })
 
-.controller('TanksCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('TanksCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("tanks");
     $scope.menutitle = NavigationService.makeactive("Tanks and Equipments");
@@ -297,7 +297,7 @@ $scope.oneAtATime = true;
     $scope.navigation = NavigationService.getnav();
 })
 
-.controller('InsulationCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('InsulationCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("insulation");
     $scope.menutitle = NavigationService.makeactive("Hot & Cold Insulation");
@@ -318,7 +318,7 @@ $scope.oneAtATime = true;
     ];
 })
 
-.controller('ModularCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('ModularCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("skidmodular");
     $scope.menutitle = NavigationService.makeactive("Skid & Modular Plants");
@@ -326,7 +326,7 @@ $scope.oneAtATime = true;
     $scope.navigation = NavigationService.getnav();
 })
 
-.controller('SSMSCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('SSMSCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("ssms");
     $scope.menutitle = NavigationService.makeactive("SS & MS steel structure");
@@ -334,35 +334,38 @@ $scope.oneAtATime = true;
     $scope.navigation = NavigationService.getnav();
 })
 
-.controller('headerctrl', function($scope, TemplateService) {
-    $scope.template = TemplateService;
-    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-        $(window).scrollTop(0);
-    });
-    $scope.oneAtATime = true;
- //    $scope.status = {
- //   isCustomHeaderOpen: false,
- //   isFirstOpen: true,
- //   isFirstDisabled: false
- // };
+.controller('headerctrl', function ($scope, TemplateService) {
+        $scope.template = TemplateService;
+        $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+            $(window).scrollTop(0);
+        });
+        $scope.oneAtATime = true;
+        //    $scope.status = {
+        //   isCustomHeaderOpen: false,
+        //   isFirstOpen: true,
+        //   isFirstDisabled: false
+        // };
 
-})
-.controller('footerctrl', function($scope, TemplateService,NavigationService, $timeout,$state ) {
-    $scope.template = TemplateService;
-    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-        $(window).scrollTop(0);
-    });
-    NavigationService.getAllSectors(function(data) {
-        $scope.allSectorData = data;
+    })
+    .controller('footerctrl', function ($scope, TemplateService, NavigationService, $timeout, $state) {
+        $scope.template = TemplateService;
+        $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+            $(window).scrollTop(0);
+        });
+        NavigationService.getAllSectors(function (data) {
+            $scope.allSectorData = data;
 
-        console.log('allSectorData', $scope.allSectorData);
-    });
-    $scope.goToSectors=function(sector){
-      $scope.sector=sector;
-      $state.go('sectors', {id:$scope.sector.id,name: $scope.sector.name});
-//       var result = { id:'jimbob', name:37, etc:'bluebell' };
-// $state.go('toState', result);
-    }
-})
+            console.log('allSectorData', $scope.allSectorData);
+        });
+        $scope.goToSectors = function (sector) {
+            $scope.sector = sector;
+            $state.go('sectors', {
+                id: $scope.sector.id,
+                name: $scope.sector.name
+            });
+            //       var result = { id:'jimbob', name:37, etc:'bluebell' };
+            // $state.go('toState', result);
+        }
+    })
 
 ;
