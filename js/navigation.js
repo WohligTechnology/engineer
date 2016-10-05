@@ -1,5 +1,5 @@
-// var adminurl = "admin/index.php/json/";
-var adminurl = "http://rd-engineering.com/admin/index.php/json/";
+var adminurl = "admin/index.php/json/";
+// var adminurl = "http://rd-engineering.com/admin/index.php/json/";
 var imgurl = "admin/uploads/";
 // if (isproduction) {
 //     adminURL = "http://www.wohlig.co.in/demo/index.php";
