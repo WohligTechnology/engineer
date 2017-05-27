@@ -1721,6 +1721,15 @@ p {
   }
 }
 
+//nav chnaged
+.condol-img{
+    width: 240px;
+    margin-left: 20px;
+    img{
+      width: 100%;
+    }
+}
+
 // .panel-default > .panel-heading + .panel-collapse > .panel-body
 //piping and erection//
 @import "fancybox-override";
