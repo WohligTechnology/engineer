@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider'])
 
-.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout,$uibModal) {
         //Used to name the .html file
 
         console.log("Testing Consoles");
@@ -46,10 +46,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         })
 
+//on load popup//
 
+$scope.openModal = function() {
+        var modalInstance = $uibModal.open({
+                animation: true,
+                scope: $scope,
+                size: 'xl',
+                windowClass: 'eddy-modal',
+                templateUrl: "views/modal/condolence.html"
+            });
+};
+            
+$scope.openModal();
 
-
-
+//on load popup//
 
     })
     // .controller('OverviewCtrl', function($scope, TemplateService, NavigationService, $timeout) {
