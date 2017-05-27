@@ -448,6 +448,10 @@ h2{
   }
 }
 }
+.overview-condol{
+  margin: 20px 0 0 0;
+  padding: 0;
+}
 }
 /*extra small devices*/
 
@@ -683,6 +687,11 @@ font-size: 24px;
   padding: 10px 0;
 }
 /*management ends*/
+
+.overview-condol{
+  margin: 20px 0 0 0;
+  padding: 0;
+}
 }
 /*iphone4 ends*/
 /*nexus4 starts*/
@@ -857,6 +866,10 @@ ul.dropdown-menu {
   margin-bottom: 0;
 }
 //*csr ends*//
+.overview-condol{
+  margin: 20px 0 0 0;
+  padding: 0;
+}
 }
 /*nexus4 ends*/
 @media (max-width: $screen-xs-max){
@@ -995,5 +1008,10 @@ ul.dropdown-menu {
   .panel-body{
     padding: 0;
   }
+}
+
+.overview-condol{
+  margin: 20px 0 0 0;
+  padding: 0;
 }
 }
